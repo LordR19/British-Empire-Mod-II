@@ -1,0 +1,33 @@
+﻿C1M = { # Mozambique / South East Africa
+	dynamic_country_name = {
+		name = dyn_c_default_mocambique
+		adjective = dyn_c_default_mocambique_adj
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_south_east_africa
+		adjective = dyn_c_south_east_africa_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+				AND = {
+					exists = c:POR
+					NOT = {
+						is_subject_of = c:POR
+					}
+				}
+			}
+		}
+	}
+}

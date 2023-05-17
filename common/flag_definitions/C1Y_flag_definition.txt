@@ -1,0 +1,67 @@
+﻿#Colonial Yemen
+C1Y = {
+	flag_definition = {
+		coa = C1Y
+		subject_canton = C1Y
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C1Y_sub		
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = C1Y
+		subject_canton = C1Y
+		coa_with_overlord_canton = C1Y_sub	
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+		
+	flag_definition = {
+		coa = C1Y_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = C1Y_sub		
+		priority = 50
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C1Y_sub_british
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = C1Y_sub_british		
+		priority = 100
+		trigger = { 
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C1Y_monarchy
+		subject_canton = C1Y_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C1Y_sub			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = C1Y_dictatorship
+		subject_canton = C1Y_dictatorship
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C1Y_sub
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+}

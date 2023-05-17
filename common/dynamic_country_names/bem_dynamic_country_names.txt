@@ -1,0 +1,240 @@
+﻿SAF = { # South Africa
+	dynamic_country_name = {
+		name = dyn_c_south_africa
+		adjective = dyn_c_south_africa_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:SAF
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_south_africa_union
+		adjective = dyn_c_south_africa_union_adj
+
+		is_main_tag_only = yes
+		priority = 5
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:SAF
+					type = puppet
+					is_initiator = yes
+				}
+			}
+
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_CAPE_COLONY
+				owns_entire_state_region = STATE_EASTERN_CAPE
+				owns_entire_state_region = STATE_NORTHERN_CAPE
+				owns_entire_state_region = STATE_TRANSVAAL
+				owns_entire_state_region = STATE_VRYSTAAT
+				owns_entire_state_region = STATE_ZULULAND
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_dominion_south_africa
+		adjective = dyn_c_dominion_south_africa
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = c:GBR
+			scope:actor = {
+				is_direct_subject_of = c:GBR
+			}
+			has_global_variable = bem_british_dominions_global_var
+		}
+	}
+}
+
+CAN = { # Canada
+	dynamic_country_name = {
+		name = dyn_c_dominion_canada
+		adjective = dyn_c_dominion_canada
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:CAN
+					type = dominion
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+
+AST = { # Australia
+	dynamic_country_name = {
+		name = dyn_c_dominion_australia
+		adjective = dyn_c_dominion_australia
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:AST
+					type = dominion
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+
+NZL = { # New Zealand
+	dynamic_country_name = {
+		name = dyn_c_dominion_new_zealand
+		adjective = dyn_c_dominion_new_zealand
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:NZL
+					type = dominion
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+
+DEI = { # Dutch East Indies
+dynamic_country_name = {
+	name = dyn_c_subject_east_indies
+	adjective = dyn_c_subject_east_indies_adj
+
+	is_main_tag_only = yes
+	priority = 5
+	
+	trigger = {
+		scope:actor = {
+			is_subject = yes
+			exists = c:NET
+			NOT = {
+				is_subject_of = c:NET
+			}
+		}
+	}
+}
+}
+
+BIC = { # British East India Company
+	dynamic_country_name = {
+		name = dyn_c_british_raj
+		adjective = dyn_c_british_raj_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:BIC
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_east_india
+		adjective = dyn_c_east_india_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_independent_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_subject_east_india
+		adjective = dyn_c_subject_east_india_adj
+
+		is_main_tag_only = yes
+		priority = 5
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+				exists = c:GBR
+				NOT = {
+					is_subject_of = c:GBR
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_dominion_india
+		adjective = dyn_c_dominion_india
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = c:GBR
+			scope:actor = {
+				is_direct_subject_of = c:GBR
+			}
+
+			has_global_variable = bem_british_dominions_global_var
+		}
+	}
+}
+
+MLT = { # Malta
+	dynamic_country_name = {
+		name = dyn_c_crown_colony_malta
+		adjective = dyn_c_crown_colony_malta_adj
+
+		is_main_tag_only = no
+		priority = 10
+	
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+}
+
+NAL = { # Natal
+	dynamic_country_name = {
+		name = dyn_c_colony_natal
+		adjective = dyn_c_colony_natal_adj
+
+		is_main_tag_only = no
+		priority = 10
+	
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+}

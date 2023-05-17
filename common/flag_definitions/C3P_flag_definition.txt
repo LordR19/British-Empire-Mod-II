@@ -1,0 +1,68 @@
+﻿#Colonial Pepper Coast
+C3P = {
+	flag_definition = {
+		coa = C3P
+		subject_canton = C3P
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C3P		
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = C3P
+		subject_canton = C3P
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C3P	
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+		
+	flag_definition = {
+		coa = C3P_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = C3P_sub		
+		priority = 50
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C3P_sub_british
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = C3P_sub_british		
+		priority = 100
+		trigger = { 
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C3P_monarchy
+		subject_canton = C3P_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C3P			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = C3P_dictatorship
+		subject_canton = C3P_dictatorship
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C3P
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+}

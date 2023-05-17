@@ -1,0 +1,27 @@
+﻿C1V = { # Colonial Upper Volta
+	dynamic_country_name = {
+		name = dyn_c_default_volta
+		adjective = dyn_c_default_volta_adj
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colony_of_volta
+		adjective = dyn_c_colony_of_volta_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}

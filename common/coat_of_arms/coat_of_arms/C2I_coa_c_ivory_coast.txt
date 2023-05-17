@@ -1,0 +1,73 @@
+#Colonial Ivory Coast
+C2I = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_emblem_elephant_head.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+}
+
+C2I_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_emblem_elephant_head.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.55 0.55 } position = { 0.75 0.5 } }
+	}
+}
+
+C2I_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "green"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_emblem_elephant_head.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.5 } }
+	}
+}
+
+C2I_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_emblem_elephant_head.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.45 0.45 } position = { 0.18 0.2 } }
+	}
+}
+
+C2I_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_emblem_elephant_head.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+}

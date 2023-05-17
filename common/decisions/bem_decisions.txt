@@ -1,0 +1,25 @@
+﻿bem_make_dominions_decision = {
+	is_shown = {
+		exists = c:GBR
+		this = c:GBR
+		NOT = {
+			has_global_variable = bem_british_dominions_global_var
+		}
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		custom_tooltip = {
+			text = bem_make_dominions_decision_tt
+			set_global_variable = bem_british_dominions_global_var
+		} 
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}

@@ -1,0 +1,206 @@
+﻿gov_british_dominion = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_GOVERNOR_GENERAL"
+	female_ruler = "RULER_TITLE_GOVERNOR_GENERAL"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		exists = c:GBR
+		is_subject_of = c:GBR
+		OR = {
+			AND = {
+				exists = c:CAN
+				root = c:CAN
+			}
+			AND = {
+				exists = c:AST
+				root = c:AST
+			}
+			AND = {
+				exists = c:NZL
+				root = c:NZL
+			}
+			AND = {
+				exists = c:SAF
+				root = c:SAF
+			}
+		}
+	}
+}
+
+gov_british_protectorate = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_GOVERNOR_GENERAL"
+	female_ruler = "RULER_TITLE_GOVERNOR_GENERAL"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		exists = c:GBR
+		is_subject_of = c:GBR
+		OR = {
+			AND = {
+				exists = c:CYP
+				root = c:CYP
+			}
+			AND = {
+				exists = c:C1E
+				root = c:C1E
+			}
+			AND = {
+				exists = c:C1C
+				root = c:C1C
+			}
+			AND = {
+				exists = c:C1P
+				root = c:C1P
+			}
+			AND = {
+				exists = c:C1I
+				root = c:C1I
+			}
+			AND = {
+				exists = c:C1A
+				root = c:C1A
+			}
+			AND = {
+				exists = c:C1Y
+				root = c:C1Y
+			}
+			AND = {
+				exists = c:C1S
+				root = c:C1S
+			}
+			AND = {
+				exists = c:C1N
+				root = c:C1N
+			}
+			AND = {
+				exists = c:C1K
+				root = c:C1K
+			}
+			AND = {
+				exists = c:C2T
+				root = c:C2T
+			}
+			AND = {
+				exists = c:C1U
+				root = c:C1U
+			}
+			AND = {
+				exists = c:C2S
+				root = c:C2S
+			}
+			AND = {
+				exists = c:C2C
+				root = c:C2C
+			}
+			AND = {
+				exists = c:C1W
+				root = c:C1W
+			}
+			AND = {
+				exists = c:C1B
+				root = c:C1B
+			}
+			AND = {
+				exists = c:C2R
+				root = c:C2R
+			}
+		}
+	}
+}
+
+gov_british_crown_colony = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_GOVERNOR_GENERAL"
+	female_ruler = "RULER_TITLE_GOVERNOR_GENERAL"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		exists = c:GBR
+		is_subject_of = c:GBR
+		OR = {
+			AND = {
+				exists = c:HGK
+				root = c:HGK
+			}
+			AND = {
+				exists = c:CBG
+				root = c:CBG
+			}
+			AND = {
+				exists = c:SST
+				root = c:SST
+			}
+			AND = {
+				exists = c:C1T
+				root = c:C1T
+			}
+			AND = {
+				exists = c:MLT
+				root = c:MLT
+			}
+			AND = {
+				exists = c:NAL
+				root = c:NAL
+			}
+			AND = {
+				exists = c:C1R
+				root = c:C1R
+			}
+			AND = {
+				exists = c:C1M
+				root = c:C1M
+			}
+			AND = {
+				exists = c:C2M
+				root = c:C2M
+			}
+			AND = {
+				exists = c:C2M
+				root = c:C2M
+			}
+			AND = {
+				exists = c:C3C
+				root = c:C3C
+			}
+			AND = {
+				exists = c:C3M
+				root = c:C3M
+			}
+			AND = {
+				exists = c:C1G
+				root = c:C1G
+			}
+			AND = {
+				exists = c:C4C
+				root = c:C4C
+			}
+			AND = {
+				exists = c:C2B
+				root = c:C2B
+			}
+		}
+	}
+}
+
+gov_bem_colony = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_GOVERNOR"
+	female_ruler = "RULER_TITLE_GOVERNOR"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		is_country_type = colonial
+		is_subject = yes
+		bem_colonial_nation_trigger = yes
+	}
+}

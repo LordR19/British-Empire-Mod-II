@@ -1,0 +1,216 @@
+﻿########################
+# bem SCRIPTED EFFECTS #
+########################
+
+#by Lord R
+
+##########################
+
+###Imperial Conference Participants###
+# Creates a list of global variables of up to ten of the most prestigous subjects of Great Britain
+bem_create_participiants_list_imperial_conference_effect = {
+	if = {
+		limit = {
+			any_country = {
+				is_direct_subject_of = c:GBR
+				count >= 1
+			}
+		}
+		ordered_country = {
+			limit = {
+				is_direct_subject_of = c:GBR
+			}
+			order_by = { value = prestige }
+			position = 0
+			set_global_variable = {
+				name = bem_imperial_conference_participant_1_global_var
+				value = this
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_country = {
+				is_direct_subject_of = c:GBR
+				count >= 2
+			}
+		}
+		ordered_country = {
+			limit = {
+				is_direct_subject_of = c:GBR
+			}
+			order_by = { value = prestige }
+			position = 1
+			set_global_variable = {
+				name = bem_imperial_conference_participant_2_global_var
+				value = this
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_country = {
+				is_direct_subject_of = c:GBR
+				count >= 3
+			}
+		}
+		ordered_country = {
+			limit = {
+				is_direct_subject_of = c:GBR
+			}
+			order_by = { value = prestige }
+			position = 2
+			set_global_variable = {
+				name = bem_imperial_conference_participant_3_global_var
+				value = this
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_country = {
+				is_direct_subject_of = c:GBR
+				count >= 4
+			}
+		}
+		ordered_country = {
+			limit = {
+				is_direct_subject_of = c:GBR
+			}
+			order_by = { value = prestige }
+			position = 3
+			set_global_variable = {
+				name = bem_imperial_conference_participant_4_global_var
+				value = this
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_country = {
+				is_direct_subject_of = c:GBR
+				count >= 5
+			}
+		}
+		ordered_country = {
+			limit = {
+				is_direct_subject_of = c:GBR
+			}
+			order_by = { value = prestige }
+			position = 4
+			set_global_variable = {
+				name = bem_imperial_conference_participant_5_global_var
+				value = this
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_country = {
+				is_direct_subject_of = c:GBR
+				count >= 6
+			}
+		}
+		ordered_country = {
+			limit = {
+				is_direct_subject_of = c:GBR
+			}
+			order_by = { value = prestige }
+			position = 5
+			set_global_variable = {
+				name = bem_imperial_conference_participant_6_global_var
+				value = this
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_country = {
+				is_direct_subject_of = c:GBR
+				count >= 7
+			}
+		}
+		ordered_country = {
+			limit = {
+				is_direct_subject_of = c:GBR
+			}
+			order_by = { value = prestige }
+			position = 6
+			set_global_variable = {
+				name = bem_imperial_conference_participant_7_global_var
+				value = this
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_country = {
+				is_direct_subject_of = c:GBR
+				count >= 8
+			}
+		}
+		ordered_country = {
+			limit = {
+				is_direct_subject_of = c:GBR
+			}
+			order_by = { value = prestige }
+			position = 7
+			set_global_variable = {
+				name = bem_imperial_conference_participant_8_global_var
+				value = this
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_country = {
+				is_direct_subject_of = c:GBR
+				count >= 9
+			}
+		}
+		ordered_country = {
+			limit = {
+				is_direct_subject_of = c:GBR
+			}
+			order_by = { value = prestige }
+			position = 8
+			set_global_variable = {
+				name = bem_imperial_conference_participant_9_global_var
+				value = this
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_country = {
+				is_direct_subject_of = c:GBR
+				count >= 10
+			}
+		}
+		ordered_country = {
+			limit = {
+				is_direct_subject_of = c:GBR
+			}
+			order_by = { value = prestige }
+			position = 9
+			set_global_variable = {
+				name = bem_imperial_conference_participant_10_global_var
+				value = this
+			}
+		}
+	}
+}
+
+# deletes all the global variables for the participants
+bem_delete_participant_list = {
+	remove_global_variable = bem_imperial_conference_participant_1_global_var
+	remove_global_variable = bem_imperial_conference_participant_2_global_var
+	remove_global_variable = bem_imperial_conference_participant_3_global_var
+	remove_global_variable = bem_imperial_conference_participant_4_global_var
+	remove_global_variable = bem_imperial_conference_participant_5_global_var
+	remove_global_variable = bem_imperial_conference_participant_6_global_var
+	remove_global_variable = bem_imperial_conference_participant_7_global_var
+	remove_global_variable = bem_imperial_conference_participant_8_global_var
+	remove_global_variable = bem_imperial_conference_participant_9_global_var
+	remove_global_variable = bem_imperial_conference_participant_10_global_var
+}

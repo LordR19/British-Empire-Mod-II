@@ -1,0 +1,1095 @@
+﻿namespace = bem
+
+# Event to set up Governors i n the appropriate countries
+bem.1 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		OR = {
+			is_country_type = colonial
+			is_country_type = unrecognized
+			AND = {
+				exists = c:MLT
+				root = c:MLT
+			}
+			AND = {
+				exists = c:CRE
+				root = c:CRE
+			}
+			AND = {
+				exists = c:ION
+				root = c:ION
+			}
+		}
+	}
+
+	immediate = {
+		activate_law = law_type:law_presidential_republic
+		trigger_event = {
+			id = bem.2
+			days = 1
+		}
+
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						exists = c:CAN
+						root = c:CAN
+					}
+					AND = {
+						exists = c:AST
+						root = c:AST
+					}
+					AND = {
+						exists = c:NZL
+						root = c:NZL
+					}
+					AND = {
+						exists = c:SAF
+						root = c:SAF
+					}
+				}
+				NOT = {
+					is_subject_type = subject_type_dominion
+				}
+			}
+			
+			change_subject_type = subject_type_dominion
+		}
+
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						exists = c:HGK
+						root = c:HGK
+					}
+					AND = {
+						exists = c:CBG
+						root = c:CBG
+					}
+					AND = {
+						exists = c:SST
+						root = c:SST
+					}
+					bem_colonial_nation_trigger = yes
+				}
+			}
+			change_subject_type = subject_type_puppet
+		}
+	}
+}
+
+#Event used to create a new governor that is male and of the primary culture
+bem.2 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+	}
+
+	immediate = {
+		create_character = {
+			ruler = yes
+			female = no
+		}
+	}
+}
+
+# Colonial / Imperial Conference
+bem.10 = {
+	type = country_event
+	placement = ROOT
+
+	title = bem.10.t
+	desc = bem.10.d
+	flavor = bem.10.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	cooldown = {
+		years = 4
+	}
+
+	trigger = {
+		NOT = {
+			has_variable = bem_no_more_imperial_conference_var
+		}
+		year >= 1886
+		exists = c:GBR
+		this = c:GBR
+		any_country = {
+			is_direct_subject_of = c:GBR
+			NOT = {
+				this = c:GBR
+			}
+			count > 3
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_direct_subject_of = c:GBR
+			}
+			save_scope_as = bem_happy_subject_scope_1
+			set_variable = bem_happy_subject_block_var
+		}
+		random_country = {
+			limit = {
+				NOT = {
+					has_variable = bem_happy_subject_block_var
+				}
+				is_direct_subject_of = c:GBR
+			}
+			save_scope_as = bem_happy_subject_scope_2
+			set_variable = bem_happy_subject_block_var
+		}
+		random_country = {
+			limit = {
+				NOT = {
+					has_variable = bem_happy_subject_block_var
+				}
+				is_direct_subject_of = c:GBR
+			}
+			save_scope_as = bem_subject_with_request_scope
+		}
+		set_global_variable = {
+			name = bem_subject_request_global_var
+			value = scope:bem_subject_with_request_scope
+			days = 120
+		}
+		
+		set_variable = {
+			name = bem_request_var
+			value = { 1 4 }
+		}
+		round_variable = {
+			name = bem_request_var
+			nearest = 1
+		}
+	}
+
+	option = { #Support Scope!
+		name = bem.10.a
+		default_option = yes
+
+		change_relations = {
+			country = scope:bem_happy_subject_scope_1
+			value = 20
+		}
+		change_relations = {
+			country = scope:bem_happy_subject_scope_2
+			value = 20
+		}
+		if = {
+			limit = {
+				var:bem_request_var = 1
+			}
+			add_treasury = -1000000
+			scope:bem_subject_with_request_scope = {
+				add_treasury = 1000000
+			}
+			change_relations = {
+				country = scope:bem_subject_with_request_scope
+				value = 20
+			}
+		}
+		if = {
+			limit = {
+				var:bem_request_var = 2
+			}
+			add_treasury = -1000000
+			scope:bem_subject_with_request_scope = {
+				add_investment_pool  = 1000000
+			}
+			change_relations = {
+				country = scope:bem_subject_with_request_scope
+				value = 20
+			}
+		}
+		if = {
+			limit = {
+				var:bem_request_var = 3
+			}
+			add_modifier = {
+				name = bem_bureaucratic_support_sent_modifier
+				months = 12
+			}
+			scope:bem_subject_with_request_scope = {
+				add_modifier = {
+					name = bem_bureaucratic_support_modifier
+					months = 12
+				}
+			}
+			change_relations = {
+				country = scope:bem_subject_with_request_scope
+				value = 20
+			}
+		}
+		if = {
+			limit = {
+				var:bem_request_var = 4
+			}
+			add_modifier = {
+				name = bem_construction_support_sent_modifier
+				months = 12
+			}
+			scope:bem_subject_with_request_scope = {
+				add_modifier = {
+					name = bem_construction_support_modifier
+					months = 12
+				}
+			}
+			change_relations = {
+				country = scope:bem_subject_with_request_scope
+				value = 20
+			}
+		}
+		every_country = {
+			limit = {
+				has_variable = bem_happy_subject_block_var
+			}
+			remove_variable = bem_happy_subject_block_var
+		}
+	}
+
+	option = { #We don't have the means to support Scope.
+		name = bem.10.b
+		default_option = yes
+
+		change_relations = {
+			country = scope:bem_happy_subject_scope_1
+			value = 20
+		}
+		change_relations = {
+			country = scope:bem_happy_subject_scope_2
+			value = 20
+		}
+		change_relations = {
+			country = scope:bem_subject_with_request_scope
+			value = -20
+		}
+		every_country = {
+			limit = {
+				has_variable = bem_happy_subject_block_var
+			}
+			remove_variable = bem_happy_subject_block_var
+		}
+	}
+
+	option = { #I don't care. I don't want to hear about it!
+		name = bem.10.c
+
+		change_relations = {
+			country = scope:bem_happy_subject_scope_1
+			value = 20
+		}
+		change_relations = {
+			country = scope:bem_happy_subject_scope_2
+			value = 20
+		}
+		every_country = {
+			limit = {
+				has_variable = bem_happy_subject_block_var
+			}
+			remove_variable = bem_happy_subject_block_var
+		}
+
+		custom_tooltip = bem_10.c.tt
+
+		set_variable = bem_no_more_imperial_conference_var
+	}
+}
+
+# Colonial / Imperial Conference (hidden)
+bem.11 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		has_variable = bem_no_more_imperial_conference_var
+		year >= 1886
+		exists = c:GBR
+		this = c:GBR
+		any_country = {
+			is_direct_subject_of = c:GBR
+			NOT = {
+				this = c:GBR
+			}
+			count > 2
+		}
+	}
+
+	cooldown = {
+		years = 4
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_direct_subject_of = c:GBR
+			}
+			save_scope_as = bem_happy_subject_scope_1
+			set_variable = bem_happy_subject_block_var
+		}
+		random_country = {
+			limit = {
+				NOT = {
+					has_variable = bem_happy_subject_block_var
+				}
+				is_direct_subject_of = c:GBR
+			}
+			save_scope_as = bem_happy_subject_scope_2
+			set_variable = bem_happy_subject_block_var
+		}
+
+		change_relations = {
+			country = scope:bem_happy_subject_scope_1
+			value = 20
+		}
+		change_relations = {
+			country = scope:bem_happy_subject_scope_2
+			value = 20
+		}
+		every_country = {
+			limit = {
+				has_variable = bem_happy_subject_block_var
+			}
+			remove_variable = bem_happy_subject_block_var
+		}
+	}
+}
+
+# Sherlock Holmes published
+bem.100 = {
+	type = country_event
+	placement = ROOT
+
+	title = bem.100.t
+	desc = bem.100.d
+	flavor = bem.100.f
+
+	duration = 3
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:bem_doyle_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+		NOT = {
+			has_global_variable = bem_sherlock_holmes_global_var
+		}
+		year >= 1886
+		exists = c:GBR
+		this = c:GBR
+	}
+
+	immediate = {
+		set_global_variable = bem_sherlock_holmes_global_var
+
+		create_character = {
+			dna = bem_doyle
+			first_name = bem_arthur_conan
+			last_name = bem_doyle
+			birth_date = 1859.5.22
+			culture = cu:scottish
+			interest_group = ig_petty_bourgeoisie
+			female = no
+			traits = { 
+				innovative
+				romantic
+			}
+
+			save_scope_as = bem_doyle_scope
+
+			on_created = {
+				scope:bem_doyle_scope = {
+					place_character_in_void = 4
+				}
+			}
+		}
+	}
+
+	option = { #Elementary, my dear Watson.
+		name = bem.100.a
+		default_option = yes
+
+		add_modifier = {
+			name = bem_sherlock_holmes_modifier
+		}
+	}
+}
+
+# On the Origin of Species published
+bem.101 = {
+	type = country_event
+	placement = ROOT
+
+	title = bem.101.t
+	desc = bem.101.d
+	flavor = bem.101.f
+
+	duration = 3
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:bem_darwin_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+		NOT = {
+			has_global_variable = bem_on_the_origin_of_species_global_var
+		}
+		year >= 1858
+		exists = c:GBR
+		this = c:GBR
+	}
+
+	immediate = {
+		set_global_variable = bem_on_the_origin_of_species_global_var
+
+		create_character = {
+			dna = bem_darwin
+			first_name = bem_charles
+			last_name = bem_darwin
+			age = 50
+			birth_date = 1809.2.12
+			culture = cu:british
+			interest_group = ig_intelligentsia
+			female = no
+			traits = { 
+				innovative
+				meticulous
+			}
+
+			save_scope_as = bem_darwin_scope
+
+			on_created = {
+				scope:bem_darwin_scope = {
+					place_character_in_void = 4
+				}
+			}
+		}
+	}
+
+	option = { #Evolved from apes, are we? Well, it does make sense."
+		name = bem.101.a
+		default_option = yes
+
+		add_modifier = {
+			name = bem_on_the_origin_of_species_modifier
+		}
+	}
+}
+
+# Gruesome murder in Whitechapel, London
+bem.200 = {
+	type = country_event
+	placement = scope:home_counties_state
+
+	title = bem.200.t
+	desc = bem.200.d
+	flavor = bem.200.f
+
+	duration = 1
+
+	event_image = {
+		texture = "gfx/event_pictures/bem/bem_ripper_1.dds"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/public_figure_assassination"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+		NOT = {
+			has_global_variable = bem_mary_anne_nichols_global_var
+		}
+		game_date >= 1888.8.1
+		exists = c:GBR
+		this = c:GBR
+	}
+
+	immediate = {
+		set_global_variable = bem_mary_anne_nichols_global_var
+
+		random_state  = {
+			limit = {
+				state_region = s:STATE_HOME_COUNTIES
+			}
+			save_scope_as = home_counties_state
+		}
+	}
+
+	option = { #How horrible...
+		name = bem.200.a
+
+		hidden_effect = {
+			random_list = {
+				99 = {
+					trigger_event = {
+						id = bem.201
+						days = { 7 21 }
+					}
+				}
+				1 = {
+					trigger_event = {
+						id = bem.206
+						days = { 7 21 }
+					}
+				}
+			}	
+		}
+		add_modifier = {
+			name = bem_ripper_rampage_modifier
+			years = 2
+		}
+	}
+
+	option = { #Offer a bonus for all our police officers!
+		name = bem.200.b
+
+		trigger = {
+			NOT = {
+				has_law = law_type:law_no_police
+			}
+		}
+
+		hidden_effect = { #We need more police officers to catch this monster!
+			random_list = {
+				75 = {
+					trigger_event = {
+						id = bem.201
+						days = { 7 21 }
+					}
+				}
+				25 = {
+					trigger_event = {
+						id = bem.206
+						days = { 7 21 }
+					}
+				}
+			}	
+		}
+		add_modifier = {
+			name = bem_ripper_rampage_modifier
+			years = 2
+		}
+		add_modifier = {
+			name = bem_bonus_offered_to_police_officers_modifier
+			months = 6
+		}
+	}
+
+	option = { #I administer a country. Stop bothering me with such trivialities."
+		name = bem.200.c
+		default_option = yes
+
+		custom_tooltip = bem.200.c.tt
+		add_modifier = {
+			name = bem_ripper_rampage_modifier
+			years = 2
+		}
+	}
+}
+
+# The Whitechapel “Ripper” strikes again!
+bem.201 = {
+	type = country_event
+	placement = scope:home_counties_state
+
+	title = bem.201.t
+	desc = bem.201.d
+	flavor = bem.201.f
+
+	duration = 1
+
+	event_image = {
+		texture = "gfx/event_pictures/bem/bem_ripper_2.dds"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/public_figure_assassination"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+
+		random_state  = {
+			limit = {
+				state_region = s:STATE_HOME_COUNTIES
+			}
+			save_scope_as = home_counties_state
+		}
+	}
+
+	option = { #Terrible..."
+		name = bem.201.a
+
+		hidden_effect = {
+			random_list = {
+				99 = {
+					trigger_event = {
+						id = bem.202
+						days = { 7 21 }
+					}
+				}
+				1 = {
+					trigger_event = {
+						id = bem.206
+						days = { 7 21 }
+					}
+				}
+			}
+		}
+	}
+
+	option = { #Offer a bonus for all our police officers!
+		name = bem.201.b
+
+		trigger = {
+			NOT = {
+				has_law = law_type:law_no_police
+			}
+		}
+
+		hidden_effect = {
+			random_list = {
+				75 = {
+					trigger_event = {
+						id = bem.202
+						days = { 7 21 }
+					}
+				}
+				25 = {
+					trigger_event = {
+						id = bem.206
+						days = { 7 21 }
+					}
+				}
+			}	
+		}
+		add_modifier = {
+			name = bem_expanded_police_forces_modifier
+			months = 6
+		}
+	}
+
+	option = { #I administer a country. Stop bothering me with such trivialities."
+		name = bem.200.c
+		default_option = yes
+
+		custom_tooltip = bem.200.c.tt
+	}
+}
+
+# "Jack the Ripper" claims his two latest victims!
+bem.202 = {
+	type = country_event
+	placement = scope:home_counties_state
+
+	title = bem.202.t
+	desc = bem.202.d
+	flavor = bem.202.f
+
+	duration = 1
+
+	event_image = {
+		texture = "gfx/event_pictures/bem/bem_ripper_3.dds"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/public_figure_assassination"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		random_state  = {
+			limit = {
+				state_region = s:STATE_HOME_COUNTIES
+			}
+			save_scope_as = home_counties_state
+		}
+	}
+
+	option = { #Oh no, not again..."
+		name = bem.202.a
+
+		hidden_effect = {
+			random_list = {
+				99 = {
+					trigger_event = {
+						id = bem.203
+						days = { 7 21 }
+					}
+				}
+				1 = {
+					trigger_event = {
+						id = bem.206
+						days = { 7 21 }
+					}
+				}
+			}
+		}
+	}
+
+	option = { #Offer a reward to everyone with information about the Ripper!
+		name = bem.202.b
+
+		hidden_effect = {
+			random_list = {
+				75 = {
+					trigger_event = {
+						id = bem.203
+						days = { 7 21 }
+					}
+				}
+				25 = {
+					trigger_event = {
+						id = bem.206
+						days = { 7 21 }
+					}
+				}
+			}	
+		}
+		add_treasury = -1000000
+	}
+
+	option = { #I administer a country. Stop bothering me with such trivialities."
+		name = bem.200.c
+		default_option = yes
+
+		custom_tooltip = bem.200.c.tt
+	}
+}
+
+# A letter from the Ripper
+bem.203 = {
+	type = country_event
+	placement = scope:home_counties_state
+
+	title = bem.203.t
+	desc = bem.203.d
+	flavor = bem.203.f
+
+	duration = 1
+
+	event_image = {
+		texture = "gfx/event_pictures/bem/bem_ripper_4.dds"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/public_figure_assassination"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		random_state  = {
+			limit = {
+				state_region = s:STATE_HOME_COUNTIES
+			}
+			save_scope_as = home_counties_state
+		}
+	}
+
+	option = { #What a monster!"
+		name = bem.203.a
+
+		hidden_effect = {
+			random_list = {
+				99 = {
+					trigger_event = {
+						id = bem.204
+						days = { 7 21 }
+					}
+				}
+				1 = {
+					trigger_event = {
+						id = bem.206
+						days = { 7 21 }
+					}
+				}
+			}
+		}
+	}
+
+	option = { #Get help from the Universities. We need to find out everything we can about it!
+		name = bem.203.b
+
+		trigger = {
+			any_scope_building = {
+				is_building_type = building_university
+				level >= 5
+			}
+		}
+
+		hidden_effect = {
+			random_list = {
+				75 = {
+					trigger_event = {
+						id = bem.204
+						days = { 7 21 }
+					}
+				}
+				25 = {
+					trigger_event = {
+						id = bem.206
+						days = { 7 21 }
+					}
+				}
+			}
+		}
+		add_modifier = {
+			name = bem_researchers_focus_on_letter_modifier
+			months = 6
+		}
+	}
+
+	option = { #I administer a country. Stop bothering me with such trivialities."
+		name = bem.200.c
+		default_option = yes
+
+		custom_tooltip = bem.200.c.tt
+	}
+}
+
+# “Jack the Ripper” butchers 5th victim!
+bem.204 = {
+	type = country_event
+	placement = scope:home_counties_state
+
+	title = bem.204.t
+	desc = bem.204.d
+	flavor = bem.204.f
+
+	duration = 1
+
+	event_image = {
+		texture = "gfx/event_pictures/bem/bem_ripper_5.dds"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/public_figure_assassination"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		random_state  = {
+			limit = {
+				state_region = s:STATE_HOME_COUNTIES
+			}
+			save_scope_as = home_counties_state
+		}
+	}
+
+	option = { #Will this never stop?
+		name = bem.204.a
+
+		hidden_effect = {
+			random_list = {
+				99 = {
+					trigger_event = {
+						id = bem.205
+						days = { 7 21 }
+					}
+				}
+				1 = {
+					trigger_event = {
+						id = bem.206
+						days = { 7 21 }
+					}
+				}
+			}
+		}
+	}
+
+	option = { #Offer huge rewards for any relevant information. This has to stop!
+		name = bem.204.b
+
+		hidden_effect = {
+			random_list = {
+				75 = {
+					trigger_event = {
+						id = bem.205
+						days = { 7 21 }
+					}
+				}
+				25 = {
+					trigger_event = {
+						id = bem.206
+						days = { 7 21 }
+					}
+				}
+			}
+		}
+		add_treasury = -5000000
+	}
+
+	option = { #I administer a country. Stop bothering me with such trivialities.
+		name = bem.200.c
+		default_option = yes
+
+		custom_tooltip = bem.200.c.tt
+	}
+}
+
+# No signs of “Jack the Ripper”
+bem.205 = {
+	type = country_event
+	placement = scope:home_counties_state
+
+	title = bem.205.t
+	desc = bem.205.d
+	flavor = bem.205.f
+
+	duration = 1
+
+	event_image = {
+		texture = "gfx/event_pictures/bem/bem_ripper_6.dds"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/public_figure_assassination"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		random_state  = {
+			limit = {
+				state_region = s:STATE_HOME_COUNTIES
+			}
+			save_scope_as = home_counties_state
+		}
+	}
+
+	option = { #Did he really disappear?
+		name = bem.205.a
+
+		remove_modifier = bem_bonus_offered_to_police_officers_modifier
+		remove_modifier = bem_expanded_police_forces_modifier
+		remove_modifier = bem_researchers_focus_on_letter_modifier
+	}
+}
+
+# "Jack the Ripper" eluded police by committing suicide
+bem.206 = {
+	type = country_event
+	placement = scope:home_counties_state
+
+	title = bem.206.t
+	desc = bem.206.d
+	flavor = bem.206.f
+
+	duration = 1
+
+	event_image = {
+		texture = "gfx/event_pictures/bem/bem_ripper_5.dds"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/public_figure_assassination"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		random_state  = {
+			limit = {
+				state_region = s:STATE_HOME_COUNTIES
+			}
+			save_scope_as = home_counties_state
+		}
+	}
+
+	option = { #Did we really catch him?
+		name = bem.206.a
+
+		remove_modifier = bem_ripper_rampage_modifier
+		remove_modifier = bem_bonus_offered_to_police_officers_modifier
+		remove_modifier = bem_expanded_police_forces_modifier
+		remove_modifier = bem_researchers_focus_on_letter_modifier
+	}
+}
+
+# "RMS Titanic" prepares for historic voyage
+bem.210 = {
+	type = country_event
+	placement = scope:home_counties_state
+
+	title = bem.210.t
+	desc = bem.210.d
+	flavor = bem.210.f
+
+	duration = 1
+
+	event_image = {
+		texture = "gfx/event_pictures/bem/bem_titanic_1.dds"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/public_figure_assassination"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+		NOT = {
+			has_global_variable = titanic_event_global_var
+		}
+		year >= 1911
+		exists = c:GBR
+		this = c:GBR
+	}
+
+	immediate = {
+		random_state  = {
+			limit = {
+				state_region = s:STATE_HOME_COUNTIES
+			}
+			save_scope_as = home_counties_state
+		}
+		set_global_variable = titanic_event_global_var
+	}
+
+	option = { #Have a good trip!
+		name = bem.210.a
+	}
+}

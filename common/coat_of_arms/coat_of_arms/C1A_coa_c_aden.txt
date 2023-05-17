@@ -1,0 +1,86 @@
+#Protectorate of Aden
+C1A = {
+	pattern = "pattern_solid.tga"
+	color1 = { 115 175 255 }
+
+	textured_emblem = {
+		texture = "te_emblem_ship_aden.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.48 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves.dds"
+		color1 = "blue_light"
+		color2 = { 0 150 250 }
+		instance = { scale = { 1 1 } position = { 0.5 0.79 } }
+	}
+}
+
+C1A_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = { 115 175 255 }
+
+	textured_emblem = {
+		texture = "te_emblem_ship_aden.dds"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.48 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves.dds"
+		color1 = "blue_light"
+		color2 = { 0 150 250 }
+		instance = { scale = { 1 1 } position = { 0.5 0.79 } }
+	}
+}
+
+C1A_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_seal_aden.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+C1A_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = { 115 175 255 }
+
+	textured_emblem = {
+		texture = "te_emblem_ship_aden.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.48 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves.dds"
+		color1 = "blue_light"
+		color2 = { 0 150 250 }
+		instance = { scale = { 1 1 } position = { 0.5 0.79 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.55 0.55 } position = { 0.22 0.22 } }
+	}
+}
+
+C1A_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = { 115 175 255 }
+
+	textured_emblem = {
+		texture = "te_emblem_ship_aden.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.48 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves.dds"
+		color1 = "blue_light"
+		color2 = { 0 150 250 }
+		instance = { scale = { 1 1 } position = { 0.5 0.79 } }
+	}
+	colored_emblem = {
+		texture = "ce_crossed_scimitars.dds"
+		color1 = "black"
+		instance = { scale = { 0.5 0.5 } position = { 0.17 0.22 } }
+	}
+}

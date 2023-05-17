@@ -1,0 +1,49 @@
+﻿bem_bureaucratic_support_modifier = { 
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
+	country_bureaucracy_add = 100
+}
+
+bem_bureaucratic_support_sent_modifier = { 
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds"
+	country_bureaucracy_add = -100
+}
+
+bem_construction_support_modifier = { 
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds"
+	country_construction_add = 20
+}
+
+bem_construction_support_sent_modifier = { 
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds"
+	country_construction_add = -20
+}
+
+bem_sherlock_holmes_modifier = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+	country_prestige_add = 1
+}
+
+bem_on_the_origin_of_species_modifier = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+	country_prestige_add = 1
+}
+
+bem_ripper_rampage_modifier = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+	country_prestige_mult = -0.05
+}
+
+bem_bonus_offered_to_police_officers_modifier = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+	country_expenses_add = 20000
+}
+
+bem_expanded_police_forces_modifier = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+	country_bureaucracy_add = -200
+}
+
+bem_researchers_focus_on_letter_modifier = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+	country_military_weekly_innovation_mult  = -0.5
+}

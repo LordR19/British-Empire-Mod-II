@@ -1,0 +1,269 @@
+﻿#imperial conference name
+imperial_conference_name = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			year < 1907
+		}
+
+		localization_key = bem_custom_loc_colonial_conference
+	}
+
+	text = {
+		localization_key = bem_custom_loc_imperial_conference
+	}
+
+}
+
+#a or an
+imperial_conference_name_with_a_an = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			year < 1907
+		}
+
+		localization_key = bem_custom_loc_a_colonial_conference
+	}
+
+	text = {
+		localization_key = bem_custom_loc_an_imperial_conference
+	}
+
+}
+
+#A or An capitalised
+imperial_conference_name_with_a_an_capital = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			year < 1907
+		}
+
+		localization_key = bem_custom_loc_a_colonial_conference_cap
+	}
+
+	text = {
+		localization_key = bem_custom_loc_an_imperial_conference_cap
+	}
+
+}
+
+#imperial conference request
+imperial_conference_request_type = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			var:bem_request_var = 1
+		}
+		localization_key = bem_custom_loc_request_money
+	}
+
+	text = {
+		trigger = {
+			var:bem_request_var = 2
+			has_global_variable = bem_subject_request_global_var
+		}
+		localization_key = bem_custom_loc_request_investment
+	}
+
+	text = {
+		trigger = {
+			var:bem_request_var = 3
+		}
+		localization_key = bem_custom_loc_request_bureaucratic_assistance
+	}
+
+	text = {
+		trigger = {
+			var:bem_request_var = 4
+		}
+		localization_key = bem_custom_loc_request_construction_assistance
+	}
+
+}
+
+#Imperial Conference Flavor
+imperial_conference_flavor_type = {
+	type = country
+	random_valid = yes
+
+	text = {
+		trigger = {
+			year < 1907
+			year > 1900
+		}
+
+		localization_key = bem_custom_loc_conference_flavor_namechange
+	}
+
+	text = {
+		trigger = {
+			has_technology_researched = electric_telegraph
+			country_or_subject_owns_entire_state_region = STATE_BRITISH_COLUMBIA
+			country_or_subject_owns_entire_state_region = STATE_NEW_SOUTH_WALES
+		}
+
+		localization_key = bem_custom_loc_conference_flavor_telegraph_australia_vancouver
+	}
+
+	text = {
+		localization_key = bem_custom_loc_conference_flavor_one_colony_one_vote
+	}
+
+	text = {
+		localization_key = bem_custom_loc_conference_flavor_preferential_trade
+	}
+
+	text = {
+		localization_key = bem_custom_loc_conference_flavor_imperial_council
+	}
+
+	text = {
+		localization_key = bem_custom_loc_conference_flavor_royal_navy_increase
+	}
+
+	text = {
+		localization_key = bem_custom_loc_conference_flavor_defense_contributions
+	}
+
+	text = {
+		localization_key = bem_custom_loc_conference_flavor_imperial_council_advising
+	}
+
+	text = {
+		localization_key = bem_custom_loc_conference_flavor_peace_and_treaties
+	}
+
+	text = {
+		localization_key = bem_custom_loc_conference_flavor_external_politics
+	}
+}
+
+#Participiant 1
+bem_imperial_conference_participiant_1_type = {
+	type = country
+	
+	text = {
+		trigger = {
+			has_global_variable = bem_imperial_conference_participant_1_global_var
+		}
+		localization_key = bem_imperial_conference_participant_1
+	}
+}
+
+#Participiant 2
+bem_imperial_conference_participiant_2_type = {
+	type = country
+	
+	text = {
+		trigger = {
+			has_global_variable = bem_imperial_conference_participant_2_global_var
+		}
+		localization_key = bem_imperial_conference_participant_2
+	}
+}
+
+#Participiant 2
+bem_imperial_conference_participiant_3_type = {
+	type = country
+	
+	text = {
+		trigger = {
+			has_global_variable = bem_imperial_conference_participant_3_global_var
+		}
+		localization_key = bem_imperial_conference_participant_3
+	}
+}
+
+#Participiant 2
+bem_imperial_conference_participiant_4_type = {
+	type = country
+	
+	text = {
+		trigger = {
+			has_global_variable = bem_imperial_conference_participant_4_global_var
+		}
+		localization_key = bem_imperial_conference_participant_4
+	}
+}
+
+#Participiant 2
+bem_imperial_conference_participiant_5_type = {
+	type = country
+	
+	text = {
+		trigger = {
+			has_global_variable = bem_imperial_conference_participant_5_global_var
+		}
+		localization_key = bem_imperial_conference_participant_5
+	}
+}
+
+#Participiant 2
+bem_imperial_conference_participiant_6_type = {
+	type = country
+	
+	text = {
+		trigger = {
+			has_global_variable = bem_imperial_conference_participant_6_global_var
+		}
+		localization_key = bem_imperial_conference_participant_6
+	}
+}
+
+#Participiant 2
+bem_imperial_conference_participiant_7_type = {
+	type = country
+	
+	text = {
+		trigger = {
+			has_global_variable = bem_imperial_conference_participant_7_global_var
+		}
+		localization_key = bem_imperial_conference_participant_7
+	}
+}
+
+#Participiant 2
+bem_imperial_conference_participiant_8_type = {
+	type = country
+	
+	text = {
+		trigger = {
+			has_global_variable = bem_imperial_conference_participant_8_global_var
+		}
+		localization_key = bem_imperial_conference_participant_8
+	}
+}
+
+#Participiant 2
+bem_imperial_conference_participiant_9_type = {
+	type = country
+	
+	text = {
+		trigger = {
+			has_global_variable = bem_imperial_conference_participant_9_global_var
+		}
+		localization_key = bem_imperial_conference_participant_9
+	}
+}
+
+#Participiant 2
+bem_imperial_conference_participiant_10_type = {
+	type = country
+	
+	text = {
+		trigger = {
+			has_global_variable = bem_imperial_conference_participant_10_global_var
+		}
+		localization_key = bem_imperial_conference_participant_10
+	}
+}

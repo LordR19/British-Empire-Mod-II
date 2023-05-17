@@ -1,0 +1,49 @@
+﻿C2P = { # Territory of Papua
+	dynamic_country_name = {
+		name = dyn_c_default_papua
+		adjective = dyn_c_default_papua_adj
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colony_of_papua
+		adjective = dyn_c_colony_of_papua_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+				AND = {
+					exists = c:GBR
+					NOT = {
+						is_subject_of = c:GBR
+					}
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colony_of_papua_british
+		adjective = dyn_c_colony_of_papua_british_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+				exists = c:GBR
+				is_subject_of = c:GBR
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+#Colonial Falklands
+C1F = {
+	pattern = "pattern_solid.tga"
+	color1 = { 0 107 205  }
+	
+	textured_emblem = {
+		texture = "te_emblem_sheep_falklands.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+}
+
+C1F_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = { 0 107 205  }
+	
+	textured_emblem = {
+		texture = "te_emblem_sheep_falklands.dds"
+		instance = { scale = { 0.45 0.45 } position = { 0.75 0.5 } }
+	}
+}
+
+C1F_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_seal_falklands.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+C1F_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = { 0 107 205  }
+	
+	textured_emblem = {
+		texture = "te_emblem_sheep_falklands.dds"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.55 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.4 } }
+	}
+}
+
+C1F_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	textured_emblem = {
+		texture = "te_emblem_sheep_falklands.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+}

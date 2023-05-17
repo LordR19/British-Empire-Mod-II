@@ -1,0 +1,128 @@
+#Northern Rhodesia
+C2R = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_flag_waves_horizontal.dds"
+		color1 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_bicolor_left.dds"
+		color1 = "azure"
+		instance = { scale = { 1 1 } position = { 0.32 0.5 } }
+	}
+
+	textured_emblem = {
+		texture = "te_seal_african_fish_eagle_w_fish_side.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.17 0.5 } }
+	}
+}
+
+C2R_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_flag_waves_vertical.dds"
+		color1 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_bicolor_top.dds"
+		color1 = "azure"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+
+	textured_emblem = {
+		texture = "te_seal_african_fish_eagle_w_fish.dds"
+		instance = { scale = { 0.53 0.53 } position = { 0.75 0.25 } }
+	}
+}
+
+C2R_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_seal_northern_rhodesia.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+C2R_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_flag_waves_horizontal.dds"
+		color1 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_bicolor_left.dds"
+		color1 = "azure"
+		instance = { scale = { 1 1 } position = { 0.32 0.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.5 0.5 } position = { 0.16 0.2 } }
+		instance = { scale = { 0.5 0.5 } position = { 0.16 0.5 } }
+		instance = { scale = { 0.5 0.5 } position = { 0.16 0.8 } }
+	}
+}
+
+C2R_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_flag_waves_horizontal.dds"
+		color1 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_bicolor_left.dds"
+		color1 = "red"
+		instance = { scale = { 1 1 } position = { 0.32 0.5 } }
+	}
+
+	textured_emblem = {
+		texture = "te_seal_african_fish_eagle_w_fish_side.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.17 0.5 } }
+	}
+}
+
+Zambia_backup = {
+	pattern = "pattern_solid.tga"
+	color1 = {50 140 0 }
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "red"
+		color2 = "azure"
+		instance = { scale = { 0.39 0.6 } position = { 0.67 0.7 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "black"
+		color2 = "yellow"
+		instance = { scale = { 0.39 0.6 } position = { 0.8 0.7 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_emblem_sun_african_fish_eagle.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.4 0.4 } position = { 0.8 0.2 } }
+	}
+}

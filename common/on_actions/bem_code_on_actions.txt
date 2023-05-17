@@ -1,0 +1,361 @@
+﻿# For on_actions launched by the code itself.
+
+# Root = Country
+on_monthly_pulse_country = {
+	on_actions = {
+		#bem_on_monthly removed for now as the primary_cultures do not get removed properly
+	}
+}
+
+bem_on_monthly = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					is_subject = yes
+					OR = {
+						AND = {
+							exists = c:DEI
+							this = c:DEI
+						}
+						AND = {
+							exists = c:BIC
+							this = c:BIC
+						}
+						bem_colonial_nation_trigger = yes
+					}
+				}
+			}
+			overlord = {
+				ordered_primary_culture = {
+					save_scope_as = switch_primary_culture_to_scope
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						root.religion = overlord.religion
+					}
+				}
+				set_state_religion = overlord.religion
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_has_primary_culture = scope:switch_primary_culture_to_scope
+					}
+				}
+				add_primary_culture = scope:switch_primary_culture_to_scope
+				while = {
+					limit = {
+						any_primary_culture = {
+							NOT = {
+								this = scope:switch_primary_culture_to_scope
+							}
+						}
+					}
+					random_primary_culture = {
+						limit = { 
+							NOT = {
+								this = scope:switch_primary_culture_to_scope
+							}
+						}
+						save_scope_as = primary_culture_delete_scope
+					}
+					remove_primary_culture = scope:primary_culture_delete_scope
+				}
+				create_character = {
+					ruler = yes
+				}
+				every_scope_character = {
+					limit = {
+						NOT = {
+							culture = scope:switch_primary_culture_to_scope
+						}
+					}
+					kill_character = {
+						hidden = yes
+						value = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+# Root = Country
+on_yearly_pulse_country = {
+	on_actions = {
+		bem_on_yearly_events
+	}
+}
+
+bem_on_yearly_events = {
+	effect = {
+		trigger_event = { # Colonial / Imperial Conference
+			id = bem.10
+			days = { 60 240 }
+		}
+		trigger_event = { # Colonial / Imperial Conference (hidden) --> Still fires but player doesn't get an event
+			id = bem.11
+			days = { 60 240 }
+		}
+		trigger_event = { # Sherlock Holmes published
+			id = bem.100
+			days = { 1 360 }
+		}
+		trigger_event = { # On the Origin of Species published
+			id = bem.101
+			days = { 1 360 }
+		}
+		trigger_event = { # Gruesome murder in Whitechapel, London
+			id = bem.200
+			days = { 180 240 }
+		}
+		trigger_event = { # "RMS Titanic" prepares for historic voyage
+			id = bem.210
+			days = { 90 95 }
+		}
+	}
+}
+
+# Root = Releasing Country
+# scope:target = Released Country
+on_country_released_as_own_subject = {
+	on_actions = {
+		bem_on_country_released_as_own_subject
+	}
+}
+
+bem_on_country_released_as_own_subject = {
+	effect = {
+		if = { #This is specifically for Great Britain. It makes some historical Dominions dominions in game and all the other nations puppets
+			limit = {
+				exists = c:GBR
+				root = c:GBR
+			}
+			scope:target = {
+				if = { #Canada, Australia, New Zeeland and South Africa become Dominions
+					limit = {
+						OR = {
+							AND = {
+								exists = c:CAN
+								this = c:CAN
+							}
+							AND = {
+								exists = c:AST
+								this = c:AST
+							}
+							AND = {
+								exists = c:NZL
+								this = c:NZL
+							}
+							AND = {
+								exists = c:SAF
+								this = c:SAF
+							}
+						}
+						NOT = {
+							is_subject_type = subject_type_dominion
+						}
+					}
+					change_subject_type = subject_type_dominion
+					activate_law = law_type:law_presidential_republic #They become presidential republics, so they have governors
+					trigger_event = { #Adds a new male leader
+						id = bem.2
+						days = 1
+					}
+				}
+				else_if = {
+					limit = {
+						OR = { # All new Releasables, Malta, Crete and The Ionian Islands become puppets
+							bem_colonial_nation_trigger = yes
+							AND = {
+								exists = c:MLT
+								root = c:MLT
+							}
+							AND = {
+								exists = c:CRE
+								root = c:CRE
+							}
+							AND = {
+								exists = c:ION
+								root = c:ION
+							}
+						}
+					}
+					change_subject_type = subject_type_puppet
+					activate_law = law_type:law_presidential_republic #They become presidential republics, so they have governors
+					trigger_event = { #Adds a new male leader
+						id = bem.2
+						days = 1
+					}
+					# if possible get some pops with the right culture here!
+				}
+			}	
+		}
+		else_if = { #All countries that are not Great Britain
+			limit = {
+				scope:target = {
+					bem_colonial_nation_trigger = yes
+				}
+			}
+			scope:target = {
+				# Makes the Colony a puppet
+				change_subject_type = subject_type_puppet
+
+				#Changes government type to presidial
+				activate_law = law_type:law_presidential_republic
+				
+				#Adds a new male leader
+				trigger_event = {
+						id = bem.2
+						days = 1
+				}
+			}
+
+			# Switches the Religion to the Religion of the Releasing Country
+			if = {
+				limit = {
+					ROOT = {
+						NOT = {
+							country_has_state_religion = rel:protestant
+						}
+					}
+				}
+				scope:target = {
+					set_state_religion = root.religion
+				}
+			}
+
+			#Switches the primary Culture to the primary Culture of the Releasing Country
+			if = {
+				limit = {
+					ROOT = {
+						NOT = {
+							country_has_primary_culture = cu:british
+						}
+					}
+				}
+				ordered_primary_culture = {
+					save_scope_as = switch_primary_culture_to_scope
+				}
+				scope:target = {
+					add_primary_culture = scope:switch_primary_culture_to_scope
+					while = {
+						limit = {
+							any_primary_culture = {
+								NOT = {
+									this = scope:switch_primary_culture_to_scope
+								}
+							}
+						}
+						random_primary_culture = {
+							limit = { 
+								NOT = {
+									this = scope:switch_primary_culture_to_scope
+								}
+							}
+							save_scope_as = primary_culture_delete_scope
+						}
+						remove_primary_culture = scope:primary_culture_delete_scope
+					}
+					create_character = {
+						ruler = yes
+					}
+					every_scope_character = {
+						limit = {
+							NOT = {
+								culture = scope:switch_primary_culture_to_scope
+							}
+						}
+						kill_character = yes
+					}
+					# if possible get some pops with the right culture here!
+				}
+			}
+		}
+	}
+}
+
+on_country_released_as_independent = {
+	on_actions = {
+		bem_on_country_released_as_independent
+	}
+}
+
+bem_on_country_released_as_independent = {
+	effect = {
+		if = { #All countries that are not Great Britain
+			limit = {
+				scope:target = {
+					bem_colonial_nation_trigger = yes
+				}
+			}
+			scope:target = {
+				# Makes the Colony a puppet
+				change_subject_type = subject_type_puppet
+			}
+
+			# Switches the Religion to the Religion of the Releasing Country
+			if = {
+				limit = {
+					ROOT = {
+						NOT = {
+							country_has_state_religion = rel:protestant
+						}
+					}
+				}
+				scope:target = {
+					set_state_religion = root.religion
+				}
+			}
+
+			#Switches the primary Culture to the primary Culture of the Releasing Country
+			if = {
+				limit = {
+					ROOT = {
+						NOT = {
+							country_has_primary_culture = cu:british
+						}
+					}
+				}
+				ordered_primary_culture = {
+					save_scope_as = switch_primary_culture_to_scope
+				}
+				scope:target = {
+					add_primary_culture = scope:switch_primary_culture_to_scope
+					while = {
+						limit = {
+							any_primary_culture = {
+								NOT = {
+									this = scope:switch_primary_culture_to_scope
+								}
+							}
+						}
+						random_primary_culture = {
+							limit = { 
+								NOT = {
+									this = scope:switch_primary_culture_to_scope
+								}
+							}
+							save_scope_as = primary_culture_delete_scope
+						}
+						remove_primary_culture = scope:primary_culture_delete_scope
+					}
+					create_character = {
+						ruler = yes
+					}
+					every_scope_character = {
+						limit = {
+							NOT = {
+								culture = scope:switch_primary_culture_to_scope
+							}
+						}
+						kill_character = yes
+					}
+				}
+			}
+		}
+	}
+}

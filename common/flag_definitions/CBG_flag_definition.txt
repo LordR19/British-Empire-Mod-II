@@ -1,0 +1,55 @@
+﻿#Colonial West Guayana
+CBG = {
+	flag_definition = {
+		coa = CBG
+		subject_canton = CBG
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = CBG_sub		
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = CBG
+		subject_canton = CBG
+		coa_with_overlord_canton = CBG_sub	
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+		
+	flag_definition = {
+		coa = CBG_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = CBG_sub		
+		priority = 50
+		trigger = { 
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = CBG_monarchy
+		subject_canton = CBG_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = CBG_sub			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = CBG_dictatorship
+		subject_canton = CBG_dictatorship
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = CBG_sub
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+}

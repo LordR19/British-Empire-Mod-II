@@ -1,0 +1,217 @@
+﻿#########################
+# bem SCRIPTED TRIGGERS #
+#########################
+
+#by Lord R
+
+##########################
+
+#Trigger to figure out if this is one of the added colonial nations
+bem_colonial_nation_trigger = {
+	OR = {
+		AND = {
+			exists = c:HGK
+			this = c:HGK
+		}
+		AND = {
+			exists = c:CBG
+			this = c:CBG
+		}
+		AND = {
+			exists = c:SST
+			this = c:SST
+		}
+		AND = {
+			exists = c:C1A
+			this = c:C1A
+		}
+		AND = {
+			exists = c:C1B
+			this = c:C1B
+		}
+		AND = {
+			exists = c:C1C
+			this = c:C1C
+		}
+		AND = {
+			exists = c:C1D
+			this = c:C1D
+		}
+		AND = {
+			exists = c:C1E
+			this = c:C1E
+		}
+		AND = {
+			exists = c:C1F
+			this = c:C1F
+		}
+		AND = {
+			exists = c:C1G
+			this = c:C1G
+		}
+		AND = {
+			exists = c:C1I
+			this = c:C1K
+		}
+		AND = {
+			exists = c:C1L
+			this = c:C1L
+		}
+		AND = {
+			exists = c:C1M
+			this = c:C1M
+		}
+		AND = {
+			exists = c:C1N
+			this = c:C1N
+		}
+		AND = {
+			exists = c:C1P
+			this = c:C1P
+		}
+		AND = {
+			exists = c:C1R
+			this = c:C1R
+		}
+		AND = {
+			exists = c:C1S
+			this = c:C1S
+		}
+		AND = {
+			exists = c:C1T
+			this = c:C1T
+		}
+		AND = {
+			exists = c:C1U
+			this = c:C1U
+		}
+		AND = {
+			exists = c:C1V
+			this = c:C1V
+		}
+		AND = {
+			exists = c:C1W
+			this = c:C1W
+		}
+		AND = {
+			exists = c:C1Y
+			this = c:C1Y
+		}
+		AND = {
+			exists = c:C2A
+			this = c:C2A
+		}
+		AND = {
+			exists = c:C2B
+			this = c:C2B
+		}
+		AND = {
+			exists = c:C2C
+			this = c:C2C
+		}
+		AND = {
+			exists = c:C2E
+			this = c:C2E
+		}
+		AND = {
+			exists = c:C2G
+			this = c:C2G
+		}
+		AND = {
+			exists = c:C2I
+			this = c:C2I
+		}
+		AND = {
+			exists = c:C2M
+			this = c:C2M
+		}
+		AND = {
+			exists = c:C2N
+			this = c:C2N
+		}
+		AND = {
+			exists = c:C2P
+			this = c:C2P
+		}
+		AND = {
+			exists = c:C2R
+			this = c:C2R
+		}
+		AND = {
+			exists = c:C2S
+			this = c:C2S
+		}
+		AND = {
+			exists = c:C2T
+			this = c:C2T
+		}
+		AND = {
+			exists = c:C2W
+			root = c:C2W
+		}
+		AND = {
+			exists = c:C3A
+			this = c:C3A
+		}
+		AND = {
+			exists = c:C3C
+			this = c:C3C
+		}
+		AND = {
+			exists = c:C3E
+			this = c:C3E
+		}
+		AND = {
+			exists = c:C3G
+			this = c:C3G
+		}
+		AND = {
+			exists = c:C3M
+			this = c:C3M
+		}
+		AND = {
+			exists = c:C3N
+			this = c:C3N
+		}
+		AND = {
+			exists = c:C3P
+			this = c:C3P
+		}
+		AND = {
+			exists = c:C3S
+			this = c:C3S
+		}
+		AND = {
+			exists = c:C3T
+			this = c:C3T
+		}
+		AND = {
+			exists = c:C4C
+			this = c:C4C
+		}
+		AND = {
+			exists = c:C4M
+			this = c:C4M
+		}
+		AND = {
+			exists = c:C4T
+			this = c:C4T
+		}
+		AND = {
+			exists = c:C5C
+			this = c:C5C
+		}
+		AND = {
+			exists = c:C5M
+			this = c:C5M
+		}
+		AND = {
+			exists = c:C5T
+			this = c:C5T
+		}
+		AND = {
+			exists = c:C6M
+			this = c:C6M
+		}
+	}
+}

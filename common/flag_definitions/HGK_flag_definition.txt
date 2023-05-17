@@ -1,0 +1,46 @@
+﻿#Hong Kong
+HGK = {
+	flag_definition = {
+		coa = HGK	
+		subject_canton = HGK
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = HGK_sub_GBR_old
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = HGK_sub_GBR_old
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+			year < 1876
+		}
+		priority = 1000
+	}
+
+	flag_definition = {
+		coa = HGK_sub_GBR_new
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = HGK_sub_GBR_new
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+			year >= 1876
+		}
+		priority = 1001
+	}
+
+	flag_definition = {
+		coa = HGK_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = HGK_anarchy
+		priority = 2000
+		trigger = { 
+			coa_def_anarchy_flag_trigger = yes
+		}
+	}
+}

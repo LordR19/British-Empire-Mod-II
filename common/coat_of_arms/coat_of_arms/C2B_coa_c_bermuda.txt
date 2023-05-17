@@ -1,0 +1,93 @@
+#Colony of Bermuda
+C2B = {
+	pattern = "pattern_solid.tga"
+	color1 = "azure"
+	
+	colored_emblem = {
+		texture = "ce_emblem_ship_bermuda.dds"
+		color1 = "white"
+		color2 = "red"
+		color3 = "brown"
+		instance = { scale = { 0.75 0.75 } position = { 0.53 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves_estonia.dds"
+		color1 = "blue"
+		color2 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.8 } }
+	}
+}
+
+C2B_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "azure"
+	
+	colored_emblem = {
+		texture = "ce_emblem_ship_bermuda.dds"
+		color1 = "white"
+		color2 = "red"
+		color3 = "brown"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.55 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves_estonia.dds"
+		color1 = "blue"
+		color2 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.8 } }
+	}
+}
+
+C2B_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_seal_bermuda.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+C2B_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "azure"
+	
+	colored_emblem = {
+		texture = "ce_emblem_ship_bermuda.dds"
+		color1 = "white"
+		color2 = "red"
+		color3 = "brown"
+		instance = { scale = { 0.75 0.75 } position = { 0.53 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves_estonia.dds"
+		color1 = "blue"
+		color2 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.8 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.45 0.45 } position = { 0.2 0.2 } }
+	}
+}
+
+C2B_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_emblem_ship_bermuda.dds"
+		color1 = "white"
+		color2 = "black"
+		color3 = "brown"
+		instance = { scale = { 0.75 0.75 } position = { 0.53 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves_estonia.dds"
+		color1 = "blue"
+		color2 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.8 } }
+	}
+}

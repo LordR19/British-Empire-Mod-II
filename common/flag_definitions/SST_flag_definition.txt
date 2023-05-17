@@ -1,0 +1,58 @@
+﻿#Strait Settlements
+SST = {
+	flag_definition = {
+		coa = SST	
+		subject_canton = SST
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = SST_sub_GBR_very_old
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = SST_sub_GBR_very_old
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+			year < 1868
+		}
+		priority = 1000
+	}
+
+	flag_definition = {
+		coa = SST_sub_GBR_old
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = SST_sub_GBR_old
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+			year >= 1874
+			year < 1823
+		}
+		priority = 1001
+	}
+
+	flag_definition = {
+		coa = SST_sub_GBR_new
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = SST_sub_GBR_new
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+			year >= 1923
+		}
+		priority = 1002
+	}
+
+	flag_definition = {
+		coa = SST_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = SST_anarchy
+		priority = 2000
+		trigger = { 
+			coa_def_anarchy_flag_trigger = yes
+		}
+	}
+}

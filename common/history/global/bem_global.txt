@@ -1,0 +1,22 @@
+﻿# This is executed last among all history
+GLOBAL = {
+	create_country = {
+		tag = SST
+		origin = c:GBR
+
+		province = p:xC00130
+		province = p:x8080B0
+		province = p:x08673B
+
+		on_created = {
+			activate_law = law_type:law_presidential_republic
+
+			c:GBR = {
+				create_diplomatic_pact = {
+					country = c:SST
+					type = puppet
+				}
+			}
+		}
+	}
+}

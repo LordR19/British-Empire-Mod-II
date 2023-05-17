@@ -1,0 +1,73 @@
+#Colonial West Sahara
+C2W = {
+	pattern = "pattern_solid.tga"
+	color1 = "azure"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "yellow"
+	}
+	textured_emblem = {
+		texture = "te_emblem_camel_rider.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+}
+
+C2W_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "azure"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "yellow"
+	}
+	textured_emblem = {
+		texture = "te_emblem_camel_rider.dds"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }
+	}
+}
+
+C2W_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_seal_west_sahara.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+C2W_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "azure"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "yellow"
+	}
+	textured_emblem = {
+		texture = "te_emblem_camel_rider.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.4 0.4 } position = { 0.18 0.2 } }
+	}
+}
+
+C2W_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "yellow"
+	}
+	textured_emblem = {
+		texture = "te_emblem_camel_rider.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+}

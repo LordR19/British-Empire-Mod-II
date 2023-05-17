@@ -1,0 +1,46 @@
+﻿C1N = { # Protectorate of Nigeria
+	dynamic_country_name = {
+		name = dyn_c_default_nigeria
+		adjective = dyn_c_default_nigeria_adj
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_protectorate_of_nigeria
+		adjective = dyn_c_protectorate_of_nigeria_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_nigeria
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			AND = {
+				exists = c:GBR
+				NOT = {
+					scope:actor = {
+						is_subject_of = c:GBR
+					}
+				}
+			}
+		}
+	}
+}

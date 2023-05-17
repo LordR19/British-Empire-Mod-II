@@ -1,0 +1,97 @@
+#Colony of Eritrea
+C3E = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+
+	colored_emblem = {
+		texture = "ce_wreath_thin.dds"
+		color1 = "yellow"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_emblem_frankincense.dds"
+		instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 } }
+	}
+}
+
+C3E_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+
+	colored_emblem = {
+		texture = "ce_wreath_thin.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { 0.75 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_emblem_frankincense.dds"
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.5 } }
+	}
+}
+
+C3E_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_emblem_frankincense.dds"
+		instance = { scale = { 0.4 0.4 } position = { 0.75 0.51 } }
+	}
+}
+
+C3E_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+
+	colored_emblem = {
+		texture = "ce_wreath_thin.dds"
+		color1 = "yellow"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.5 } }
+	}
+}
+
+C3E_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_wreath_thin.dds"
+		color1 = "yellow"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_emblem_frankincense.dds"
+		instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 } }
+	}
+}
+
+Eritrea_backup = {
+	pattern = "pattern_solid.tga"
+	color1 = "green_light"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "blue_light"
+	}
+	colored_emblem = {
+		texture = "ce_flag_chevron_left_long.dds"
+		color1 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_emblem_wreath_eritrea.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.25 0.5 } }
+	}
+}

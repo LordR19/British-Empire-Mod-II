@@ -1,0 +1,44 @@
+﻿C2T = { # Protectorate of Transjordan
+	dynamic_country_name = {
+		name = dyn_c_default_transjordan
+		adjective = dyn_c_default_transjordan_adj
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_protectorate_of_transjordan
+		adjective = dyn_c_protectorate_of_transjordan_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_transjordan
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			exists = c:GBR
+			NOT = {
+				scope:actor = {
+					is_subject_of = c:GBR
+				}
+			}
+		}
+	}
+}

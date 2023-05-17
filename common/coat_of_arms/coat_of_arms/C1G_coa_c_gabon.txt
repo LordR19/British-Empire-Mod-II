@@ -1,0 +1,114 @@
+#Colony of Gabon
+C1G = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_emblem_ship_gabon_gabon.dds"
+		color1 = "black"
+		color2 = "green_light"
+		color3 = "azure"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.4 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves_latvia.dds"
+		color1 = "azure"
+		color2 = "azure"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}
+
+C1G_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_emblem_ship_gabon.dds"
+		color1 = "black"
+		color2 = "green_light"
+		color3 = "azure"
+		instance = { scale = { 0.55 0.55 } position = { 0.74 0.49 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves_latvia.dds"
+		color1 = "azure"
+		color2 = "azure"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}
+
+C1G_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.51 0.51 } position = { 0.75 0.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.48 0.48 } position = { 0.75 0.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_emblem_ship_gabon.dds"
+		color1 = "black"
+		color2 = "green_light"
+		color3 = "azure"
+		instance = { scale = { 0.33 0.33 } position = { 0.75 0.46 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_seal_sea.dds"
+		color1 = "azure"
+		instance = { scale = { 0.49 0.49 } position = { 0.75 0.51 } }
+	}
+}
+
+C1G = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_emblem_ship_gabon.dds"
+		color1 = "black"
+		color2 = "green_light"
+		color3 = "azure"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.4 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves_latvia.dds"
+		color1 = "azure"
+		color2 = "azure"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.25 0.25 } position = { 0.53 0.4 } }
+	}
+}
+
+C1G_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_emblem_ship_gabon.dds"
+		color1 = "black"
+		color2 = "black"
+		color3 = "black"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.4 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves_latvia.dds"
+		color1 = "azure"
+		color2 = "azure"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}

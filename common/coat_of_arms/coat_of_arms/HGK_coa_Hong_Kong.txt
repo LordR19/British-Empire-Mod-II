@@ -1,0 +1,53 @@
+#Hong Kong
+HGK = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem  = {
+		texture = "ce_flower_hong_kong.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }	
+	}
+}
+
+HGK_sub_GBR_old = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_seal_hong_kong_old.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+HGK_sub_GBR_new = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_seal_hong_kong_new.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+HGK_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem  = {
+		texture = "ce_flower_hong_kong.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }	
+	}
+}
+
+HGK_anarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem  = {
+		texture = "ce_flower_hong_kong.dds"
+		color1 = "black"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }	
+	}
+}

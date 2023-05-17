@@ -1,0 +1,27 @@
+﻿C1D = { # Colonial Dahomey
+	dynamic_country_name = {
+		name = dyn_c_default_dahomey
+		adjective = dyn_c_default_dahomey_adj
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colony_of_dahomey
+		adjective = dyn_c_colony_of_dahomey_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,82 @@
+#Tanganyika Territory
+C1T = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+
+	colored_emblem = {
+		texture = "ce_emblem_lions_head.dds"
+		color1 = "white"
+		color2 = "white"
+		color3 = "grey"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }
+	}
+}
+
+C1T_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+
+	colored_emblem = {
+		texture = "ce_emblem_lions_head.dds"
+		color1 = "white"
+		color2 = "white"
+		color3 = "grey"
+		instance = { scale = { 0.75 0.75 } position = { 0.75 0.5 } }
+	}
+}
+
+C1T_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_seal_tanganyika.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+C1T_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+
+	colored_emblem = {
+		texture = "ce_emblem_lions_head.dds"
+		color1 = "white"
+		color2 = "white"
+		color3 = "grey"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.6 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.18 } }
+	}
+}
+
+C1T_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_emblem_lions_head.dds"
+		color1 = "white"
+		color2 = "white"
+		color3 = "grey"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }
+	}
+}
+
+Tanzania_backup = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_fimbriated_thin.dds"
+		color1 = "green"
+		color2 = "black"
+		color3 = "green"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}

@@ -1,0 +1,206 @@
+﻿namespace = bem_breakup_events
+
+# Independent Colonial Ethiopia decides how to proceed
+bem_breakup_events.1 = {
+	type = country_event
+	placement = root
+	
+	title = bem_breakup_events.1.t
+	desc = bem_breakup_events.1.d
+	flavor = bem_breakup_events.1.f
+	
+	event_image = {
+		video = "gfx/event_pictures/africa_public_protest.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/public_protest"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+	trigger = {
+		NOT = {
+			has_variable = c2e_collapse_var
+		}
+		exists = c:C2E
+		this = c:C2E
+		is_subject = no
+		is_at_war = no
+	}
+
+	immediate = {
+		ordered_primary_culture = {
+			save_scope_as = colonial_culture_scope
+		}
+		set_variable = c2e_collapse_var
+	}
+
+	option = {
+		name = bem_breakup_events.1.a
+		ai_chance = {
+			base = 8 # this is the default pick for the AI
+		}
+		
+		custom_tooltip = {
+			text = india_princes_independent_tt
+		}
+		c:C2E = {
+			change_tag = SHW
+			set_country_type = unrecognized
+		}
+
+		c:C2E = {
+			while = {
+				limit = {
+					any_primary_culture = {
+						count >= 1
+					}
+				}
+				random_primary_culture = {
+					save_scope_as = remove_primary_scope
+				}
+				remove_primary_culture = scope:remove_primary_scope
+				clear_saved_scope = remove_primary_scope
+			}
+		}
+
+		hidden_effect = {
+			every_primary_culture = {
+				root = {
+					remove_primary_culture = prev
+				}
+			}
+			add_primary_culture = cu:amhara
+			add_primary_culture = cu:oromo
+			set_state_religion = rel:oriental_orthodox
+			ig:ig_devout = { 
+				set_interest_group_name = ig_oriental_orthodox_church
+			}
+			every_scope_character = {
+				limit = {
+					NOR = {
+						culture = cu:amhara
+						culture = cu:oromo
+					}
+				}
+				kill_character = {
+					hidden = yes
+					value = yes
+				}
+			}
+			if = {
+				limit = {
+					country_or_subject_owns_entire_state_region = STATE_AMHARA
+				}
+				create_country = {
+					tag = WLG
+					origin = root
+					province = p:x92412C
+					province = p:x831523
+					province = p:xE071B6
+					province = p:x7F9732
+					province = p:x2D40BF
+					province = p:x7A6C4F
+					province = p:x0FB7D1
+					province = p:x378A0D
+					province = p:xF53F6D
+					province = p:x5D4889
+					province = p:x8D694F
+					province = p:xB88334     
+				}
+			}
+		}
+	}
+
+	option = {
+		name = bem_breakup_events.1.b
+		highlighted_option = yes
+		trigger = {
+			has_technology_researched = pan-nationalism
+		}
+		ai_chance = {
+			factor = 1 # this will be quite rare for the AI
+		}
+		change_tag = BHT
+		hidden_effect = {
+			every_primary_culture = {
+				root = {
+					remove_primary_culture = prev
+				}
+			}
+			add_primary_culture = cu:bengali
+			add_primary_culture = cu:assamese
+			add_primary_culture = cu:avadhi
+			add_primary_culture = cu:bihari
+			add_primary_culture = cu:gujarati
+			add_primary_culture = cu:kanauji
+			add_primary_culture = cu:kannada
+			add_primary_culture = cu:malayalam
+			add_primary_culture = cu:marathi
+			add_primary_culture = cu:oriya
+			add_primary_culture = cu:panjabi
+			add_primary_culture = cu:rajput
+			add_primary_culture = cu:sindi
+			add_primary_culture = cu:tamil
+			add_primary_culture = cu:telegu
+			set_state_religion = rel:hindu
+			every_scope_character = {
+				limit = {
+					culture = cu:british
+					culture = cu:scottish
+				}
+				kill_character = yes
+			}
+		}
+	}
+	option = {
+		name = bem_breakup_events.1.c
+		ai_chance = {
+			base = 0 # AI will never do this
+		}
+		default_option = yes
+		add_radicals = {
+			value = very_large_radicals
+		}
+	}
+}
+
+bem_breakup_events.2 = {
+	type = country_event
+	placement = root
+	
+	title = bem_breakup_events.1.t
+	desc = bem_breakup_events.1.d
+	flavor = bem_breakup_events.1.f
+	
+	event_image = {
+		video = "gfx/event_pictures/africa_public_protest.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/public_protest"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = bem_breakup_events.1.a
+
+		add_primary_culture = cu:swiss
+
+		every_primary_culture = {
+			root = {
+				remove_primary_culture = prev
+			}
+		}
+	}
+}

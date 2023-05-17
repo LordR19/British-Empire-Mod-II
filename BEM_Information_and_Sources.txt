@@ -1,0 +1,18 @@
+########################################
+
+Cabinet of Wonder was created by Lord R
+
+This Mod tries to add flavor to different regions in the world of Victoria 3. Right now it focuses on Switzerland.
+
+########################################
+
+Seal of Hong Kong (new): CC BY SA 4.0 - Sodacan - https://de.wikipedia.org/wiki/Datei:Flag_of_Hong_Kong_(1876%E2%80%931955).svg
+Seal of Cape Colony (old): CC BY SA 4.0 - Sodacan - https://en.wikipedia.org/wiki/File:Flag_of_the_Cape_Colony_(1876%E2%80%931910).svg
+Seal of Somaliland Protectorat: CC BY SA 4.0 - Sodacan - https://en.wikipedia.org/wiki/File:Flag_of_British_Somaliland_(1903%E2%80%931950).svg
+Seal of Uganda: CC BY SA - Sodacan 4.0 - https://en.wikipedia.org/wiki/File:Flag_of_the_Uganda_Protectorate.svg
+Coat of Arms of South West Africa: CC BY - Samhanin - https://en.wikipedia.org/wiki/File:Coat_of_arms_of_South_West_Africa.svg
+Seal of Southern Rhodesia: CC BY SA - Greentubing - https://en.wikipedia.org/wiki/File:Flag_of_Southern_Rhodesia_(1924%E2%80%931953,_1963%E2%80%931964).svg
+Seal of British Guayana: CC BY SA 4.0 - Sodacan - https://commons.wikimedia.org/wiki/File:Flag_of_British_Guiana_(1875%E2%80%931906).svg
+Palm on Lybian Flag: CC BY SA 3.0 - GJo - https://commons.wikimedia.org/wiki/File:Tripolitana_COA.svg
+Elephant head Ivory Coast: CC BY SA 4.0 - Romero13 - https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_the_Ivory_Coast.svg
+Seal of Transvaal: CC BY SA 4.0 - Sodacan - https://en.wikipedia.org/wiki/File:Flag_of_the_Transvaal_Colony_(1904%E2%80%931910).svg

@@ -1,0 +1,83 @@
+#Protectorate of Palestine
+C1P = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_emblem_eagle_saladin.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+}
+
+C1P_christian = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_emblem_cross_jerusalem.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+}
+
+C1P_sub_christian = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_emblem_cross_jerusalem.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+C1P_sub_other = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_emblem_eagle_saladin.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }
+	}
+}
+
+C1P_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_seal_palestine_letters.dds"
+		color1 = "black"
+		instance = { scale = { 0.45 0.45 } position = { 0.745 0.475 } }
+	}
+}
+
+C1P_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_emblem_eagle_saladin.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+}
+
+C1P_dictatorship_christian = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_emblem_cross_jerusalem.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+}

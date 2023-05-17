@@ -1,0 +1,27 @@
+﻿C3S = { # Colonial Senegal
+	dynamic_country_name = {
+		name = dyn_c_default_senegal
+		adjective = dyn_c_default_senegal_adj
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colony_of_senegal
+		adjective = dyn_c_colony_of_senegal_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}

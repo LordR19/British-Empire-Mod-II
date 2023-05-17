@@ -1,0 +1,67 @@
+﻿#Colony of Chad
+C5C = {
+	flag_definition = {
+		coa = C5C
+		subject_canton = C5C
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C5C_sub		
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = C5C
+		subject_canton = C5C
+		coa_with_overlord_canton = C5C_sub	
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+		
+	flag_definition = {
+		coa = C5C_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = C5C_sub		
+		priority = 50
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C5C_sub_british
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = C5C_sub_british		
+		priority = 100
+		trigger = { 
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C5C_monarchy
+		subject_canton = C5C_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C5C_sub			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = C5C_dictatorship
+		subject_canton = C5C_dictatorship
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C5C_sub
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+}

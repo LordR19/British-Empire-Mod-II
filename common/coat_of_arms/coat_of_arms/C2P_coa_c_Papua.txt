@@ -1,0 +1,112 @@
+#Territory of Papua
+C2P = {
+	pattern = "pattern_per_bend.dds"
+	color1 = "red"
+	color2 = "black"
+	
+	colored_emblem = {
+		texture = "ce_emblem_paradise_bird_papua.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.6 0.6 } position = { 0.75 0.4 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		instance = { scale = { 0.18 0.18 } position = { 0.22 0.4 } } # top
+		instance = { scale = { 0.18 0.18 } position = { 0.32 0.55 } } # right
+		instance = { scale = { 0.09 0.09 } position = { 0.27 0.7 } } # right small
+		instance = { scale = { 0.18 0.18 } position = { 0.22 0.85 } } # bottom
+		instance = { scale = { 0.18 0.18 } position = { 0.12 0.55 } } # left
+	}
+}
+
+C2P_sub = {
+	pattern = "pattern_per_bend.dds"
+	color1 = "red"
+	color2 = "black"
+	
+	colored_emblem = {
+		texture = "ce_emblem_paradise_bird_papua.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.6 0.6 } position = { 0.75 0.4 } }
+	}
+}
+
+C2P_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_st_edward.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "white"
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.43 } }
+	}
+	colored_emblem = {
+		texture = "ce_letter_p.dds"
+		color1 = "black"
+		instance = { scale = { 0.1 0.1 } position = { 0.65 0.58 } }
+		instance = { scale = { 0.1 0.1 } position = { 0.75 0.58 } }
+	}
+	colored_emblem = {
+		texture = "ce_letter_a.dds"
+		color1 = "black"
+		instance = { scale = { 0.1 0.1 } position = { 0.7 0.58 } }
+		instance = { scale = { 0.1 0.1 } position = { 0.85 0.58 } }
+	}
+	colored_emblem = {
+		texture = "ce_letter_u.dds"
+		color1 = "black"
+		instance = { scale = { 0.1 0.1 } position = { 0.8 0.58 } }
+	}
+}
+
+C2P_monarchy = {
+	pattern = "pattern_per_bend.dds"
+	color1 = "red"
+	color2 = "black"
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = white
+		instance = { scale = { 0.18 0.18 } position = { 0.22 0.4 } } # top
+		instance = { scale = { 0.18 0.18 } position = { 0.32 0.55 } } # right
+		instance = { scale = { 0.09 0.09 } position = { 0.27 0.7 } } # right small
+		instance = { scale = { 0.18 0.18 } position = { 0.22 0.85 } } # bottom
+		instance = { scale = { 0.18 0.18 } position = { 0.12 0.55 } } # left
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.35 } }
+	}
+}
+
+C2P_dictatorship = {
+	pattern = "pattern_per_bend.dds"
+	color1 = "red"
+	color2 = "black"
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = white
+		instance = { scale = { 0.18 0.18 } position = { 0.22 0.4 } } # top
+		instance = { scale = { 0.18 0.18 } position = { 0.32 0.55 } } # right
+		instance = { scale = { 0.09 0.09 } position = { 0.27 0.7 } } # right small
+		instance = { scale = { 0.18 0.18 } position = { 0.22 0.85 } } # bottom
+		instance = { scale = { 0.18 0.18 } position = { 0.12 0.55 } } # left
+	}
+	colored_emblem = {
+		texture = "ce_crossed_scimitars.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.35 } }
+	}
+}

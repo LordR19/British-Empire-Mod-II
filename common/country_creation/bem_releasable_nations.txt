@@ -1,0 +1,942 @@
+﻿#Hong Kong
+HGK = {
+	provinces = {
+		xB03161
+	}
+
+	possible = {
+		exists = c:GBR
+		this = c:GBR
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colonial British Guayana
+CBG = {
+	provinces = {
+		xA22A4C xBB88B5 x218011 x1F5190 x6B802F xA52CE3 xE600F3 xA00111 x734F81 x8E31E8 x7B4B5E x63ABD4 x3A069F x24A66B x719492 x41552E x4AE8F7 x9A88B5 xB21306 xB1960A x805A8C x518580 xC0C0D0 xADE6C2 xE85635 x9FEDF7 xAA1153 x6816FF x350473 xFAE8C5 xB3512B xD0678B xD0BA2B xE7864B xA350D5 x6C6251
+	}
+
+	possible = {
+		exists = c:GBR
+		this = c:GBR
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Protectorate of Aden
+C1A = {
+	provinces = {
+		x319060 xB090E0 x2BD409 xFA0283 x657048 x54840B x3D1674 x2975A3 xC790E8 x299C0F xDFA579 x346541 x90602A x3D86FC x75D341 x8E96A7 xDD732E x95D64E x5F3582 x2A9E89 xBAA208 x308FDF xD6CC22 x1C7B77 xA05CB5 x6D2F95 x5C91FE x3D7345 xC09525 xB8A8D2 x672267 x60DFF9 xD3F276 xA1AAB0 x843C65 x5DF9FC x895FE6 xCF61E1 x0B9A27 xF385EB x0C7E0C x872CEB x8BF4B8 x30A3E2 x37058f xAD1CE2 x8D121D x8D6307 xBDEA27 x02B35C xA2FDFA x6BD0A9 xB010DF x9D6547 xA0540A
+	}
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Bechuanaland Protectorate
+C1B = {
+	states = {
+		STATE_BOTSWANA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Protectorate of Cyprus
+C1C = {
+	states = {
+		STATE_CYPRUS
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colonial Dahomey
+C1D = {
+	states = {
+		STATE_DAHOMEY
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Protectorate of Egypt
+C1E = {
+	states = {
+		STATE_LOWER_EGYPT
+		STATE_MIDDLE_EGYPT
+		STATE_UPPER_EGYPT
+		STATE_SINAI
+		STATE_EGYPTIAN_DESERT
+		STATE_MATRUH
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Falkland Islands
+C1F = {
+	provinces = {
+		x3020D0
+		x5E9DB3
+		x9EF337
+	}
+	
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colony of Gabon
+C1G = {
+	states = {
+		STATE_GABON
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Protectorate of Iraq
+C1I = {
+	states = {
+		STATE_BAGHDAD
+		STATE_MOSUL
+		STATE_BASRA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Protectorate of Kenya
+C1K = {
+	states = {
+		STATE_KENYA
+		STATE_RIFT_VALLEY
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colonial Lybia
+C1L = {
+	states = {
+		STATE_TRIPOLI
+		STATE_LIBYA
+		STATE_LIBYAN_DESERT
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+
+#Mocambique / SE Africa
+C1M = {
+	states = {
+		STATE_MOCAMBIQUE
+		STATE_ZAMBEZIA
+		STATE_LOURENCO_MARQUES
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Protectorate of Nigeria
+C1N = {
+	states = {
+		STATE_YORUBA_STATES
+		STATE_NIGER_DELTA
+		STATE_BENIN
+		STATE_NIGERIA
+		STATE_BORNU
+		STATE_HAUSALAND
+		STATE_EAST_HAUSALAND
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Protectorate of Palestine
+C1P = {
+	states = {
+		STATE_PALESTINE
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Southern Rhodesia
+C1R = {
+	states = {
+		STATE_ZAMBEZI
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Protectorate of Somaliland
+C1S = {
+	states = {
+		STATE_SOMALILAND
+	}
+
+	required_num_states = 1
+
+	possible = {
+		root = {
+			is_country_type = recognized
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Tanganyika Territory
+C1T = {
+	states = {
+		STATE_ZANZIBAR
+		STATE_LINDI
+		STATE_TANGANYIKA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Protectorate of Uganda
+C1U = {
+	states = {
+		STATE_UGANDA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colonial Upper Volta
+C1V = {
+	states = {
+		STATE_VOLTA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+
+#Territory of South West Africa
+C1W = {
+	states = {
+		STATE_NAMAQUALAND
+		STATE_HEREROLAND
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+
+#Protectorate of Yemen
+C1Y = {
+	provinces = {
+		x567A83 xE5892F x02F9FF x7EC879 x625380 x9D8A78 xEF2E43 xBB387A xCF6C49 x7C3EA9 xFE5027 x68B524 xE5DF3B x1A7BB0 x2576C1 xCF401E x49FCAB x6290E6 xF86F58 x84FA60 x8B1488 x075453 x00E3EF xB79DED x9E941B x034B03 x8436FE xB08F60 x314190 x2197EF x9EDF3C xDD033C
+	}
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colony of Angola
+C2A = {
+	states = {
+		STATE_NORTH_ANGOLA
+		STATE_SOUTH_ANGOLA
+		STATE_EAST_ANGOLA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colony of Bermuda
+C2B = {
+	states = {
+		STATE_BERMUDA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Protectorate of Cameroon
+C2C = {
+	states = {
+		STATE_NORTH_CAMEROON
+		STATE_SOUTH_CAMEROON
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colony of Ethiopia
+C2E = {
+	states = {
+		STATE_GONDER
+		STATE_AMHARA
+		STATE_OROMIA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colonial Guinea
+C2G = {
+	states = {
+		STATE_GUINEA
+		STATE_SIERRA_LEONE
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+#Colonial Ivory Coast
+C2I = {
+	states = {
+		STATE_IVORY_COAST
+		STATE_WINDWARD_COAST
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+#Colony of Madagascar
+C2M = {
+	states = {
+		STATE_NORTH_MADAGASCAR
+		STATE_SOUTH_MADAGASCAR
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colony of Niger
+C2N = {
+	states = {
+		STATE_OUTER_HAUSALAND
+		STATE_NIGER
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Territory of Papua
+C2P = {
+	states = {
+		STATE_EASTERN_NEW_GUINEA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Northern Rhodesia
+C2R = {
+	states = {
+		STATE_ZAMBIA
+		STATE_KAZEMBE
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Protectorate of Sudan
+C2S = {
+	states = {
+		STATE_BLUE_NILE
+		STATE_DONGOLA
+		STATE_DARFUR
+		STATE_KORDOFAN
+		STATE_EQUATORIA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Protectorate of Transjordan
+C2T = {
+	states = {
+		STATE_TRANSJORDAN
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colonial West Sahara
+C2W = {
+	states = {
+		STATE_WEST_SAHARA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colonial Algeria
+C3A = {
+	states = {
+		STATE_ALGIERS
+		STATE_CONSTANTINE
+		STATE_EAST_SAHARA
+		STATE_SAHARA
+		STATE_TLEMCEN
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colony of Congo
+C3C = {
+	states = {
+		STATE_BAS_CONGO
+		STATE_KASAI
+		STATE_KATANGA
+		STATE_EQUATEUR
+		STATE_CONGO_ORIENTALE
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colony of Eritrea
+C3E = {
+	states = {
+		STATE_ERITREA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colonial Gold Coast
+C3G = {
+	states = {
+		STATE_GHANA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+#Colony of Middle-Congo
+C3M = {
+	states = {
+		STATE_CONGO
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colonial Pepper Coast
+C3P = {
+	states = {
+		STATE_LIBERIA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+#Colonial Senegal
+C3S = {
+	states = {
+		STATE_SENEGAL
+		STATE_GAMBIA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+#Colonial Tunisia
+C3T = {
+	states = {
+		STATE_TUNISIA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colony of Central Africa
+C4C = {
+	states = {
+		STATE_UBANGI_SHARI
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colony of Mali
+C4M = {
+	states = {
+		STATE_WESTERN_MALI
+		STATE_EASTERN_MALI
+		STATE_TIMBUKTU
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colonial Togo
+C4T = {
+	states = {
+		STATE_TOGO
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+#Colony of Chad
+C5C = {
+	states = {
+		STATE_WADDAI
+		STATE_CHAD
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colonial Morocco
+C5M = {
+	states = {
+		STATE_MARRAKECH
+		STATE_FEZ
+		STATE_INNER_MOROCCO
+		STATE_AL_RIF
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Colonial Transvaal
+C5T = {
+	states = {
+		STATE_TRANSVAAL
+		STATE_VRYSTAAT
+		STATE_ZULULAND
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+#Colonial Mauritania
+C6M = {
+	states = {
+		STATE_MAURITANIA
+		STATE_INNER_MAURITANIA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = {
+			is_country_type = recognized
+			is_country_type = colonial
+		}
+	}
+	
+	ai_will_do = { always = no }
+}

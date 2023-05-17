@@ -1,0 +1,54 @@
+﻿#Colony of Congo
+C3C = {
+	flag_definition = {
+		coa = C3C
+		subject_canton = C3C
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C3C_sub		
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = C3C
+		subject_canton = C3C
+		coa_with_overlord_canton = C3C_sub	
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+		
+	flag_definition = {
+		coa = C3C_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = C3C_sub		
+		priority = 50
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C3C_monarchy
+		subject_canton = C3C_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C3C_sub			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = C3C_dictatorship
+		subject_canton = C3C_dictatorship
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C3C_sub
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+}
