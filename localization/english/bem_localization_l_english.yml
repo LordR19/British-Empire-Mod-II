@@ -77,6 +77,11 @@
  dyn_c_protectorate_of_aden_adj: "Adenese"
  dyn_c_colonial_aden: "[Country.GetOverlord.GetAdjectiveNoFormatting] Aden"
 
+ C1H: "Colonial Hejaz"
+ C1H_ADJ: "Hejazi"
+ dyn_c_default_hejaz: "Hejaz"
+ dyn_c_colony_of_hejaz: "[Country.GetOverlord.GetAdjectiveNoFormatting] Hejaz"
+
  C1Y: "Colonial Yemen"
  C1Y_ADJ: "Yemeni"
  dyn_c_default_yemen: "Saba"
@@ -148,6 +153,12 @@
  dyn_c_protectorate_of_cameroon: "Protectorate of Cameroon"
  dyn_c_protectorate_of_cameroon_adj: "Cameroonian"
  dyn_c_colonial_cameroon: "[Country.GetOverlord.GetAdjectiveNoFormatting] Cameroon"
+
+ C1O: "Colonial Oman"
+ C1O_ADJ: "Omani"
+ dyn_c_default_oman: "Oman"
+ dyn_c_default_oman_adj: "Omani"
+ dyn_c_colonial_oman: "[Country.GetOverlord.GetAdjectiveNoFormatting] Oman"
 
  C1W: "Colonial South West Africa"
  C1W_ADJ: "South West African"
@@ -223,6 +234,11 @@
  dyn_c_default_gabon_adj: "Gabonese"
  dyn_c_colony_of_gabon: "[Country.GetOverlord.GetAdjectiveNoFormatting] Gabon"
  dyn_c_colony_of_gabon_adj: "Gabonese"
+
+ C4A: "Colonial Arabia"
+ C4A_ADJ: "Arabian"
+ dyn_c_default_arabia: "Inner Arabia"
+ dyn_c_colonial_arabia: "[Country.GetOverlord.GetAdjectiveNoFormatting] Arabia"
 
  C4C: "Colonial Central Africa"
  C4C_ADJ: "Central African"
@@ -393,6 +409,11 @@
  dyn_c_default_transvaal_adj: "Transvaalian"
  dyn_c_colony_of_transvaal: "[Country.GetOverlord.GetAdjectiveNoFormatting] Transvaal"
  dyn_c_colony_of_transvaal_adj: "Transvaalian"
+
+ C6C: "Colonial Cape"
+ C6C_ADJ: "South African"
+ dyn_c_default_cape: "Cape"
+ dyn_c_colonial_cape: "[Country.GetOverlord.GetAdjectiveNoFormatting] Cape Colony"
 
  dyn_c_south_africa_union: "Union of South Africa"
  dyn_c_south_africa_union_adj: "South African"

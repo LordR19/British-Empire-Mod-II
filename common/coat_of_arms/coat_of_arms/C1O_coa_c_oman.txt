@@ -1,0 +1,61 @@
+#Colonial Oman
+C1O = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_scimitar.dds"
+		color1 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}
+
+C1O_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_scimitar_pale.dds"
+		color1 = "red"
+		instance = { scale = { 0.8 0.8 } position = { 0.75 0.5 } }
+	}
+}
+
+C1O_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_seal_oman.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+C1O_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_scimitar.dds"
+		color1 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.2 } }
+	}
+}
+
+C1O_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_scimitar.dds"
+		color1 = "black"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}
