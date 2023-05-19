@@ -44,3 +44,5 @@
 
  bem_name_india_default_decision: "Reset Name of India to default"
  bem_name_india_default_decision_desc: "#yellow India#! will no longer be called Dominion of India and instead use its #yellow default name#!."
+
+ dyn_c_crown_colony_malta: "Crown Colony of Malta"

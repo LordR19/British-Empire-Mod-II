@@ -169,15 +169,15 @@ bem_on_country_released_as_own_subject = {
 							bem_colonial_nation_trigger = yes
 							AND = {
 								exists = c:MLT
-								root = c:MLT
+								this = c:MLT
 							}
 							AND = {
 								exists = c:CRE
-								root = c:CRE
+								this = c:CRE
 							}
 							AND = {
 								exists = c:ION
-								root = c:ION
+								this = c:ION
 							}
 						}
 					}
