@@ -883,6 +883,21 @@ C6M = {
 	
 }
 
+#Colonial Ceylon
+C7C = {
+
+	color = { 110 142 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital =  	STATE_CEYLON
+	
+}
+
 #Colonial Malaysia
 C7M = {
 

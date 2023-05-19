@@ -440,6 +440,11 @@
  dyn_c_default_malaysia: "Malaysia"
  dyn_c_colonial_malaysia: "[Country.GetOverlord.GetAdjectiveNoFormatting] Malaysia"
 
+ C7C: "Colonial Ceylon"
+ C7C_ADJ: "Ceylonese"
+ dyn_c_default_ceylon: "Ceylon"
+ dyn_c_colonial_ceylon: "[Country.GetOverlord.GetAdjectiveNoFormatting] Ceylon"
+
  dyn_c_south_africa_union: "Union of South Africa"
  dyn_c_south_africa_union_adj: "South African"
  dyn_c_dominion_south_africa: "Dominion of South Africa"

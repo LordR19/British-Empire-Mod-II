@@ -1235,6 +1235,25 @@ C6M = {
 	}
 }
 
+#Colonial Ceylon
+C7C = {
+	states = {
+		STATE_CEYLON
+	}
+
+	required_num_states = 1
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_india = no
+		owns_entire_state_region = STATE_CEYLON
+	}
+}
+
 #Colonial Malaysia
 C7M = {
 	states = {

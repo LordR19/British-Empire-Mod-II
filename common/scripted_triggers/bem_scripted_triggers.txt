@@ -246,6 +246,10 @@ bem_colonial_nation_trigger = {
 			this = c:C6M
 		}
 		AND = {
+			exists = c:C7C
+			this = c:C7C
+		}
+		AND = {
 			exists = c:C7M
 			this = c:C7M
 		}
