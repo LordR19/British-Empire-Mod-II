@@ -56,6 +56,16 @@ C1A = {
 		has_game_rule = bem_colonial_nations_release
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_YEMEN
+		NOR = {
+			AND = {
+				exists = c:EGY
+				this = c:EGY
+			}
+			AND = {
+				exists = c:ARA
+				this = c:ARA
+			}
+		}
 	}
 }
 
@@ -191,6 +201,16 @@ C1H = {
 		has_game_rule = bem_colonial_nations_release
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_HEDJAZ
+		NOR = {
+			AND = {
+				exists = c:EGY
+				this = c:EGY
+			}
+			AND = {
+				exists = c:ARA
+				this = c:ARA
+			}
+		}
 	}
 }
 
@@ -214,6 +234,16 @@ C1I = {
 		owns_entire_state_region = STATE_BAGHDAD
 		owns_entire_state_region = STATE_MOSUL
 		owns_entire_state_region = STATE_BASRA
+		NOR = {
+			AND = {
+				exists = c:EGY
+				this = c:EGY
+			}
+			AND = {
+				exists = c:ARA
+				this = c:ARA
+			}
+		}
 	}
 }
 
@@ -332,6 +362,16 @@ C1O = {
 		has_game_rule = bem_colonial_nations_release
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_OMAN
+		NOR = {
+			AND = {
+				exists = c:EGY
+				this = c:EGY
+			}
+			AND = {
+				exists = c:ARA
+				this = c:ARA
+			}
+		}
 	}
 }
 
@@ -351,6 +391,16 @@ C1P = {
 		has_game_rule = bem_colonial_nations_release
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_PALESTINE
+		NOR = {
+			AND = {
+				exists = c:EGY
+				this = c:EGY
+			}
+			AND = {
+				exists = c:ARA
+				this = c:ARA
+			}
+		}
 	}
 }
 
@@ -490,6 +540,16 @@ C1Y = {
 		has_game_rule = bem_colonial_nations_release
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_YEMEN
+		NOR = {
+			AND = {
+				exists = c:EGY
+				this = c:EGY
+			}
+			AND = {
+				exists = c:ARA
+				this = c:ARA
+			}
+		}
 	}
 }
 
@@ -763,6 +823,16 @@ C2T = {
 		has_game_rule = bem_colonial_nations_release
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_TRANSJORDAN
+		NOR = {
+			AND = {
+				exists = c:EGY
+				this = c:EGY
+			}
+			AND = {
+				exists = c:ARA
+				this = c:ARA
+			}
+		}
 	}
 }
 
@@ -1027,6 +1097,16 @@ C4A = {
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_HAIL
 		owns_entire_state_region = STATE_NEJD
+		NOR = {
+			AND = {
+				exists = c:EGY
+				this = c:EGY
+			}
+			AND = {
+				exists = c:ARA
+				this = c:ARA
+			}
+		}
 	}
 }
 
