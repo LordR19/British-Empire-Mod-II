@@ -927,3 +927,18 @@ C7M = {
 	capital =  	STATE_MALAYA
 	
 }
+
+#Colonial Malacca
+C8M = {
+
+	color = { 255 112 42 }
+	
+	country_type = colonial
+	
+	tier = city_state
+
+	cultures = { british }
+	
+	capital =  	STATE_MALAYA
+	
+}

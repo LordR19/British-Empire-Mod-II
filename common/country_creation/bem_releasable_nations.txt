@@ -15,9 +15,7 @@ HGK = {
 #Strait Settlements (aka Singapore)
 SST = {
 	provinces = {
-		province = p:xC00130
-		province = p:x8080B0
-		province = p:x08673B
+		xC00130 x8080B0 x08673B
 	}
 
 	possible = {
@@ -53,6 +51,7 @@ C1A = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_YEMEN
 		NOR = {
@@ -82,6 +81,7 @@ C1B = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_BOTSWANA
 	}
@@ -116,6 +116,7 @@ C1D = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_DAHOMEY
 	}
@@ -140,6 +141,7 @@ C1E = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_LOWER_EGYPT
 		owns_entire_state_region = STATE_MIDDLE_EGYPT
@@ -179,6 +181,7 @@ C1G = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_GABON
 	}
@@ -198,6 +201,7 @@ C1H = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_HEDJAZ
 		NOR = {
@@ -229,6 +233,7 @@ C1I = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_BAGHDAD
 		owns_entire_state_region = STATE_MOSUL
@@ -261,6 +266,7 @@ C1K = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_KENYA
 		owns_entire_state_region = STATE_RIFT_VALLEY
@@ -283,6 +289,7 @@ C1L = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_TRIPOLI
 		owns_entire_state_region = STATE_LIBYA
@@ -307,6 +314,7 @@ C1M = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_MOCAMBIQUE
 		owns_entire_state_region = STATE_ZAMBEZIA
@@ -334,6 +342,7 @@ C1N = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_YORUBA_STATES
 		owns_entire_state_region = STATE_NIGER_DELTA
@@ -359,6 +368,7 @@ C1O = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_OMAN
 		NOR = {
@@ -388,6 +398,7 @@ C1P = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_PALESTINE
 		NOR = {
@@ -417,6 +428,7 @@ C1R = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_ZAMBEZI
 	}
@@ -436,6 +448,7 @@ C1S = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_SOMALILAND
 	}
@@ -457,6 +470,7 @@ C1T = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_ZANZIBAR
 		owns_entire_state_region = STATE_LINDI
@@ -478,6 +492,7 @@ C1U = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_UGANDA
 	}
@@ -497,6 +512,7 @@ C1V = {
 
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_VOLTA
 	}
@@ -518,6 +534,7 @@ C1W = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_NAMAQUALAND
 		owns_entire_state_region = STATE_HEREROLAND
@@ -537,6 +554,7 @@ C1Y = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_YEMEN
 		NOR = {
@@ -567,6 +585,7 @@ C1Z = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		bem_country_is_in_oceania = no
 		owns_entire_state_region = STATE_NORTH_ISLAND
 		owns_entire_state_region = STATE_SOUTH_ISLAND
@@ -589,6 +608,7 @@ C2A = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_NORTH_ANGOLA
 		owns_entire_state_region = STATE_SOUTH_ANGOLA
@@ -626,6 +646,7 @@ C2C = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_NORTH_CAMEROON
 		owns_entire_state_region = STATE_SOUTH_CAMEROON
@@ -648,6 +669,7 @@ C2E = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_GONDER
 		owns_entire_state_region = STATE_AMHARA
@@ -670,6 +692,7 @@ C2G = {
 
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_GUINEA
 		owns_entire_state_region = STATE_SIERRA_LEONE
@@ -691,6 +714,7 @@ C2I = {
 
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_IVORY_COAST
 		owns_entire_state_region = STATE_WINDWARD_COAST
@@ -712,6 +736,7 @@ C2M = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_NORTH_MADAGASCAR
 		owns_entire_state_region = STATE_SOUTH_MADAGASCAR
@@ -733,6 +758,7 @@ C2N = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_OUTER_HAUSALAND
 		owns_entire_state_region = STATE_NIGER
@@ -753,6 +779,7 @@ C2P = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_EASTERN_NEW_GUINEA
 	}
@@ -773,6 +800,7 @@ C2R = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_ZAMBIA
 		owns_entire_state_region = STATE_KAZEMBE
@@ -797,6 +825,7 @@ C2S = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_BLUE_NILE
 		owns_entire_state_region = STATE_DONGOLA
@@ -820,6 +849,7 @@ C2T = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_TRANSJORDAN
 		NOR = {
@@ -849,6 +879,7 @@ C2W = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_WEST_SAHARA
 	}
@@ -872,6 +903,7 @@ C3A = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_ALGIERS
 		owns_entire_state_region = STATE_CONSTANTINE
@@ -897,6 +929,7 @@ C3B = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_southeast_asia = no
 		owns_entire_state_region = STATE_WEST_BORNEO
 		owns_entire_state_region = STATE_EAST_BORNEO
@@ -922,6 +955,7 @@ C3C = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_BAS_CONGO
 		owns_entire_state_region = STATE_KASAI
@@ -945,6 +979,7 @@ C3E = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_ERITREA
 	}
@@ -964,6 +999,7 @@ C3G = {
 
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_GHANA
 	}
@@ -989,6 +1025,7 @@ C3I = {
 
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_southeast_asia = no
 		owns_entire_state_region = STATE_WEST_JAVA
 		owns_entire_state_region = STATE_CENTRAL_JAVA
@@ -1014,6 +1051,7 @@ C3M = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_CONGO
 	}
@@ -1033,6 +1071,7 @@ C3P = {
 
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_LIBERIA
 	}
@@ -1053,6 +1092,7 @@ C3S = {
 
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_SENEGAL
 		owns_entire_state_region = STATE_GAMBIA
@@ -1073,6 +1113,7 @@ C3T = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_TUNISIA
 	}
@@ -1093,6 +1134,7 @@ C4A = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_middle_east = no
 		owns_entire_state_region = STATE_HAIL
 		owns_entire_state_region = STATE_NEJD
@@ -1123,6 +1165,7 @@ C4C = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_UBANGI_SHARI
 	}
@@ -1144,6 +1187,7 @@ C4M = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_WESTERN_MALI
 		owns_entire_state_region = STATE_EASTERN_MALI
@@ -1154,7 +1198,7 @@ C4M = {
 #Colonial Singapore
 C4S = {
 	provinces = {
-		province = p:xC00130
+		xC00130
 	}
 
 	possible = {
@@ -1178,6 +1222,7 @@ C4T = {
 
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_TOGO
 	}
@@ -1203,6 +1248,7 @@ C5A = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		bem_country_is_in_oceania = no
 		owns_entire_state_region = STATE_NEW_SOUTH_WALES
 		owns_entire_state_region = STATE_NORTHERN_TERRITORY
@@ -1229,6 +1275,7 @@ C5C = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_WADDAI
 		owns_entire_state_region = STATE_CHAD
@@ -1252,6 +1299,7 @@ C5M = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_MARRAKECH
 		owns_entire_state_region = STATE_FEZ
@@ -1276,6 +1324,7 @@ C5T = {
 
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_TRANSVAAL
 		owns_entire_state_region = STATE_VRYSTAAT
@@ -1299,6 +1348,7 @@ C6C = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_CAPE_COLONY
 		owns_entire_state_region = STATE_EASTERN_CAPE
@@ -1321,6 +1371,7 @@ C6M = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_africa = no
 		owns_entire_state_region = STATE_MAURITANIA
 		owns_entire_state_region = STATE_INNER_MAURITANIA
@@ -1341,6 +1392,7 @@ C7C = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_india = no
 		owns_entire_state_region = STATE_CEYLON
 	}
@@ -1360,7 +1412,21 @@ C7M = {
 	
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
 		country_is_in_southeast_asia = no
 		owns_entire_state_region = STATE_MALAYA
 	}
+}
+
+#Colonial Malacca
+C8M = {
+	provinces = {
+		x8080B0
+	}
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = { always = no }
 }

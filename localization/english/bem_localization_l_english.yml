@@ -455,6 +455,11 @@
  dyn_c_default_ceylon: "Ceylon"
  dyn_c_colonial_ceylon: "[Country.GetOverlord.GetAdjectiveNoFormatting] Ceylon"
 
+ C8M: "Colonial Malacca"
+ C8M_ADJ: "Malaccan"
+ dyn_c_default_malacca: "Malacca"
+ dyn_c_colonial_malacca: "[Country.GetOverlord.GetAdjectiveNoFormatting] Malacca"
+
  dyn_c_south_africa_union: "Union of South Africa"
  dyn_c_south_africa_union_adj: "South African"
  dyn_c_dominion_south_africa: "Dominion of South Africa"
