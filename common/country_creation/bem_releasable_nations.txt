@@ -831,7 +831,6 @@ C2S = {
 		owns_entire_state_region = STATE_DONGOLA
 		owns_entire_state_region = STATE_DARFUR
 		owns_entire_state_region = STATE_KORDOFAN
-		owns_entire_state_region = STATE_EQUATORIA
 	}
 }
 
@@ -1305,6 +1304,26 @@ C5M = {
 		owns_entire_state_region = STATE_FEZ
 		owns_entire_state_region = STATE_INNER_MOROCCO
 		owns_entire_state_region = STATE_AL_RIF
+	}
+}
+
+#Colonial South Sudan
+C5S = {
+	states = {
+		STATE_EQUATORIA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		has_technology_researched = colonization
+	}
+
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_EQUATORIA
 	}
 }
 

@@ -426,6 +426,11 @@
  dyn_c_colony_of_morocco: "[Country.GetOverlord.GetAdjectiveNoFormatting] Morocco"
  dyn_c_colony_of_morocco_adj: "Moroccan"
 
+ C5S: "Colonial South Sudan "
+ C5S_ADJ: "South Sudanese"
+ dyn_c_default_south_sudan: "South Sudan"
+ dyn_c_colonial_south_sudan: "[Country.GetOverlord.GetAdjectiveNoFormatting] South Sudan"
+
  C5T: "Colonial Transvaal"
  C5T_ADJ: "Transvaalian"
  dyn_c_default_transvaal: "Transvaal"

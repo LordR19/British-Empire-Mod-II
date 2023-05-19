@@ -853,6 +853,21 @@ C5M = {
 	
 }
 
+#Colonial South Sudan
+C5S = {
+
+	color = { 42 255 42 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { british }
+
+	capital = STATE_EQUATORIA
+
+}
+
 #Colonial Transvaal
 C5T = {
 
