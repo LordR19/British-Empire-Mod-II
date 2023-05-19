@@ -194,7 +194,7 @@ bem_on_country_released_as_own_subject = {
 				}
 			}	
 		}
-		else_if = { #All countries that are not Great Britain
+		if = { #On action for all the Colonial Nations
 			limit = {
 				scope:target = {
 					bem_colonial_nation_trigger = yes
@@ -232,46 +232,27 @@ bem_on_country_released_as_own_subject = {
 			if = {
 				limit = {
 					ROOT = {
-						NOT = {
-							country_has_primary_culture = cu:british
+						any_primary_culture = {
+							NOT = {
+								this = cu:british
+							}
 						}
 					}
-				}
-				ordered_primary_culture = {
-					save_scope_as = switch_primary_culture_to_scope
 				}
 				scope:target = {
-					add_primary_culture = scope:switch_primary_culture_to_scope
-					while = {
-						limit = {
-							any_primary_culture = {
-								NOT = {
-									this = scope:switch_primary_culture_to_scope
-								}
-							}
+					remove_primary_culture = cu:british
+				}
+				ROOT = {
+					every_primary_culture = {
+						scope:target = {
+							add_primary_culture = prev
 						}
-						random_primary_culture = {
-							limit = { 
-								NOT = {
-									this = scope:switch_primary_culture_to_scope
-								}
-							}
-							save_scope_as = primary_culture_delete_scope
-						}
-						remove_primary_culture = scope:primary_culture_delete_scope
 					}
-					create_character = {
-						ruler = yes
-					}
+				}
+				scope:target = {
 					every_scope_character = {
-						limit = {
-							NOT = {
-								culture = scope:switch_primary_culture_to_scope
-							}
-						}
 						kill_character = yes
 					}
-					# if possible get some pops with the right culture here!
 				}
 			}
 		}
@@ -286,15 +267,11 @@ on_country_released_as_independent = {
 
 bem_on_country_released_as_independent = {
 	effect = {
-		if = { #All countries that are not Great Britain
+		if = { #All colonial Nations
 			limit = {
 				scope:target = {
 					bem_colonial_nation_trigger = yes
 				}
-			}
-			scope:target = {
-				# Makes the Colony a puppet
-				change_subject_type = subject_type_puppet
 			}
 
 			# Switches the Religion to the Religion of the Releasing Country
@@ -315,43 +292,25 @@ bem_on_country_released_as_independent = {
 			if = {
 				limit = {
 					ROOT = {
-						NOT = {
-							country_has_primary_culture = cu:british
+						any_primary_culture = {
+							NOT = {
+								this = cu:british
+							}
 						}
 					}
-				}
-				ordered_primary_culture = {
-					save_scope_as = switch_primary_culture_to_scope
 				}
 				scope:target = {
-					add_primary_culture = scope:switch_primary_culture_to_scope
-					while = {
-						limit = {
-							any_primary_culture = {
-								NOT = {
-									this = scope:switch_primary_culture_to_scope
-								}
-							}
+					remove_primary_culture = cu:british
+				}
+				ROOT = {
+					every_primary_culture = {
+						scope:target = {
+							add_primary_culture = prev
 						}
-						random_primary_culture = {
-							limit = { 
-								NOT = {
-									this = scope:switch_primary_culture_to_scope
-								}
-							}
-							save_scope_as = primary_culture_delete_scope
-						}
-						remove_primary_culture = scope:primary_culture_delete_scope
 					}
-					create_character = {
-						ruler = yes
-					}
+				}
+				scope:target = {
 					every_scope_character = {
-						limit = {
-							NOT = {
-								culture = scope:switch_primary_culture_to_scope
-							}
-						}
 						kill_character = yes
 					}
 				}

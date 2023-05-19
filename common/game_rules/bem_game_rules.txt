@@ -1,0 +1,9 @@
+﻿bem_colonial_nations_release = {
+	default = bem_no_colonial_nations_release
+
+	bem_no_colonial_nations_release = {
+	}
+
+	bem_colonial_nations_release = {
+	}
+}

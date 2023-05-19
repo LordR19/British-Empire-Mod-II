@@ -1,0 +1,67 @@
+﻿#Colonial New Zealand
+C1Z = {
+	flag_definition = {
+		coa = C1Z
+		subject_canton = C1Z
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C1Z_sub		
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = C1Z
+		subject_canton = C1Z
+		coa_with_overlord_canton = C1Z_sub	
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+		
+	flag_definition = {
+		coa = C1Z_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = C1Z_sub	
+		priority = 50
+		trigger = { 
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = NZL_canton
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = NZL_canton
+		priority = 100
+		trigger = { 
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C1Z_monarchy
+		subject_canton = C1Z_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C1Z_sub			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = C1Z_dictatorship
+		subject_canton = C1Z_dictatorship
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C1Z_sub
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+}

@@ -25,9 +25,13 @@
 	
 	building_group_weights = {
 		bg_manufacturing = 0.01
+		bg_arts = 0.001
+		bg_infrastructure = 1.5
+		bg_construction = 5.0
 		bg_rubber = 5.0
 		bg_oil_extraction = 5.0
 		bg_mining = 5.0
+		bg_gold_mining = 20.0
 		bg_logging = 5.0
 		bg_plantations = 5.0	
 	}

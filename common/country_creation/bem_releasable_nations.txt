@@ -12,6 +12,22 @@ HGK = {
 	ai_will_do = { always = no }
 }
 
+#Strait Settlements (aka Singapore)
+SST = {
+	provinces = {
+		province = p:xC00130
+		province = p:x8080B0
+		province = p:x08673B
+	}
+
+	possible = {
+		exists = c:GBR
+		this = c:GBR
+	}
+	
+	ai_will_do = { always = no }
+}
+
 #Colonial British Guayana
 CBG = {
 	provinces = {
@@ -33,13 +49,14 @@ C1A = {
 	}
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_middle_east = no
+		owns_entire_state_region = STATE_YEMEN
+	}
 }
 
 #Bechuanaland Protectorate
@@ -51,13 +68,14 @@ C1B = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_BOTSWANA
+	}
 }
 
 #Protectorate of Cyprus
@@ -69,10 +87,7 @@ C1C = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
 	ai_will_do = { always = no }
@@ -87,13 +102,14 @@ C1D = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_DAHOMEY
+	}
 }
 
 #Protectorate of Egypt
@@ -110,13 +126,19 @@ C1E = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_LOWER_EGYPT
+		owns_entire_state_region = STATE_MIDDLE_EGYPT
+		owns_entire_state_region = STATE_UPPER_EGYPT
+		owns_entire_state_region = STATE_SINAI
+		owns_entire_state_region = STATE_EGYPTIAN_DESERT
+		owns_entire_state_region = STATE_MATRUH
+	}
 }
 
 #Falkland Islands
@@ -128,10 +150,7 @@ C1F = {
 	}
 	
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
 	ai_will_do = { always = no }
@@ -146,13 +165,33 @@ C1G = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_GABON
+	}
+}
+
+#Colonial Hejaz
+C1H = {
+	states = {
+		STATE_HEDJAZ
+	}
+
+	required_num_states = 1
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_middle_east = no
+		owns_entire_state_region = STATE_HEDJAZ
+	}
 }
 
 #Protectorate of Iraq
@@ -166,13 +205,16 @@ C1I = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_middle_east = no
+		owns_entire_state_region = STATE_BAGHDAD
+		owns_entire_state_region = STATE_MOSUL
+		owns_entire_state_region = STATE_BASRA
+	}
 }
 
 #Protectorate of Kenya
@@ -185,13 +227,15 @@ C1K = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_KENYA
+		owns_entire_state_region = STATE_RIFT_VALLEY
+	}
 }
 
 #Colonial Lybia
@@ -205,13 +249,16 @@ C1L = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_TRIPOLI
+		owns_entire_state_region = STATE_LIBYA
+		owns_entire_state_region = STATE_LIBYAN_DESERT
+	}
 }
 
 
@@ -226,13 +273,16 @@ C1M = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_MOCAMBIQUE
+		owns_entire_state_region = STATE_ZAMBEZIA
+		owns_entire_state_region = STATE_LOURENCO_MARQUES
+	}
 }
 
 #Protectorate of Nigeria
@@ -250,13 +300,39 @@ C1N = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_YORUBA_STATES
+		owns_entire_state_region = STATE_NIGER_DELTA
+		owns_entire_state_region = STATE_BENIN
+		owns_entire_state_region = STATE_NIGERIA
+		owns_entire_state_region = STATE_BORNU
+		owns_entire_state_region = STATE_HAUSALAND
+		owns_entire_state_region = STATE_EAST_HAUSALAND
+	}
+}
+
+#Colonial Oman
+C1O = {
+	states = {
+		STATE_OMAN
+	}
+
+	required_num_states = 1
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_middle_east = no
+		owns_entire_state_region = STATE_OMAN
+	}
 }
 
 #Protectorate of Palestine
@@ -268,13 +344,14 @@ C1P = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_middle_east = no
+		owns_entire_state_region = STATE_PALESTINE
+	}
 }
 
 #Southern Rhodesia
@@ -286,13 +363,14 @@ C1R = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_ZAMBEZI
+	}
 }
 
 #Protectorate of Somaliland
@@ -304,12 +382,14 @@ C1S = {
 	required_num_states = 1
 
 	possible = {
-		root = {
-			is_country_type = recognized
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_SOMALILAND
+	}
 }
 
 #Tanganyika Territory
@@ -323,13 +403,16 @@ C1T = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_ZANZIBAR
+		owns_entire_state_region = STATE_LINDI
+		owns_entire_state_region = STATE_TANGANYIKA
+	}
 }
 
 #Protectorate of Uganda
@@ -341,13 +424,14 @@ C1U = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_UGANDA
+	}
 }
 
 #Colonial Upper Volta
@@ -359,13 +443,14 @@ C1V = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_VOLTA
+	}
 }
 
 
@@ -379,13 +464,15 @@ C1W = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_NAMAQUALAND
+		owns_entire_state_region = STATE_HEREROLAND
+	}
 }
 
 
@@ -396,13 +483,35 @@ C1Y = {
 	}
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_middle_east = no
+		owns_entire_state_region = STATE_YEMEN
+	}
+}
+
+#Colonial New Zealand
+C1Z = {
+	states = {
+		STATE_NORTH_ISLAND
+		STATE_SOUTH_ISLAND
+	}
+
+	required_num_states = 1
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		bem_country_is_in_oceania = no
+		owns_entire_state_region = STATE_NORTH_ISLAND
+		owns_entire_state_region = STATE_SOUTH_ISLAND
+	}
 }
 
 #Colony of Angola
@@ -416,13 +525,16 @@ C2A = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_NORTH_ANGOLA
+		owns_entire_state_region = STATE_SOUTH_ANGOLA
+		owns_entire_state_region = STATE_EAST_ANGOLA
+	}
 }
 
 #Colony of Bermuda
@@ -434,10 +546,7 @@ C2B = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
 	ai_will_do = { always = no }
@@ -453,13 +562,15 @@ C2C = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_NORTH_CAMEROON
+		owns_entire_state_region = STATE_SOUTH_CAMEROON
+	}
 }
 
 #Colony of Ethiopia
@@ -473,13 +584,16 @@ C2E = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_GONDER
+		owns_entire_state_region = STATE_AMHARA
+		owns_entire_state_region = STATE_OROMIA
+	}
 }
 
 #Colonial Guinea
@@ -492,13 +606,15 @@ C2G = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_GUINEA
+		owns_entire_state_region = STATE_SIERRA_LEONE
+	}
 }
 
 #Colonial Ivory Coast
@@ -511,13 +627,15 @@ C2I = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_IVORY_COAST
+		owns_entire_state_region = STATE_WINDWARD_COAST
+	}
 }
 
 #Colony of Madagascar
@@ -530,13 +648,15 @@ C2M = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_NORTH_MADAGASCAR
+		owns_entire_state_region = STATE_SOUTH_MADAGASCAR
+	}
 }
 
 #Colony of Niger
@@ -549,13 +669,15 @@ C2N = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_OUTER_HAUSALAND
+		owns_entire_state_region = STATE_NIGER
+	}
 }
 
 #Territory of Papua
@@ -567,13 +689,14 @@ C2P = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_EASTERN_NEW_GUINEA
+	}
 }
 
 #Northern Rhodesia
@@ -586,13 +709,15 @@ C2R = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_ZAMBIA
+		owns_entire_state_region = STATE_KAZEMBE
+	}
 }
 
 #Protectorate of Sudan
@@ -608,13 +733,18 @@ C2S = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_BLUE_NILE
+		owns_entire_state_region = STATE_DONGOLA
+		owns_entire_state_region = STATE_DARFUR
+		owns_entire_state_region = STATE_KORDOFAN
+		owns_entire_state_region = STATE_EQUATORIA
+	}
 }
 
 #Protectorate of Transjordan
@@ -626,13 +756,14 @@ C2T = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_middle_east = no
+		owns_entire_state_region = STATE_TRANSJORDAN
+	}
 }
 
 #Colonial West Sahara
@@ -644,13 +775,14 @@ C2W = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_WEST_SAHARA
+	}
 }
 
 #Colonial Algeria
@@ -666,13 +798,41 @@ C3A = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_ALGIERS
+		owns_entire_state_region = STATE_CONSTANTINE
+		owns_entire_state_region = STATE_EAST_SAHARA
+		owns_entire_state_region = STATE_SAHARA
+		owns_entire_state_region = STATE_TLEMCEN
+	}
+}
+
+#Colonial Borneo
+C3B = {
+	states = {
+		STATE_WEST_BORNEO
+		STATE_EAST_BORNEO
+		STATE_NORTH_BORNEO
+	}
+
+	required_num_states = 1
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_southeast_asia = no
+		owns_entire_state_region = STATE_WEST_BORNEO
+		owns_entire_state_region = STATE_EAST_BORNEO
+		owns_entire_state_region = STATE_NORTH_BORNEO
+	}
 }
 
 #Colony of Congo
@@ -688,13 +848,18 @@ C3C = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_BAS_CONGO
+		owns_entire_state_region = STATE_KASAI
+		owns_entire_state_region = STATE_KATANGA
+		owns_entire_state_region = STATE_EQUATEUR
+		owns_entire_state_region = STATE_CONGO_ORIENTALE
+	}
 }
 
 #Colony of Eritrea
@@ -706,13 +871,14 @@ C3E = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_ERITREA
+	}
 }
 
 #Colonial Gold Coast
@@ -724,13 +890,45 @@ C3G = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_GHANA
+	}
+}
+
+#Colonial Indonesia
+C3I = {
+	states = {
+		STATE_WEST_JAVA
+		STATE_CENTRAL_JAVA
+		STATE_EAST_JAVA
+		STATE_ACEH
+		STATE_NORTH_SUMATRA
+		STATE_SOUTH_SUMATRA
+		STATE_SUNDA_ISLANDS
+	}
+
+	required_num_states = 1
+
+	possible = {
+		has_technology_researched = colonization
+	}
+
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_southeast_asia = no
+		owns_entire_state_region = STATE_WEST_JAVA
+		owns_entire_state_region = STATE_CENTRAL_JAVA
+		owns_entire_state_region = STATE_EAST_JAVA
+		owns_entire_state_region = STATE_ACEH
+		owns_entire_state_region = STATE_NORTH_SUMATRA
+		owns_entire_state_region = STATE_SOUTH_SUMATRA
+		owns_entire_state_region = STATE_SUNDA_ISLANDS
+	}
 }
 
 #Colony of Middle-Congo
@@ -742,13 +940,14 @@ C3M = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_CONGO
+	}
 }
 
 #Colonial Pepper Coast
@@ -760,13 +959,14 @@ C3P = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_LIBERIA
+	}
 }
 
 #Colonial Senegal
@@ -779,13 +979,15 @@ C3S = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_SENEGAL
+		owns_entire_state_region = STATE_GAMBIA
+	}
 }
 
 #Colonial Tunisia
@@ -797,13 +999,35 @@ C3T = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_TUNISIA
+	}
+}
+
+#Colonial Arabia
+C4A = {
+	states = {
+		STATE_HAIL
+		STATE_NEJD
+	}
+
+	required_num_states = 1
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_middle_east = no
+		owns_entire_state_region = STATE_HAIL
+		owns_entire_state_region = STATE_NEJD
+	}
 }
 
 #Colony of Central Africa
@@ -815,13 +1039,14 @@ C4C = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_UBANGI_SHARI
+	}
 }
 
 #Colony of Mali
@@ -835,13 +1060,16 @@ C4M = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_WESTERN_MALI
+		owns_entire_state_region = STATE_EASTERN_MALI
+		owns_entire_state_region = STATE_TIMBUKTU
+	}
 }
 
 #Colonial Togo
@@ -853,13 +1081,45 @@ C4T = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_TOGO
+	}
+}
+
+#Colonial Australia
+C5A = {
+	states = {
+		STATE_NEW_SOUTH_WALES
+		STATE_NORTHERN_TERRITORY
+		STATE_QUEENSLAND
+		STATE_SOUTH_AUSTRALIA
+		STATE_TASMANIA
+		STATE_VICTORIA
+		STATE_WESTERN_AUSTRALIA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		bem_country_is_in_oceania = no
+		owns_entire_state_region = STATE_NEW_SOUTH_WALES
+		owns_entire_state_region = STATE_NORTHERN_TERRITORY
+		owns_entire_state_region = STATE_QUEENSLAND
+		owns_entire_state_region = STATE_SOUTH_AUSTRALIA
+		owns_entire_state_region = STATE_TASMANIA
+		owns_entire_state_region = STATE_VICTORIA
+		owns_entire_state_region = STATE_WESTERN_AUSTRALIA
+	}
 }
 
 #Colony of Chad
@@ -872,13 +1132,15 @@ C5C = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_WADDAI
+		owns_entire_state_region = STATE_CHAD
+	}
 }
 
 #Colonial Morocco
@@ -893,13 +1155,17 @@ C5M = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_MARRAKECH
+		owns_entire_state_region = STATE_FEZ
+		owns_entire_state_region = STATE_INNER_MOROCCO
+		owns_entire_state_region = STATE_AL_RIF
+	}
 }
 
 #Colonial Transvaal
@@ -913,13 +1179,39 @@ C5T = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_TRANSVAAL
+		owns_entire_state_region = STATE_VRYSTAAT
+		owns_entire_state_region = STATE_ZULULAND
+	}
+}
+
+#Colonial Cape
+C6C = {
+	states = {
+		STATE_CAPE_COLONY
+		STATE_EASTERN_CAPE
+		STATE_NORTHERN_CAPE
+	}
+
+	required_num_states = 1
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_CAPE_COLONY
+		owns_entire_state_region = STATE_EASTERN_CAPE
+		owns_entire_state_region = STATE_NORTHERN_CAPE
+	}
 }
 
 #Colonial Mauritania
@@ -932,11 +1224,32 @@ C6M = {
 	required_num_states = 1
 
 	possible = {
-		OR = {
-			is_country_type = recognized
-			is_country_type = colonial
-		}
+		has_technology_researched = colonization
 	}
 	
-	ai_will_do = { always = no }
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_africa = no
+		owns_entire_state_region = STATE_MAURITANIA
+		owns_entire_state_region = STATE_INNER_MAURITANIA
+	}
+}
+
+#Colonial Malaysia
+C7M = {
+	states = {
+		STATE_MALAYA
+	}
+
+	required_num_states = 1
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		country_is_in_southeast_asia = no
+		owns_entire_state_region = STATE_MALAYA
+	}
 }

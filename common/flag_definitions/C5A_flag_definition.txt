@@ -1,0 +1,67 @@
+﻿#Colonial Australia
+C5A = {
+	flag_definition = {
+		coa = C5A
+		subject_canton = C5A
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C5A_sub		
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = C5A
+		subject_canton = C5A
+		coa_with_overlord_canton = C5A_sub	
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+		
+	flag_definition = {
+		coa = C5A_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = C5A_sub		
+		priority = 50
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = AST_subject
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = AST_subject	
+		priority = 100
+		trigger = { 
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C5A_monarchy
+		subject_canton = C5A_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C5A_sub			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = C5A_dictatorship
+		subject_canton = C5A_dictatorship
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C5A_sub
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+}

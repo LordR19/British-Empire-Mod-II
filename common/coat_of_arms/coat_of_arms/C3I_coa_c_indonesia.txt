@@ -1,0 +1,122 @@
+#Colonial Indonesia
+C3I = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_stripes_13.dds"
+		color1 = "blue"
+	}
+	colored_emblem = {
+		texture = "ce_anb_rhombus.dds"
+		color1 = "white"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_anb_rhombus.dds"
+		color1 = "blue"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_kris_crossed.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.5 0.47 } }
+	}
+}
+
+C3I_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_stripes_13.dds"
+		color1 = "blue"
+	}
+	colored_emblem = {
+		texture = "ce_anb_rhombus.dds"
+		color1 = "white"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_anb_rhombus.dds"
+		color1 = "blue"
+		instance = { scale = { 0.6 0.6 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_kris_crossed.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.3 0.3 } position = { 0.75 0.48 } }
+	}
+}
+
+C3I_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_kris_crossed.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.5 } }
+	}
+}
+
+C3I_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_stripes_13.dds"
+		color1 = "blue"
+	}
+	colored_emblem = {
+		texture = "ce_anb_rhombus.dds"
+		color1 = "white"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_anb_rhombus.dds"
+		color1 = "blue"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "white"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.5 } }
+	}
+}
+
+C3I_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_stripes_13.dds"
+		color1 = "black"
+	}
+	colored_emblem = {
+		texture = "ce_anb_rhombus.dds"
+		color1 = "white"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_anb_rhombus.dds"
+		color1 = "black"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_kris_crossed.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.5 0.47 } }
+	}
+}

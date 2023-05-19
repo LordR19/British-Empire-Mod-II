@@ -50,7 +50,15 @@ bem_colonial_nation_trigger = {
 			this = c:C1G
 		}
 		AND = {
+			exists = c:C1H
+			this = c:C1H
+		}
+		AND = {
 			exists = c:C1I
+			this = c:C1I
+		}
+		AND = {
+			exists = c:C1K
 			this = c:C1K
 		}
 		AND = {
@@ -64,6 +72,10 @@ bem_colonial_nation_trigger = {
 		AND = {
 			exists = c:C1N
 			this = c:C1N
+		}
+		AND = {
+			exists = c:C1O
+			this = c:C1O
 		}
 		AND = {
 			exists = c:C1P
@@ -96,6 +108,10 @@ bem_colonial_nation_trigger = {
 		AND = {
 			exists = c:C1Y
 			this = c:C1Y
+		}
+		AND = {
+			exists = c:C1Z
+			this = c:C1Z
 		}
 		AND = {
 			exists = c:C2A
@@ -154,6 +170,10 @@ bem_colonial_nation_trigger = {
 			this = c:C3A
 		}
 		AND = {
+			exists = c:C3B
+			this = c:C3B
+		}
+		AND = {
 			exists = c:C3C
 			this = c:C3C
 		}
@@ -166,12 +186,12 @@ bem_colonial_nation_trigger = {
 			this = c:C3G
 		}
 		AND = {
-			exists = c:C3M
-			this = c:C3M
+			exists = c:C3I
+			this = c:C3I
 		}
 		AND = {
-			exists = c:C3N
-			this = c:C3N
+			exists = c:C3M
+			this = c:C3M
 		}
 		AND = {
 			exists = c:C3P
@@ -186,6 +206,10 @@ bem_colonial_nation_trigger = {
 			this = c:C3T
 		}
 		AND = {
+			exists = c:C4A
+			this = c:C4A
+		}
+		AND = {
 			exists = c:C4C
 			this = c:C4C
 		}
@@ -196,6 +220,10 @@ bem_colonial_nation_trigger = {
 		AND = {
 			exists = c:C4T
 			this = c:C4T
+		}
+		AND = {
+			exists = c:C5A
+			this = c:C5A
 		}
 		AND = {
 			exists = c:C5C
@@ -210,8 +238,29 @@ bem_colonial_nation_trigger = {
 			this = c:C5T
 		}
 		AND = {
+			exists = c:C6C
+			this = c:C6C
+		}
+		AND = {
 			exists = c:C6M
 			this = c:C6M
 		}
+		AND = {
+			exists = c:C7M
+			this = c:C7M
+		}
+	}
+}
+
+bem_state_is_in_oceania = {
+	OR = {
+		region = sr:region_oceania
+	}
+}
+
+bem_country_is_in_oceania = {
+	exists = capital
+	capital = {
+		bem_state_is_in_oceania = yes
 	}
 }
