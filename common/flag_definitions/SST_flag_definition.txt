@@ -7,6 +7,18 @@ SST = {
 	}
 
 	flag_definition = {
+		coa = SST_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = SST_sub		
+		priority = 50
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	flag_definition = {
 		coa = SST_sub_GBR_very_old
 		allow_overlord_canton = yes
 		coa_with_overlord_canton = SST_sub_GBR_very_old
@@ -14,7 +26,7 @@ SST = {
 			coa_def_british_ensign_trigger = yes
 			year < 1868
 		}
-		priority = 1000
+		priority = 100
 	}
 
 	flag_definition = {
@@ -26,7 +38,7 @@ SST = {
 			year >= 1874
 			year < 1823
 		}
-		priority = 1001
+		priority = 101
 	}
 
 	flag_definition = {
@@ -37,22 +49,28 @@ SST = {
 			coa_def_british_ensign_trigger = yes
 			year >= 1923
 		}
-		priority = 1002
+		priority = 102
 	}
 
 	flag_definition = {
-		coa = SST_communist
-		priority = 1500
+		coa = SST_monarchy
+		subject_canton = C7M_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C7M_sub			
+		priority = 20
 		trigger = { 
-			coa_def_communist_flag_trigger = yes
+			coa_def_absolute_monarchy_flag_trigger = yes
 		}
 	}
 
 	flag_definition = {
-		coa = SST_anarchy
-		priority = 2000
-		trigger = { 
-			coa_def_anarchy_flag_trigger = yes
+		coa = SST_dictatorship
+		subject_canton = C7M_dictatorship
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C7M_sub
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
 		}
 	}
 }

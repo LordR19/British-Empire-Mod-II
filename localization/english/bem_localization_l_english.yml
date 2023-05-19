@@ -27,6 +27,11 @@
 
  SST: "Strait Settlements"
  SST_ADJ: "Malayan"
+ SST: "Colonial Strait Settlements"
+ SST_ADJ: "Malayan"
+ dyn_c_default_strait_settlements: "Strait Settlements"
+ dyn_c_colonial_strait_settlements: "[Country.GetOverlord.GetAdjectiveNoFormatting] Strait Settlements"
+
 
  CBG: "Colonial West Guayana"
  CBG_ADJ: "West Guayanese"

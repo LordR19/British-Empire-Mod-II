@@ -21,8 +21,7 @@ SST = {
 	}
 
 	possible = {
-		exists = c:GBR
-		this = c:GBR
+		has_technology_researched = colonization
 	}
 	
 	ai_will_do = { always = no }
