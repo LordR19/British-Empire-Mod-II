@@ -778,6 +778,21 @@ C4M = {
 	
 }
 
+#Colonial Singapore
+C4S = {
+
+	color = { 255 170 170 }
+	
+	country_type = colonial
+	
+	tier = city_state
+
+	cultures = { british }
+	
+	capital = STATE_MALAYA
+	
+}
+
 #Colonial Togo
 C4T = {
 

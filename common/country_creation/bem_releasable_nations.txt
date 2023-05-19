@@ -1151,6 +1151,19 @@ C4M = {
 	}
 }
 
+#Colonial Singapore
+C4S = {
+	provinces = {
+		province = p:xC00130
+	}
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = { always = no }
+}
+
 #Colonial Togo
 C4T = {
 	states = {

@@ -395,6 +395,11 @@
  dyn_c_colony_of_mali: "[Country.GetOverlord.GetAdjectiveNoFormatting] Mali"
  dyn_c_colony_of_mali_adj: "Malian"
 
+ C4S: "Colonial Singapore"
+ C4S_ADJ: "Singaporean"
+ dyn_c_default_singapore: "Singapore"
+ dyn_c_colonial_singapore: "[Country.GetOverlord.GetAdjectiveNoFormatting] Singapore"
+
  C4T: "Colonial Togo"
  C4T_ADJ: "Togolese"
  dyn_c_default_togo: "Togo"
