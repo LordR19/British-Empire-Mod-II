@@ -388,6 +388,11 @@
  dyn_c_colony_of_central_africa: "[Country.GetOverlord.GetAdjectiveNoFormatting] Central Africa"
  dyn_c_colony_of_central_africa_adj: "Central African"
 
+ C4G: "Colonial Gibraltar"
+ C4G_ADJ: "Gibraltarian"
+ dyn_c_default_gibraltar: "Gibraltar"
+ dyn_c_colonial_gibraltar: "[Country.GetOverlord.GetAdjectiveNoFormatting] Gibraltar"
+
  C4M: "Colonial Mali"
  C4M_ADJ: "Malian"
  dyn_c_default_mali: "Mali"

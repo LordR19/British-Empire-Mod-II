@@ -1,0 +1,97 @@
+#Colonial Gibraltar
+C4G = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_castle_gibraltar.dds"
+		color1 = "red"
+		color2 = "yellow"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 } }
+	}
+}
+
+C4G_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_castle_gibraltar.dds"
+		color1 = "red"
+		color2 = "yellow"
+		instance = { scale = { 0.9 0.9 } position = { 0.75 0.5 } }
+	}
+}
+
+C4G_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_seal_gibraltar.dds"
+		color1 = "red"
+		color2 = "white"
+		color3 = "yellow"
+		instance = { scale = { 0.45 0.45 } position = { 0.75 0.5 } }
+	}
+}
+
+C4G_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_castle_gibraltar.dds"
+		color1 = "red"
+		color2 = "yellow"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.4 0.4 } position = { 0.18 0.2 } }
+	}
+}
+
+C4G_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_castle_gibraltar.dds"
+		color1 = "red"
+		color2 = "yellow"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 } }
+	}
+}

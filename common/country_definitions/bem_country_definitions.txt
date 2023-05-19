@@ -763,6 +763,21 @@ C4C = {
 	
 }
 
+#Colony of Gibraltar
+C4G = {
+
+	color = { 255 89 42 }
+	
+	country_type = colonial
+	
+	tier = city_state
+
+	cultures = { british }
+	
+	capital =  	STATE_GRANADA
+	
+}
+
 #Colony of Mali
 C4M = {
 
