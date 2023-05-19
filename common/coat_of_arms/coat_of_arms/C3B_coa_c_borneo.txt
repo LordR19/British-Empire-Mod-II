@@ -47,8 +47,9 @@ C3B_sub_british = {
 		color1 = "yellow"
 		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
 	}
-	textured_emblem = {
-		texture = "te_emblem_lion_north_borneo.dds"
+	colored_emblem = {
+		texture = "ce_emblem_lion_north_borneo.dds"
+		color1 = "red_light"
 		instance = { scale = { 0.32 0.32 } position = { 0.75 0.5 } }
 	}
 }
