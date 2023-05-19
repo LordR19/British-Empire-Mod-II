@@ -1,9 +1,60 @@
-﻿bem_make_dominions_decision = {
+﻿bem_show_decisions_gbr_toggle = {
 	is_shown = {
 		exists = c:GBR
 		this = c:GBR
 		NOT = {
-			has_global_variable = bem_british_dominions_global_var
+			has_variable = show_bem_decisions_var
+		}
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		set_variable = show_bem_decisions_var
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_hide_decisions_gbr_toggle = {
+	is_shown = {
+		exists = c:GBR
+		this = c:GBR
+		has_variable = show_bem_decisions_var
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		remove_variable = show_bem_decisions_var
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+####################################################
+
+bem_name_south_africa_dominion_decision ={
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:SAF
+		c:SAF = {
+			is_subject_of = c:GBR
+		}
+		NOT = {
+			has_global_variable = bem_south_africa_dominion_global_var
 		}
 		is_player = yes
 	}
@@ -15,8 +66,316 @@
 	when_taken = {
 		custom_tooltip = {
 			text = bem_make_dominions_decision_tt
-			set_global_variable = bem_british_dominions_global_var
+			set_global_variable = bem_south_africa_dominion_global_var
 		} 
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_name_south_africa_default_decision ={
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:SAF
+		c:SAF = {
+			is_subject_of = c:GBR
+		}
+		has_global_variable = bem_south_africa_dominion_global_var
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		remove_global_variable = bem_south_africa_dominion_global_var
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_flag_south_africa_decision ={
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:SAF
+		c:SAF = {
+			is_subject_of = c:GBR
+		}
+		NOT = {
+			has_global_variable = bem_south_africa_flag_global_var
+		}
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		set_global_variable = bem_south_africa_flag_global_var
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_flag_south_africa_default_decision ={
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:SAF
+		c:SAF = {
+			is_subject_of = c:GBR
+		}
+		has_global_variable = bem_south_africa_flag_global_var
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		remove_global_variable = bem_south_africa_flag_global_var
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_name_australia_dominion_decision = {
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:AST
+		c:AST = {
+			is_subject_of = c:GBR
+		}
+		NOT = {
+			has_global_variable = bem_australia_dominion_global_var
+		}
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		custom_tooltip = {
+			text = bem_make_dominions_decision_tt
+			set_global_variable = bem_australia_dominion_global_var
+		} 
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_name_australia_default_decision = {
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:AST
+		c:AST = {
+			is_subject_of = c:GBR
+		}
+		has_global_variable = bem_australia_dominion_global_var
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		remove_global_variable = bem_australia_dominion_global_var
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_name_new_zealand_dominion_decision = {
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:NZL
+		c:NZL = {
+			is_subject_of = c:GBR
+		}
+		NOT = {
+			has_global_variable = bem_new_zealand_dominion_global_var
+		}
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		custom_tooltip = {
+			text = bem_make_dominions_decision_tt
+			set_global_variable = bem_new_zealand_dominion_global_var
+		} 
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_name_new_zealand_default_decision = {
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:NZL
+		c:NZL = {
+			is_subject_of = c:GBR
+		}
+		has_global_variable = bem_new_zealand_dominion_global_var
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		remove_global_variable = bem_new_zealand_dominion_global_var
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_name_canada_dominion_decision = {
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:CAN
+		c:CAN = {
+			is_subject_of = c:GBR
+		}
+		NOT = {
+			has_global_variable = bem_canada_dominion_global_var
+		}
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		custom_tooltip = {
+			text = bem_make_dominions_decision_tt
+			set_global_variable = bem_canada_dominion_global_var
+		} 
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_name_canada_default_decision = {
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:CAN
+		c:CAN = {
+			is_subject_of = c:GBR
+		}
+		has_global_variable = bem_canada_dominion_global_var
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		remove_global_variable = bem_canada_dominion_global_var
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_name_india_dominion_decision = {
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:BIC
+		c:BIC = {
+			is_subject_of = c:GBR
+		}
+		NOT = {
+			has_global_variable = bem_india_dominion_global_var
+		}
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		custom_tooltip = {
+			text = bem_make_dominions_decision_tt
+			set_global_variable = bem_india_dominion_global_var
+		} 
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_name_india_default_decision = {
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:BIC
+		c:BIC = {
+			is_subject_of = c:GBR
+		}
+		has_global_variable = bem_india_dominion_global_var
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		remove_global_variable = bem_india_dominion_global_var
 	}
 	
 	ai_chance = {

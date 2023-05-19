@@ -58,7 +58,7 @@
 			scope:actor = {
 				is_direct_subject_of = c:GBR
 			}
-			has_global_variable = bem_british_dominions_global_var
+			has_global_variable = bem_south_africa_dominion_global_var
 		}
 	}
 }
@@ -73,11 +73,17 @@ CAN = { # Canada
 		
 		trigger = {
 			exists = c:GBR
-			c:GBR = {
-				has_diplomatic_pact = {
-					who = c:CAN
-					type = dominion
-					is_initiator = yes
+			OR = {
+				c:GBR = {
+					has_diplomatic_pact = {
+						who = c:CAN
+						type = dominion
+						is_initiator = yes
+					}
+				}
+				AND = {
+					is_subject_of = c:GBR
+					has_global_variable = bem_canada_dominion_global_var
 				}
 			}
 		}
@@ -94,11 +100,17 @@ AST = { # Australia
 		
 		trigger = {
 			exists = c:GBR
-			c:GBR = {
-				has_diplomatic_pact = {
-					who = c:AST
-					type = dominion
-					is_initiator = yes
+			OR = {
+				c:GBR = {
+					has_diplomatic_pact = {
+						who = c:AST
+						type = dominion
+						is_initiator = yes
+					}
+				}
+				AND = {
+					is_subject_of = c:GBR
+					has_global_variable = bem_australia_dominion_global_var
 				}
 			}
 		}
@@ -115,11 +127,17 @@ NZL = { # New Zealand
 		
 		trigger = {
 			exists = c:GBR
-			c:GBR = {
-				has_diplomatic_pact = {
-					who = c:NZL
-					type = dominion
-					is_initiator = yes
+			OR = {
+				c:GBR = {
+					has_diplomatic_pact = {
+						who = c:NZL
+						type = dominion
+						is_initiator = yes
+					}
+				}
+				AND = {
+					is_subject_of = c:GBR
+					has_global_variable = bem_new_zealand_dominion_global_var
 				}
 			}
 		}
@@ -205,8 +223,7 @@ BIC = { # British East India Company
 			scope:actor = {
 				is_direct_subject_of = c:GBR
 			}
-
-			has_global_variable = bem_british_dominions_global_var
+			has_global_variable = bem_india_dominion_global_var
 		}
 	}
 }

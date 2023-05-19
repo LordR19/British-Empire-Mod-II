@@ -1,0 +1,121 @@
+#Colonial Australia
+C5A = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_flag_waves_australia.dds"
+		color1 = "yellow"
+		color2 = "green"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_star_7_australia.dds"
+		color1 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.25 0.35 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_star_7_australia.dds"
+		color1 = "white"
+		instance = { scale = { 0.14 0.14 } position = { 0.743 0.181 } }
+		instance = { scale = { 0.14 0.14 } position = { 0.625 0.404 } }
+		instance = { scale = { 0.14 0.14 } position = { 0.861 0.34 } }
+		instance = { scale = { 0.17 0.17 } position = { 0.743 0.709 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.1 0.1 } position = { 0.8 0.503 } }
+	}
+}
+
+C5A_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_flag_waves_australia.dds"
+		color1 = "yellow"
+		color2 = "green"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_star_7_australia.dds"
+		color1 = "white"
+		instance = { scale = { 0.14 0.14 } position = { 0.743 0.181 } }
+		instance = { scale = { 0.14 0.14 } position = { 0.625 0.404 } }
+		instance = { scale = { 0.14 0.14 } position = { 0.861 0.34 } }
+		instance = { scale = { 0.17 0.17 } position = { 0.743 0.709 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.1 0.1 } position = { 0.8 0.503 } }
+	}
+}
+
+C5A_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_flag_waves_australia.dds"
+		color1 = "yellow"
+		color2 = "green"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_star_7_australia.dds"
+		color1 = "white"
+		instance = { scale = { 0.14 0.14 } position = { 0.743 0.181 } }
+		instance = { scale = { 0.14 0.14 } position = { 0.625 0.404 } }
+		instance = { scale = { 0.14 0.14 } position = { 0.861 0.34 } }
+		instance = { scale = { 0.17 0.17 } position = { 0.743 0.709 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.1 0.1 } position = { 0.8 0.503 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.5 0.5 } position = { 0.25 0.35 } }
+	}
+}
+
+C5A_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_flag_waves_australia.dds"
+		color1 = "yellow"
+		color2 = "black"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_star_7_australia.dds"
+		color1 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.25 0.35 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_star_7_australia.dds"
+		color1 = "white"
+		instance = { scale = { 0.14 0.14 } position = { 0.743 0.181 } }
+		instance = { scale = { 0.14 0.14 } position = { 0.625 0.404 } }
+		instance = { scale = { 0.14 0.14 } position = { 0.861 0.34 } }
+		instance = { scale = { 0.17 0.17 } position = { 0.743 0.709 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.1 0.1 } position = { 0.8 0.503 } }
+	}
+}

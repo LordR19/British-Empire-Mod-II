@@ -1,2 +1,46 @@
 ﻿l_english:
  GBR: "United Kingdom"
+
+ bem_show_decisions_gbr_toggle: "Show British Empire Mod Decisions"
+ bem_show_decisions_gbr_toggle_desc: "Shows all the decisions for the British Empire Mod."
+
+ bem_hide_decisions_gbr_toggle: "Hide British Empire Mod Decisions"
+ bem_hide_decisions_gbr_toggle_desc: "Hidess all the decisions for the British Empire Mod."
+
+ bem_make_dominions_decision_tt: "This decision only changes the #yellow name#! of your subject to Dominion. The subject does #n not#! become a dominion."
+
+ bem_name_south_africa_dominion_decision: "Name South Africa Dominion"
+ bem_name_south_africa_dominion_decision_desc: "Changes the name of #yellow South Africa#! or #yellow Cape Colony#! to #yellow Dominion of South Africa#!."
+
+ bem_name_south_africa_default_decision: "Reset Name of South Africa to #yellow default#!"
+ bem_name_south_africa_default_decision_desc: "South Africa will no longer be called Dominion of South Africa and instead use its #yellow default name#!."
+
+ bem_flag_south_africa_decision: "Set Red Ensign as South African Flag"
+ bem_flag_south_africa_decision_desc: "Set the #yellow Red Ensign#! as the flag used for South Africa."
+
+ bem_flag_south_africa_default_decision: "Use the default flag for South Africa"
+ bem_flag_south_africa_default_decision_desc: "#yellow Resets the flag of South Africa#! to use the flag that is most apropriate."
+
+ bem_name_australia_dominion_decision: "Name Australia Dominion"
+ bem_name_australia_dominion_decision_desc: "Changes the name of #yellow Australia#! to #yellow Dominion of Australia#!."
+
+ bem_name_australia_default_decision: "Reset Name of Australia to default"
+ bem_name_australia_default_decision_desc: "#yellow Australia#! will no longer be called Dominion of Australia and instead use its #yellow default name#!."
+
+ bem_name_new_zealand_dominion_decision: "Name New Zealand Dominion"
+ bem_name_new_zealand_dominion_decision_desc: "Changes the name of #yellow New Zealand#! to #yellow Dominion of New Zealand#!."
+
+ bem_name_new_zealand_default_decision: "Reset Name of New Zealand to default"
+ bem_name_new_zealand_default_decision_desc: "#yellow New Zealand#! will no longer be called Dominion of New Zealand and instead use its #yellow default name#!."
+
+ bem_name_canada_dominion_decision: "Name Canada Dominion"
+ bem_name_canada_dominion_decision_desc: "Changes the name of #yellow Canada#! to #yellow Dominion of Canada#!."
+
+ bem_name_canada_default_decision: "Reset Name of Canada to default"
+ bem_name_canada_default_decision_desc: "#yellow Canada#! will no longer be called Dominion of Canada and instead use its #yellow default name#!."
+
+ bem_name_india_dominion_decision: "Name India Dominion"
+ bem_name_india_dominion_decision_desc: "Changes the name of #yellow India#! to #yellow Dominion of India#!."
+
+ bem_name_india_default_decision: "Reset Name of India to default"
+ bem_name_india_default_decision_desc: "#yellow India#! will no longer be called Dominion of India and instead use its #yellow default name#!."

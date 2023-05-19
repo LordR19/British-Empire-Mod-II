@@ -155,9 +155,6 @@ bem_on_country_released_as_own_subject = {
 								this = c:SAF
 							}
 						}
-						NOT = {
-							is_subject_type = subject_type_dominion
-						}
 					}
 					change_subject_type = subject_type_dominion
 					activate_law = law_type:law_presidential_republic #They become presidential republics, so they have governors
