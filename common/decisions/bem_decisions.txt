@@ -382,3 +382,58 @@ bem_name_india_default_decision = {
 		base = 0 #AI should never do this
 	}
 }
+
+
+bem_flag_cyprus_decision ={
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:C1C
+		c:C1C = {
+			is_subject_of = c:GBR
+		}
+		NOT = {
+			has_global_variable = bem_cyprus_flag_global_var
+		}
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		set_global_variable = bem_cyprus_flag_global_var
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+bem_flag_cyprus_default_decision ={
+	is_shown = {
+		has_variable = show_bem_decisions_var
+		exists = c:GBR
+		this = c:GBR
+		exists = c:C1C
+		c:C1C = {
+			is_subject_of = c:GBR
+		}
+		has_global_variable = bem_cyprus_flag_global_var
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		remove_global_variable = bem_cyprus_flag_global_var
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}

@@ -45,4 +45,10 @@
  bem_name_india_default_decision: "Reset Name of India to default"
  bem_name_india_default_decision_desc: "#yellow India#! will no longer be called Dominion of India and instead use its #yellow default name#!."
 
+ bem_flag_cyprus_decision: "Set Red Ensign as Cyprus Flag"
+ bem_flag_cyprus_decision_desc: "Set the #yellow Red Ensign#! as the flag used for Cyprus."
+
+ bem_flag_cyprus_default_decision: "Use the default flag for Cyprus"
+ bem_flag_cyprus_default_decision_desc: "#yellow Resets the flag of Cyprus#! to use the flag that is most apropriate."
+
  dyn_c_crown_colony_malta: "Crown Colony of Malta"
