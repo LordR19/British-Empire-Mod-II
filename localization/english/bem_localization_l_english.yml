@@ -621,8 +621,8 @@
 #Subject Types and Diplomatic Actions
  bem_colony: "Colony"
  bem_colony_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] is a [concept_bem_colony] of [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]."
- bem_colony_action_name: "[concept_puppet]"
- bem_colony_action_propose_name: "Make into [concept_puppet]"
+ bem_colony_action_name: "[concept_bem_colony]"
+ bem_colony_action_propose_name: "Make into [concept_bem_colony]"
  bem_colony_action_break_name: "Grant Independence"
  bem_colony_action_ask_to_break_name: "Demand Independence"
 
