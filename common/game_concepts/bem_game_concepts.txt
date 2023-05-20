@@ -1,0 +1,3 @@
+﻿concept_bem_colony = {
+	texture = "gfx/interface/icons/lens_toolbar_icons/bem_colony.dds"
+}

@@ -617,3 +617,15 @@
  setting_bem_no_colonial_nations_release_desc: "#bold AI Nations#! will #n not#! release #bold Colonial Nations#!. Only the #bold Player#! can release #bold Colonial Nations#!."
  setting_bem_colonial_nations_release: "#n Experimental!#! #p Release#! of #bold Colonial Nations#!"
  setting_bem_colonial_nations_release_desc: "#bold AI Nations#! #p will#! release #bold Colonial Nations#!, if they control all the states of the colonial nation. #n Warning!#! This feature might cause weird situations!"
+
+#Subject Types and Diplomatic Actions
+ bem_colony: "Colony"
+ bem_colony_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] is a [concept_bem_colony] of [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]."
+ bem_colony_action_name: "[concept_puppet]"
+ bem_colony_action_propose_name: "Make into [concept_puppet]"
+ bem_colony_action_break_name: "Grant Independence"
+ bem_colony_action_ask_to_break_name: "Demand Independence"
+
+ concept_bem_colony: "Colony"
+ concept_bem_colonys: "Colonies"
+ concept_bem_colony_desc: "A country that has researched Colonization can release a [concept_country] into their $concept_bem_colony$. A $concept_bem_colony$ is a [concept_subject] type that cannot start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] yet are forced to join their [Concept('concept_overlord','$concept_overlord_possessive$')] [Concept('concept_war','$concept_wars$')].\nColonies will focus on expanding their ressource output to supply their [concept_overlord]'s [concept_market]."
