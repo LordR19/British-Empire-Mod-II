@@ -179,6 +179,14 @@ bem_on_country_released_as_own_subject = {
 								exists = c:ION
 								this = c:ION
 							}
+							AND = {
+								exists = c:BAH
+								this = c:BAH
+							}
+							AND = {
+								exists = c:JAM
+								this = c:JAM
+							}
 						}
 					}
 					change_subject_type = subject_type_puppet

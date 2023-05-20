@@ -1,4 +1,4 @@
-﻿C1O = { # Colonial Oman
+﻿C1Z = { # Colonial Oman
 	dynamic_country_name = {
 		name = dyn_c_default_new_zealand
 
