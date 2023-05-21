@@ -211,7 +211,10 @@ bem_on_country_released_as_own_subject = {
 
 				#Changes government type to presidial
 				activate_law = law_type:law_presidential_republic
-				
+
+				#Disallows Colonization by subject
+				activate_law = law_type:law_no_colonial_affairs
+
 				#Adds a new male leader
 				trigger_event = {
 						id = bem.2
