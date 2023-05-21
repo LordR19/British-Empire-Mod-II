@@ -32,7 +32,6 @@
  dyn_c_default_strait_settlements: "Strait Settlements"
  dyn_c_colonial_strait_settlements: "[Country.GetOverlord.GetAdjectiveNoFormatting] Strait Settlements"
 
-
  CBG: "Colonial West Guayana"
  CBG_ADJ: "West Guayanese"
  dyn_c_default_west_guayana: "West Guayana"
@@ -41,6 +40,15 @@
  dyn_c_colony_of_west_guayana_adj: "[Country.GetOverlord.GetAdjectiveNoFormatting] West Guayanese"
  dyn_c_cbg_british: "[Country.GetOverlord.GetAdjectiveNoFormatting] Guayana"
  dyn_c_cbg_british_adj: "[Country.GetOverlord.GetAdjectiveNoFormatting] Guayanese"
+
+ CA1: "Colonial North Africa"
+ CA1: "North Africa"
+ dyn_c_default_north_africa: "North Africa"
+ dyn_c_default_maghreb: "Maghreb"
+ dyn_c_default_maghreb_adj: "Maghrebi"
+ dyn_c_colonial_north_africa: "[Country.GetOverlord.GetAdjectiveNoFormatting] North Africa"
+ dyn_c_colonial_maghreb: "[Country.GetOverlord.GetAdjectiveNoFormatting] Maghreb"
+ dyn_c_colonial_maghreb_adj: "[Country.GetOverlord.GetAdjectiveNoFormatting] Maghrebi"
 
  C1A: "Colonial Aden"
  C1A_ADJ: "Adenese"
@@ -629,3 +637,8 @@
  concept_bem_colony: "Colony"
  concept_bem_colonys: "Colonies"
  concept_bem_colony_desc: "A country that has researched Colonization can release a [concept_country] into their $concept_bem_colony$. A $concept_bem_colony$ is a [concept_subject] type that cannot start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] yet are forced to join their [Concept('concept_overlord','$concept_overlord_possessive$')] [Concept('concept_war','$concept_wars$')].\nColonies will focus on expanding their ressource output to supply their [concept_overlord]'s [concept_market]."
+
+#Decisions
+ unite_colonies_maghreb_decision: "Unite Colonies in North Africa"
+ unite_colonies_maghreb_decision_desc: "This Decision allows you to #yellow unite all your Colonial Subjects and states in North Africa#! into one big Colonial Nation."
+ unite_maghreb_tt: "Every #yellow Colonial Nation#! and #yellow every State you own#! in North Africa will be #yellow merged#! into one Colonial Nation. The Colonial Nation with the highest [concept_gdp] will take the lead of the united Colony"

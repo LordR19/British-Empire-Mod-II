@@ -21,6 +21,10 @@ bem_colonial_nation_trigger = {
 			exists = c:SST
 			this = c:SST
 		}
+		AND = { #Colonial North Africa / Maghreb
+			exists = c:CA1
+			this = c:CA1
+		}
 		AND = {
 			exists = c:C1A
 			this = c:C1A
@@ -268,6 +272,36 @@ bem_colonial_nation_trigger = {
 		AND = {
 			exists = c:C8M
 			this = c:C8M
+		}
+	}
+}
+
+#Trigger for all the Colonial Nations in the North Africa Region
+bem_colonial_nation_north_africa_trigger = {
+	OR = {
+		AND = {
+			exists = c:CA1
+			this = c:CA1
+		}
+		AND = {
+			exists = c:C1L
+			this = c:C1L
+		}
+		AND = {
+			exists = c:C2W
+			this = c:C2W
+		}
+		AND = {
+			exists = c:C3A
+			this = c:C3A
+		}
+		AND = {
+			exists = c:C3T
+			this = c:C3T
+		}
+		AND = {
+			exists = c:C5M
+			this = c:C5M
 		}
 	}
 }

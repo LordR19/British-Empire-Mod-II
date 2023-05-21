@@ -43,6 +43,21 @@ CBG = {
 	
 }
 
+#Colonial Region Maghreb
+CA1 = {
+
+	color = { 33 130 220 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_TUNISIA
+	
+}
+
 #Protectorate of Aden
 C1A = {
 

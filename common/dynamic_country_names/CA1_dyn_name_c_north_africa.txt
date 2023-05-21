@@ -1,0 +1,70 @@
+﻿CA1 = { # Colonial North Africa
+	dynamic_country_name = {
+		name = dyn_c_default_north_africa
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_default_maghreb
+		adjective = dyn_c_default_maghreb_adj
+
+		is_main_tag_only = no
+		priority = 5
+		
+		trigger = {
+			scope:actor = {
+				OR = {
+					country_has_primary_culture  = cu:maghrebi
+					country_has_primary_culture  = cu:misri
+					country_has_primary_culture  = cu:mashriqi
+					country_has_primary_culture  = cu:bedouin
+					country_has_primary_culture  = cu:berber
+					country_has_primary_culture  = cu:yemenite
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_north_africa
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_maghreb
+		adjective = dyn_c_colonial_maghreb_adj
+
+		is_main_tag_only = no
+		priority = 20
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+				overlord = {
+					OR = {
+						country_has_primary_culture  = cu:maghrebi
+						country_has_primary_culture  = cu:misri
+						country_has_primary_culture  = cu:mashriqi
+						country_has_primary_culture  = cu:bedouin
+						country_has_primary_culture  = cu:amazigh
+						country_has_primary_culture  = cu:yemenite
+					}
+				}
+			}
+		}
+	}
+}

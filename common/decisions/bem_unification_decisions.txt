@@ -1,0 +1,104 @@
+﻿unite_colonies_maghreb_decision = {
+	is_shown = {
+		OR = {
+			any_subject_or_below = {
+				capital = { region = sr:region_north_africa }
+				bem_colonial_nation_north_africa_trigger = yes
+				is_ai = yes
+				count >= 2
+			}
+			AND = {
+				any_subject_or_below = {
+					capital = { region = sr:region_north_africa }
+					bem_colonial_nation_north_africa_trigger = yes
+					is_ai = yes
+					relations:root >= relations_threshold:cordial
+				}
+				any_scope_state = {
+					region = sr:region_north_africa
+				}
+			}
+		}
+	}
+	possible = {
+		is_at_war = no
+	}
+	
+	when_taken = {
+		custom_tooltip = unite_maghreb_tt
+		
+		hidden_effect = {
+			set_variable = {
+				name = north_africa_cooldown_var
+				years = 2
+			}
+			ordered_subject_or_below  = {
+				limit = {
+					capital = { region = sr:region_north_africa }
+					bem_colonial_nation_north_africa_trigger = yes
+					is_ai = yes
+					relations:root >= relations_threshold:cordial
+				}
+				order_by = gdp
+	
+				save_scope_as = unifier_tag
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						region = sr:region_north_africa
+					}
+				}
+				every_scope_state = {
+					limit = {
+						region = sr:region_north_africa
+						root = owner
+					}
+					set_state_owner = scope:unifier_tag
+				} 
+			}
+			every_subject_or_below = {
+				limit = {
+					NOT = { this = scope:unifier_tag }
+					capital = { region = sr:region_north_africa }
+					bem_colonial_nation_north_africa_trigger = yes
+					is_ai = yes
+					relations:root >= relations_threshold:cordial
+				}
+				scope:unifier_tag = {
+					annex = prev
+				}
+			}
+			if = {
+				limit =  {
+					NOT = { exists = c:CA1 }
+				}
+				scope:unifier_tag = {
+					change_tag = CA1
+				}
+			}
+		}
+	}
+
+	ai_chance = { #needs to be tested first
+		base = 0
+		modifier = {
+			trigger = {
+				OR = {
+					NOT = { has_technology_researched = civilizing_mission }
+					NOT = {
+						sr:region_north_africa = {
+							any_scope_state = {
+								count = all
+								owner = { NOT = { is_country_type = decentralized } }
+							}
+						}
+					}
+					has_variable = north_africa_cooldown_var
+				}
+				
+			}
+			add = -200
+		}
+	}
+}

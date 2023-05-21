@@ -1,0 +1,114 @@
+#Colonial Maghreb
+CA1 = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "yellow"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = "white"
+		instance = { scale = { 1 0.5 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_stars_maghreb.dds"
+		color1 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}
+
+CA1_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "yellow"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = "white"
+		instance = { scale = { 1 0.5 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_stars_maghreb.dds"
+		color1 = "white"
+		instance = { scale = { 0.9 0.9 } position = { 0.73 0.48 } }
+	}
+}
+
+CA1_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle_per_fess.dds"
+		color1 = "black"
+		color2 = "red_light"
+		color3 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle_per_fess_stripe.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_stars_maghreb.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+CA1_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "yellow"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = "white"
+		instance = { scale = { 1 0.5 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_stars_maghreb.dds"
+		color1 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.32 } }
+	}
+}
+
+CA1_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "black"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = "white"
+		instance = { scale = { 1 0.5 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_stars_maghreb.dds"
+		color1 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}
