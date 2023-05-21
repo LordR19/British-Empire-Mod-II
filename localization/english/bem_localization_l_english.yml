@@ -42,7 +42,7 @@
  dyn_c_cbg_british_adj: "[Country.GetOverlord.GetAdjectiveNoFormatting] Guayanese"
 
  CA1: "Colonial North Africa"
- CA1: "North Africa"
+ CA1_ADJ: "North Africa"
  dyn_c_default_north_africa: "North Africa"
  dyn_c_default_maghreb: "Maghreb"
  dyn_c_default_maghreb_adj: "Maghrebi"
@@ -477,6 +477,11 @@
  C8M_ADJ: "Malaccan"
  dyn_c_default_malacca: "Malacca"
  dyn_c_colonial_malacca: "[Country.GetOverlord.GetAdjectiveNoFormatting] Malacca"
+
+ CIC_colonial_burma: "Colonial Burma"
+ CIC_colonial_burma_ADJ: "Burmese"
+ dyn_c_default_burma: "Burma"
+ dyn_c_colonial_burma: "[Country.GetOverlord.GetAdjectiveNoFormatting] Burma"
 
  dyn_c_south_africa_union: "Union of South Africa"
  dyn_c_south_africa_union_adj: "South African"

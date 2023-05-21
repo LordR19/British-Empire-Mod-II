@@ -1462,3 +1462,31 @@ C8M = {
 	
 	ai_will_do = { always = no }
 }
+
+#Colonial Burma
+CIC_colonial_burma = {
+	states = {
+		STATE_BURMA
+		STATE_KACHIN
+		STATE_PEGU
+		STATE_SHAN_STATES
+		STATE_TENASSERIM
+	}
+
+	required_num_states = 1
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		state_is_in_southeast_asia = no
+		owns_entire_state_region = STATE_BURMA
+		owns_entire_state_region = STATE_KACHIN
+		owns_entire_state_region = STATE_PEGU
+		owns_entire_state_region = STATE_SHAN_STATES
+		owns_entire_state_region = STATE_TENASSERIM
+	}
+}

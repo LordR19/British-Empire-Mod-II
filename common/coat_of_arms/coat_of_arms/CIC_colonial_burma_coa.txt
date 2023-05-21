@@ -1,0 +1,83 @@
+#Colonial Burma
+CIC_colonial_burma = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_stripe_bottom_raised.dds"
+		color1 = "green_light"
+		instance = { scale = { 1 0.4 } position = { 0.5 0.73 } }
+	}
+	textured_emblem = {
+		texture = "te_peacock.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.51 } }
+	}
+}
+
+CIC_colonial_burma_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_stripe_bottom_raised.dds"
+		color1 = "green_light"
+		instance = { scale = { 1 0.4 } position = { 0.5 0.65 } }
+	}
+	textured_emblem = {
+		texture = "te_peacock.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.75 0.51 } }
+	}
+}
+
+CIC_colonial_burma_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_emblem_circle_stripe_bottom.dds"
+		color1 = "yellow"
+		color2 = "green_light"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_peacock.dds"
+		instance = { scale = { 0.53 0.53 } position = { 0.75 0.52 } }
+	}
+}
+
+CIC_colonial_burma_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_stripe_bottom_raised.dds"
+		color1 = "green_light"
+		instance = { scale = { 1 0.4 } position = { 0.5 0.73 } }
+	}
+	textured_emblem = {
+		texture = "te_peacock.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.51 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "pearl"
+		color2 = "green"
+		color3 = "green"
+		instance = { scale = { 0.4 0.4 } position = { 0.18 0.2 } }
+	}
+}
+
+CIC_colonial_burma_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_stripe_bottom_raised.dds"
+		color1 = "yellow"
+		instance = { scale = { 1 0.4 } position = { 0.5 0.73 } }
+	}
+	textured_emblem = {
+		texture = "te_peacock.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.51 } }
+	}
+}

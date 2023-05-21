@@ -987,3 +987,18 @@ C8M = {
 	capital =  	STATE_MALAYA
 	
 }
+
+#Colonial Burma
+CIC_colonial_burma = {
+
+	color = { 0 255 215 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_BURMA
+	
+}
