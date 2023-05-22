@@ -231,8 +231,20 @@ bem_on_country_released_as_own_subject = {
 						}
 					}
 				}
-				scope:target = {
-					set_state_religion = root.religion
+				if = {
+					limit = {
+						root = {
+							has_law = law_type:law_state_atheism
+						}
+					}
+					scope:target = {
+						set_state_religion = rel:atheist
+					}
+				}
+				else = {
+					scope:target = {
+						set_state_religion = root.religion
+					}
 				}
 			}
 
@@ -291,8 +303,20 @@ bem_on_country_released_as_independent = {
 						}
 					}
 				}
-				scope:target = {
-					set_state_religion = root.religion
+				if = {
+					limit = {
+						root = {
+							has_law = law_type:law_state_atheism
+						}
+					}
+					scope:target = {
+						set_state_religion = rel:atheist
+					}
+				}
+				else = {
+					scope:target = {
+						set_state_religion = root.religion
+					}
 				}
 			}
 
