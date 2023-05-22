@@ -1,0 +1,48 @@
+﻿#Colonial Belize / British Honduras
+CCA_colonial_belize = {
+	dynamic_country_name = {
+		name = dyn_c_default_belize
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_belize
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+				AND = {
+					exists = c:GBR
+					NOT = {
+						is_subject_of = c:GBR
+					}
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_british_honduras
+		adjective = dyn_c_british_honduras_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+				exists = c:GBR
+				is_subject_of = c:GBR
+			}
+		}
+	}
+}

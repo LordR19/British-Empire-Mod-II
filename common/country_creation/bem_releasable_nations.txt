@@ -891,7 +891,7 @@ C3A = {
 		STATE_CONSTANTINE
 		STATE_EAST_SAHARA
 		STATE_SAHARA
-		STATE_TLEMCEN
+		STATE_ORAN
 	}
 
 	required_num_states = 1
@@ -908,7 +908,7 @@ C3A = {
 		owns_entire_state_region = STATE_CONSTANTINE
 		owns_entire_state_region = STATE_EAST_SAHARA
 		owns_entire_state_region = STATE_SAHARA
-		owns_entire_state_region = STATE_TLEMCEN
+		owns_entire_state_region = STATE_ORAN
 	}
 }
 
@@ -1455,6 +1455,17 @@ C8M = {
 	provinces = {
 		x8080B0
 	}
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	
+	ai_will_do = { always = no }
+}
+
+Colonial Belize / British Honduras
+CCA_colonial_belize = {
+	provinces = { xD0B040 x02073E x7D333F }
 
 	possible = {
 		has_technology_researched = colonization

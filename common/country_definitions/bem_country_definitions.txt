@@ -988,6 +988,21 @@ C8M = {
 	
 }
 
+#Colonial Belize / British Honduras
+CCA_colonial_belize = {
+
+	color = { 255 255 142 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_GUATEMALA
+	
+}
+
 #Colonial Burma
 CIC_colonial_burma = {
 

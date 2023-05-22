@@ -478,6 +478,13 @@
  dyn_c_default_malacca: "Malacca"
  dyn_c_colonial_malacca: "[Country.GetOverlord.GetAdjectiveNoFormatting] Malacca"
 
+ CCA_colonial_belize: "Colonial Belize"
+ CCA_colonial_belize_ADJ: "Belizean"
+ dyn_c_default_belize: "Belize"
+ dyn_c_colonial_belize: "[Country.GetOverlord.GetAdjectiveNoFormatting] Belize"
+ dyn_c_british_honduras: "[Country.GetOverlord.GetAdjectiveNoFormatting] Honduras"
+ dyn_c_british_honduras_adj: "[Country.GetOverlord.GetAdjectiveNoFormatting] Honduran"
+
  CIC_colonial_burma: "Colonial Burma"
  CIC_colonial_burma_ADJ: "Burmese"
  dyn_c_default_burma: "Burma"
