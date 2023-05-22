@@ -274,6 +274,10 @@ bem_colonial_nation_trigger = {
 			this = c:C8M
 		}
 		AND = {
+			exists = c:CCA_colonial_belize
+			this = c:CCA_colonial_belize
+		}
+		AND = {
 			exists = c:CIC_colonial_burma
 			this = c:CIC_colonial_burma
 		}

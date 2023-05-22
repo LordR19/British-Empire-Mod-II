@@ -1463,7 +1463,7 @@ C8M = {
 	ai_will_do = { always = no }
 }
 
-Colonial Belize / British Honduras
+#Colonial Belize / British Honduras
 CCA_colonial_belize = {
 	provinces = { xD0B040 x02073E x7D333F }
 
