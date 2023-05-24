@@ -19,7 +19,7 @@ SST = {
 	}
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = { always = no }
@@ -46,7 +46,7 @@ C1A = {
 	}
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -76,7 +76,7 @@ C1B = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -96,7 +96,7 @@ C1C = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = { always = no }
@@ -111,7 +111,7 @@ C1D = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -136,7 +136,7 @@ C1E = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -161,7 +161,7 @@ C1F = {
 	}
 	
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = { always = no }
@@ -176,7 +176,7 @@ C1G = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -196,7 +196,7 @@ C1H = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -228,7 +228,7 @@ C1I = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -261,7 +261,7 @@ C1K = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -284,7 +284,7 @@ C1L = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -309,7 +309,7 @@ C1M = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -337,7 +337,7 @@ C1N = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -363,7 +363,7 @@ C1O = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -393,7 +393,7 @@ C1P = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -423,7 +423,7 @@ C1R = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -443,7 +443,7 @@ C1S = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -465,7 +465,7 @@ C1T = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -487,7 +487,7 @@ C1U = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -507,7 +507,7 @@ C1V = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 
 	ai_will_do = {
@@ -529,7 +529,7 @@ C1W = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -549,7 +549,7 @@ C1Y = {
 	}
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -580,7 +580,7 @@ C1Z = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -603,7 +603,7 @@ C2A = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -625,7 +625,7 @@ C2B = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = { always = no }
@@ -641,7 +641,7 @@ C2C = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -664,7 +664,7 @@ C2E = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -687,7 +687,7 @@ C2G = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 
 	ai_will_do = {
@@ -709,7 +709,7 @@ C2I = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 
 	ai_will_do = {
@@ -731,7 +731,7 @@ C2M = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -753,7 +753,7 @@ C2N = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -774,7 +774,7 @@ C2P = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -795,7 +795,7 @@ C2R = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -820,7 +820,7 @@ C2S = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -843,7 +843,7 @@ C2T = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -873,7 +873,7 @@ C2W = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -897,7 +897,7 @@ C3A = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -923,7 +923,7 @@ C3B = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -949,7 +949,7 @@ C3C = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -973,7 +973,7 @@ C3E = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -993,7 +993,7 @@ C3G = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 
 	ai_will_do = {
@@ -1019,7 +1019,7 @@ C3I = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 
 	ai_will_do = {
@@ -1045,7 +1045,7 @@ C3M = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1065,7 +1065,7 @@ C3P = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 
 	ai_will_do = {
@@ -1086,7 +1086,7 @@ C3S = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 
 	ai_will_do = {
@@ -1107,7 +1107,7 @@ C3T = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1128,7 +1128,7 @@ C4A = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1159,7 +1159,7 @@ C4C = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1177,7 +1177,7 @@ C4G = {
 	}
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = { always = no }
@@ -1194,7 +1194,7 @@ C4M = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1214,7 +1214,7 @@ C4S = {
 	}
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = { always = no }
@@ -1229,7 +1229,7 @@ C4T = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 
 	ai_will_do = {
@@ -1255,7 +1255,7 @@ C5A = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1282,7 +1282,7 @@ C5C = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1306,7 +1306,7 @@ C5M = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1329,7 +1329,7 @@ C5S = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 
 	ai_will_do = {
@@ -1351,7 +1351,7 @@ C5T = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 
 	ai_will_do = {
@@ -1375,7 +1375,7 @@ C6C = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1398,7 +1398,7 @@ C6M = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1419,7 +1419,7 @@ C7C = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1439,7 +1439,7 @@ C7M = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1457,7 +1457,7 @@ C8M = {
 	}
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = { always = no }
@@ -1468,7 +1468,7 @@ CCA_colonial_belize = {
 	provinces = { xD0B040 x02073E x7D333F }
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = { always = no }
@@ -1487,7 +1487,7 @@ CIC_colonial_burma = {
 	required_num_states = 1
 
 	possible = {
-		has_technology_researched = colonization
+		OR = { is_country_type = recognized is_country_type = colonial }
 	}
 	
 	ai_will_do = {
@@ -1499,5 +1499,25 @@ CIC_colonial_burma = {
 		owns_entire_state_region = STATE_PEGU
 		owns_entire_state_region = STATE_SHAN_STATES
 		owns_entire_state_region = STATE_TENASSERIM
+	}
+}
+
+#Colonial Fiji
+COC_colonial_fiji = {
+	states = {
+		STATE_FIJI
+	}
+
+	required_num_states = 1
+
+	possible = {
+		OR = { is_country_type = recognized is_country_type = colonial }
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		state_is_in_southeast_asia = no
+		owns_entire_state_region = STATE_FIJI
 	}
 }

@@ -1017,3 +1017,18 @@ CIC_colonial_burma = {
 	capital = STATE_BURMA
 	
 }
+
+#Colonial Fiji
+COC_colonial_fiji = {
+
+	color = { 53 173 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_FIJI
+	
+}

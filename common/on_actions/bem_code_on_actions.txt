@@ -222,6 +222,22 @@ bem_on_country_released_as_own_subject = {
 				}
 			}
 
+			if = {
+				limit = {
+					scope:target = {
+						NOT = {
+							is_direct_subject_of = root
+						}
+					}
+				}
+				root = {
+					create_diplomatic_pact = {
+						country = scope:target
+						type = bem_colony
+					}
+				}
+			}
+
 			# Switches the Religion to the Religion of the Releasing Country
 			if = {
 				limit = {

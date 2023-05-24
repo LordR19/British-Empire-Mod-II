@@ -1,0 +1,73 @@
+#Colonial Fiji
+COC_colonial_fiji = {
+	pattern = "pattern_solid.tga"
+	color1 = { 53 173 255 }
+
+	textured_emblem = {
+		texture = "te_emblem_mermaid_fiji.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_flag_waves.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.68 } }
+	}
+}
+
+COC_colonial_fiji_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = { 53 173 255 }
+
+	textured_emblem = {
+		texture = "te_emblem_mermaid_fiji.dds"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.55 } }
+	}
+	textured_emblem = {
+		texture = "te_flag_waves.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.68 } }
+	}
+}
+
+COC_colonial_fiji_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_seal_fiji.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+COC_colonial_fiji_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = { 53 173 255 }
+
+	textured_emblem = {
+		texture = "te_emblem_mermaid_fiji.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_flag_waves.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.68 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "azure"
+		color3 = "azure"
+		instance = { scale = { 0.4 0.4 } position = { 0.18 0.2 } }
+	}
+}
+
+COC_colonial_fiji_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+
+	textured_emblem = {
+		texture = "te_emblem_mermaid_fiji.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_flag_waves.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.68 } }
+	}
+}
