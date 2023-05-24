@@ -488,6 +488,11 @@
  dyn_c_default_burma: "Burma"
  dyn_c_colonial_burma: "[Country.GetOverlord.GetAdjectiveNoFormatting] Burma"
 
+ COC_colonial_fiji: "Colonial Fiji"
+ COC_colonial_fiji_ADJ: "Fijian"
+ dyn_c_default_fiji: "Fiji"
+ dyn_c_colonial_fiji: "[Country.GetOverlord.GetAdjectiveNoFormatting] Fiji"
+
  dyn_c_south_africa_union: "Union of South Africa"
  dyn_c_south_africa_union_adj: "South African"
  dyn_c_dominion_south_africa: "Dominion of South Africa"
