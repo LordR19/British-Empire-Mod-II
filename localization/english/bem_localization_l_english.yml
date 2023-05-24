@@ -483,6 +483,13 @@
  dyn_c_british_honduras: "[Country.GetOverlord.GetAdjectiveNoFormatting] Honduras"
  dyn_c_british_honduras_adj: "[Country.GetOverlord.GetAdjectiveNoFormatting] Honduran"
 
+ CCI_colonial_west_indies: "Colonial West Indies"
+ CCI_colonial_west_indies_ADJ: "West Indian"
+ dyn_c_default_west_indies: "West Indies"
+ dyn_c_colonial_west_indies: "[Country.GetOverlord.GetAdjectiveNoFormatting] West Indies"
+ dyn_c_british_leeward_islands: "[Country.GetOverlord.GetAdjectiveNoFormatting] Leeward Islands"
+ dyn_c_british_leeward_islands_adj: "[Country.GetOverlord.GetAdjectiveNoFormatting] Leeward"
+
  CIC_colonial_burma: "Colonial Burma"
  CIC_colonial_burma_ADJ: "Burmese"
  dyn_c_default_burma: "Burma"

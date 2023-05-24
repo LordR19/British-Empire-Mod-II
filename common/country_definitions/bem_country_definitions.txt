@@ -1003,6 +1003,21 @@ CCA_colonial_belize = {
 	
 }
 
+#Colonial West Indies
+CCI_colonial_west_indies = {
+
+	color = "azure"
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_WEST_INDIES
+	
+}
+
 #Colonial Burma
 CIC_colonial_burma = {
 

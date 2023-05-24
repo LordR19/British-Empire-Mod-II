@@ -1474,6 +1474,24 @@ CCA_colonial_belize = {
 	ai_will_do = { always = no }
 }
 
+#Colonial West Indies
+CCI_colonial_west_indies = {
+	states = {
+		STATE_WEST_INDIES
+	}
+
+	possible = {
+		OR = { is_country_type = recognized is_country_type = colonial }
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		country_is_in_central_america = no
+		owns_entire_state_region = STATE_BURMA
+	}
+}
+
 #Colonial Burma
 CIC_colonial_burma = {
 	states = {
