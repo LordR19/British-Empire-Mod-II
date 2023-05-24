@@ -1493,7 +1493,7 @@ CIC_colonial_burma = {
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
 		can_have_subjects = yes
-		state_is_in_southeast_asia = no
+		country_is_in_southeast_asia = no
 		owns_entire_state_region = STATE_BURMA
 		owns_entire_state_region = STATE_KACHIN
 		owns_entire_state_region = STATE_PEGU
@@ -1517,7 +1517,7 @@ COC_colonial_fiji = {
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
 		can_have_subjects = yes
-		state_is_in_southeast_asia = no
+		bem_country_is_in_oceania = no
 		owns_entire_state_region = STATE_FIJI
 	}
 }
