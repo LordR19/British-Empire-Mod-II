@@ -1,0 +1,67 @@
+﻿#Colonial Jamaica
+CCI_colonial_jamaica = {
+	flag_definition = {
+		coa = CCI_colonial_jamaica
+		subject_canton = CCI_colonial_jamaica
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = CCI_colonial_jamaica_sub		
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = CCI_colonial_jamaica
+		subject_canton = CCI_colonial_jamaica
+		coa_with_overlord_canton = CCI_colonial_jamaica_sub	
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+		
+	flag_definition = {
+		coa = CCI_colonial_jamaica_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = CCI_colonial_jamaica_sub		
+		priority = 50
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = JAM_subject
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = JAM_subject		
+		priority = 100
+		trigger = { 
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = CCI_colonial_jamaica_monarchy
+		subject_canton = CCI_colonial_jamaica_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = CCI_colonial_jamaica_sub			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = CCI_colonial_jamaica_dictatorship
+		subject_canton = CCI_colonial_jamaica_dictatorship
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = CCI_colonial_jamaica_sub
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+}

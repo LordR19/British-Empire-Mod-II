@@ -1,4 +1,4 @@
-﻿#Protectorate of Transjordan
+﻿#Colonial Sudan
 C2S = {
 	flag_definition = {
 		coa = C2S
@@ -26,6 +26,19 @@ C2S = {
 		trigger = {
 			scope:actor = {
 				is_subject = yes
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C1C_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = C1C_sub		
+		priority = 100
+		trigger = { 
+			exists = c:C1C
+			scope:actor = {
+				is_subject_of = c:C1C
 			}
 		}
 	}

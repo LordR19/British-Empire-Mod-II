@@ -1,0 +1,100 @@
+#Colonial Jamaica
+CCI_colonial_jamaica = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+
+	colored_emblem = {
+		texture = "ce_flag_border_rectangle.dds"
+		color1 = "yellow"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_aligator_jamaica.dds"
+		color1 = "green"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.7 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_pineapple_jamaica.dds"
+		color1 = "yellow_light"
+		color2 = "green"
+		instance = { scale = { 0.35 0.35 } position = { 0.5 0.3 } }
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.3 } }
+		instance = { scale = { 0.35 0.35 } position = { 0.25 0.3 } }
+	}
+}
+
+CCI_colonial_jamaica_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+
+	colored_emblem = {
+		texture = "ce_flag_border_rectangle.dds"
+		color1 = "yellow"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_aligator_jamaica.dds"
+		color1 = "green"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.7 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_pineapple_jamaica.dds"
+		color1 = "yellow_light"
+		color2 = "green"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.35 } }
+	}
+}
+
+CCI_colonial_jamaica_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+
+	colored_emblem = {
+		texture = "ce_flag_border_rectangle.dds"
+		color1 = "yellow"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_aligator_jamaica.dds"
+		color1 = "green"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.7 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_pineapple_jamaica.dds"
+		color1 = "yellow_light"
+		color2 = "green"
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.3 } }
+		instance = { scale = { 0.35 0.35 } position = { 0.25 0.3 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "green"
+		color3 = "azure"
+		instance = { scale = { 0.4 0.4 } position = { 0.5 0.33 } }
+	}
+}
+
+CCI_colonial_jamaica_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+
+	colored_emblem = {
+		texture = "ce_flag_border_rectangle.dds"
+		color1 = "black"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_aligator_jamaica.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.7 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_pineapple_jamaica.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.35 0.35 } position = { 0.5 0.3 } }
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.3 } }
+		instance = { scale = { 0.35 0.35 } position = { 0.25 0.3 } }
+	}
+}

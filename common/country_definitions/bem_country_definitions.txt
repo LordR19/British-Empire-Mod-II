@@ -1003,6 +1003,21 @@ CCA_colonial_belize = {
 	
 }
 
+#Colonial Jamaica
+CCI_colonial_jamaica = {
+
+	color = {255 255 0}
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_JAMAICA
+	
+}
+
 #Colonial West Indies
 CCI_colonial_west_indies = {
 

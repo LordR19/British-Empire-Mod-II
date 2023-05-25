@@ -44,10 +44,23 @@ C5M = {
 	}
 
 	flag_definition = {
+		coa = C5M_sub_italian
+		allow_overlord_canton = no
+		coa_with_overlord_canton = C5M_sub_italian		
+		priority = 100
+		trigger = { 
+			exists = c:ITA
+			scope:actor = {
+				is_subject_of = c:ITA
+			}
+		}
+	}
+
+	flag_definition = {
 		coa = C5M_sub_french
 		allow_overlord_canton = yes
 		coa_with_overlord_canton = C5M_sub_french
-		overlord_canton_scale = { 0.3 0.3 }			
+		overlord_canton_scale = { 0.3 0.3 }
 		priority = 100
 		trigger = { 
 			exists = c:FRA

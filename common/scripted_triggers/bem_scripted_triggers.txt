@@ -278,6 +278,10 @@ bem_colonial_nation_trigger = {
 			this = c:CCA_colonial_belize
 		}
 		AND = {
+			exists = c:CCI_colonial_jamaica
+			this = c:CCI_colonial_jamaica
+		}
+		AND = {
 			exists = c:CCI_colonial_west_indies
 			this = c:CCI_colonial_west_indies
 		}

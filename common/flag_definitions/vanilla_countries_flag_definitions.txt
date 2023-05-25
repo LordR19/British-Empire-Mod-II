@@ -188,16 +188,13 @@ SAF = { # South Africa
 		priority = 1001
 		trigger = { 
 			coa_def_british_ensign_trigger = yes
-			OR = {
-				scope:actor = {
-					owns_entire_state_region = STATE_CAPE_COLONY
-					owns_entire_state_region = STATE_EASTERN_CAPE
-					owns_entire_state_region = STATE_NORTHERN_CAPE
-					owns_entire_state_region = STATE_TRANSVAAL
-					owns_entire_state_region = STATE_VRYSTAAT
-					owns_entire_state_region = STATE_ZULULAND
-				}
-				has_global_variable = bem_south_africa_flag_global_var
+			scope:actor = {
+				owns_entire_state_region = STATE_CAPE_COLONY
+				owns_entire_state_region = STATE_EASTERN_CAPE
+				owns_entire_state_region = STATE_NORTHERN_CAPE
+				owns_entire_state_region = STATE_TRANSVAAL
+				owns_entire_state_region = STATE_VRYSTAAT
+				owns_entire_state_region = STATE_ZULULAND
 			}
 		}
 	}

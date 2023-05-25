@@ -31,6 +31,25 @@ C3T = {
 	}
 
 	flag_definition = {
+		coa = TUN
+		allow_overlord_canton = yes			
+		subject_canton = TUN
+		overlord_canton_scale = { 0.402 0.402 }
+		priority = 75
+		trigger = { 
+			scope:actor = {
+				is_subject = yes
+				scope:actor = {
+					OR = {
+						country_has_state_religion = rel:sunni
+						country_has_state_religion = rel:shiite
+					}
+				}
+			}
+		}
+	}
+
+	flag_definition = {
 		coa = C3T_sub_british
 		allow_overlord_canton = yes
 		coa_with_overlord_canton = C3T_sub_british		
@@ -39,6 +58,19 @@ C3T = {
 			exists = c:GBR
 			scope:actor = {
 				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C3T_sub_italian
+		allow_overlord_canton = no
+		coa_with_overlord_canton = C3T_sub_italian		
+		priority = 100
+		trigger = { 
+			exists = c:ITA
+			scope:actor = {
+				is_subject_of = c:ITA
 			}
 		}
 	}

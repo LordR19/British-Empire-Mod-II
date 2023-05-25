@@ -44,16 +44,15 @@ C1C = {
 	}
 
 	flag_definition = {
-		coa = CYP_subject
-		allow_overlord_canton = yes
-		coa_with_overlord_canton = CYP_subject		
-		priority = 101
+		coa = C1C_sub_italian
+		allow_overlord_canton = no
+		coa_with_overlord_canton = C1C_sub_italian		
+		priority = 100
 		trigger = { 
-			exists = c:GBR
+			exists = c:ITA
 			scope:actor = {
-				is_subject_of = c:GBR
+				is_subject_of = c:ITA
 			}
-			has_global_variable = bem_cyprus_flag_global_var
 		}
 	}
 
