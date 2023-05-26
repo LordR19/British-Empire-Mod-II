@@ -1092,3 +1092,18 @@ COC_colonial_fiji = {
 	capital = STATE_FIJI
 	
 }
+
+#Colonial East Micronesia / Gilbert Islands
+COC_colonial_east_micronesia = {
+
+	color = { 255 0 0 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_EAST_MICRONESIA
+	
+}

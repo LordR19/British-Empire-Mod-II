@@ -1,0 +1,100 @@
+#Colonial East Micronesia / Gilbert Islands
+COC_colonial_east_micronesia = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_emblem_seagull_gilbert_islands.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.25 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_sun_gilbert_islands.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.67 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves.dds"
+		color1 = { 255 255 255 }
+		color2 = "blue"
+		instance = { scale = { 1 1 } position = { 0.5 0.8 } }
+	}
+}
+
+COC_colonial_east_micronesia_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_emblem_seagull_gilbert_islands.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.25 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_sun_gilbert_islands.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.55 0.55 } position = { 0.75 0.67 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves.dds"
+		color1 = { 255 255 255 }
+		color2 = "blue"
+		instance = { scale = { 1 1 } position = { 0.5 0.8 } }
+	}
+}
+
+COC_colonial_east_micronesia_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_seal_gilbert_islands.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+}
+
+COC_colonial_east_micronesia_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_emblem_sun_gilbert_islands.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.67 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves.dds"
+		color1 = { 255 255 255 }
+		color2 = "blue"
+		instance = { scale = { 1 1 } position = { 0.5 0.8 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow"
+		color2 = "azure"
+		color3 = "azure"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.25 } }
+	}
+}
+
+COC_colonial_east_micronesia_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_emblem_seagull_gilbert_islands.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.25 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_sun_gilbert_islands.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.67 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves.dds"
+		color1 = "black"
+		color2 = "yellow"
+		instance = { scale = { 1 1 } position = { 0.5 0.8 } }
+	}
+}
