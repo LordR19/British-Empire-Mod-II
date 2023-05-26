@@ -483,6 +483,11 @@
  dyn_c_british_honduras: "[Country.GetOverlord.GetAdjectiveNoFormatting] Honduras"
  dyn_c_british_honduras_adj: "[Country.GetOverlord.GetAdjectiveNoFormatting] Honduran"
 
+ CCI_colonial_bahamas: "Colonial Bahamas"
+ CCI_colonial_bahamas_ADJ: "Bahamian"
+ dyn_c_default_bahamas: "Bahamas"
+ dyn_c_colonial_bahamas: "[Country.GetOverlord.GetAdjectiveNoFormatting] Bahamas"
+
  CCI_colonial_jamaica: "Colonial Jamaica"
  CCI_colonial_jamaica_ADJ: "Jamaican"
  dyn_c_default_jamaica: "Jamaica"

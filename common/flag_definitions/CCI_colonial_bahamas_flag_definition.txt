@@ -1,0 +1,67 @@
+﻿#Colonial Bahamas
+CCI_colonial_bahamas = {
+	flag_definition = {
+		coa = CCI_colonial_bahamas
+		subject_canton = CCI_colonial_bahamas
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = CCI_colonial_bahamas_sub		
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = CCI_colonial_bahamas
+		subject_canton = CCI_colonial_bahamas
+		coa_with_overlord_canton = CCI_colonial_bahamas_sub	
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+		
+	flag_definition = {
+		coa = CCI_colonial_bahamas_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = CCI_colonial_bahamas_sub		
+		priority = 50
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = BAH_subject
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = BAH_subject		
+		priority = 100
+		trigger = { 
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = CCI_colonial_bahamas_monarchy
+		subject_canton = CCI_colonial_bahamas_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = CCI_colonial_bahamas_sub			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = CCI_colonial_bahamas_dictatorship
+		subject_canton = CCI_colonial_bahamas_dictatorship
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = CCI_colonial_bahamas_sub
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+}
