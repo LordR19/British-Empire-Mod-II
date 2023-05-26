@@ -988,6 +988,21 @@ C8M = {
 	
 }
 
+#Colonial Newfoundland
+CNA_colonial_newfoundland = {
+
+	color = { 255 22 22 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_NEWFOUNDLAND
+	
+}
+
 #Colonial Belize / British Honduras
 CCA_colonial_belize = {
 

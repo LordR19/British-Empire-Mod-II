@@ -1,0 +1,26 @@
+﻿#Colonial Newfoundland
+CNA_colonial_newfoundland = {
+	dynamic_country_name = {
+		name = dyn_c_default_newfoundland
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_newfoundland
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}

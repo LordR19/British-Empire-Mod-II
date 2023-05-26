@@ -476,6 +476,11 @@
  dyn_c_default_malacca: "Malacca"
  dyn_c_colonial_malacca: "[Country.GetOverlord.GetAdjectiveNoFormatting] Malacca"
 
+ CNA_colonial_newfoundland: "Colonial Newfoundland"
+ CNA_colonial_newfoundland_ADJ: "Newfoundland"
+ dyn_c_default_newfoundland: "Newfoundland"
+ dyn_c_colonial_newfoundland: "[Country.GetOverlord.GetAdjectiveNoFormatting] Newfoundland"
+
  CCA_colonial_belize: "Colonial Belize"
  CCA_colonial_belize_ADJ: "Belizean"
  dyn_c_default_belize: "Belize"

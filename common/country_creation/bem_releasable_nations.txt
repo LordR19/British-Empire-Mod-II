@@ -1463,6 +1463,26 @@ C8M = {
 	ai_will_do = { always = no }
 }
 
+#Colonial Newfoundland
+CNA_colonial_newfoundland = {
+	states = {
+		STATE_NEWFOUNDLAND
+	}
+
+	possible = {
+		OR = { is_country_type = recognized is_country_type = colonial }
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		country_is_in_north_america = no
+		country_is_in_central_america = no
+		country_is_in_south_america = no
+		owns_entire_state_region = STATE_NEWFOUNDLAND
+	}
+}
+
 #Colonial Belize / British Honduras
 CCA_colonial_belize = {
 	provinces = { xD0B040 x02073E x7D333F }
@@ -1487,7 +1507,9 @@ CCI_colonial_bahamas = {
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
 		can_have_subjects = yes
+		country_is_in_north_america = no
 		country_is_in_central_america = no
+		country_is_in_south_america = no
 		owns_entire_state_region = STATE_BAHAMAS
 	}
 }
@@ -1505,7 +1527,9 @@ CCI_colonial_jamaica = {
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
 		can_have_subjects = yes
+		country_is_in_north_america = no
 		country_is_in_central_america = no
+		country_is_in_south_america = no
 		owns_entire_state_region = STATE_JAMAICA
 	}
 }
@@ -1523,7 +1547,9 @@ CCI_colonial_west_indies = {
 	ai_will_do = {
 		has_game_rule = bem_colonial_nations_release
 		can_have_subjects = yes
+		country_is_in_north_america = no
 		country_is_in_central_america = no
+		country_is_in_south_america = no
 		owns_entire_state_region = STATE_WEST_INDIES
 	}
 }
