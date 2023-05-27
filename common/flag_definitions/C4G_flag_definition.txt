@@ -17,15 +17,16 @@ C4G = {
 			coa_def_republic_flag_trigger = yes
 		}
 	}
-		
+
 	flag_definition = {
-		coa = C4G_sub
-		allow_overlord_canton = yes
-		coa_with_overlord_canton = C4G_sub		
-		priority = 50
-		trigger = {
+		coa = C4G_sub_italian
+		allow_overlord_canton = no
+		coa_with_overlord_canton = C4G_sub_italian		
+		priority = 100
+		trigger = { 
+			exists = c:ITA
 			scope:actor = {
-				is_subject = yes
+				is_subject_of = c:ITA
 			}
 		}
 	}

@@ -44,6 +44,19 @@ CCI_colonial_jamaica = {
 	}
 
 	flag_definition = {
+		coa = CCI_colonial_jamaica_sub_italian
+		allow_overlord_canton = no
+		coa_with_overlord_canton = CCI_colonial_jamaica_sub_italian		
+		priority = 100
+		trigger = { 
+			exists = c:ITA
+			scope:actor = {
+				is_subject_of = c:ITA
+			}
+		}
+	}
+
+	flag_definition = {
 		coa = CCI_colonial_jamaica_monarchy
 		subject_canton = CCI_colonial_jamaica_monarchy
 		allow_overlord_canton = yes	

@@ -44,6 +44,19 @@ C6M = {
 	}
 
 	flag_definition = {
+		coa = C6M_sub_italian
+		allow_overlord_canton = no
+		coa_with_overlord_canton = C6M_sub_italian		
+		priority = 100
+		trigger = { 
+			exists = c:ITA
+			scope:actor = {
+				is_subject_of = c:ITA
+			}
+		}
+	}
+
+	flag_definition = {
 		coa = C6M_monarchy
 		subject_canton = C6M_monarchy
 		allow_overlord_canton = yes	

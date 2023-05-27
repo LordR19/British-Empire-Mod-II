@@ -17,7 +17,7 @@ CIC_colonial_burma = {
 			coa_def_republic_flag_trigger = yes
 		}
 	}
-		
+
 	flag_definition = {
 		coa = CIC_colonial_burma_sub
 		allow_overlord_canton = yes
@@ -39,6 +39,19 @@ CIC_colonial_burma = {
 			exists = c:GBR
 			scope:actor = {
 				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = CIC_colonial_burma_sub_italian
+		allow_overlord_canton = no
+		coa_with_overlord_canton = CIC_colonial_burma_sub_italian		
+		priority = 100
+		trigger = { 
+			exists = c:ITA
+			scope:actor = {
+				is_subject_of = c:ITA
 			}
 		}
 	}

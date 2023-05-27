@@ -46,6 +46,19 @@ CNA_colonial_newfoundland = {
 	}
 
 	flag_definition = {
+		coa = CNA_colonial_newfoundland_sub_italian
+		allow_overlord_canton = no
+		coa_with_overlord_canton = CNA_colonial_newfoundland_sub_italian		
+		priority = 100
+		trigger = { 
+			exists = c:ITA
+			scope:actor = {
+				is_subject_of = c:ITA
+			}
+		}
+	}
+
+	flag_definition = {
 		coa = CNA_colonial_newfoundland_monarchy
 		subject_canton = CNA_colonial_newfoundland_monarchy
 		allow_overlord_canton = yes	

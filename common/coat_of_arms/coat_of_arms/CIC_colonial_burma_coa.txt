@@ -45,6 +45,33 @@ CIC_colonial_burma_sub_british = {
 	}
 }
 
+CIC_colonial_burma_sub_italian = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "orange"
+		color2 = "green"
+		instance = { scale = { 0.25 0.25 } position = { 0.224 0.25 } rotation = 180 }
+	}
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "red"
+		color2 = "white"
+		instance = { scale = { 0.25 0.25 } position = { 0.3 0.25 } rotation = 180 }
+	}
+	textured_emblem = {
+		texture = "te_peacock.dds"
+		instance = { scale = { 0.7 0.7 } position = { 0.63 0.52 } }
+	}
+}
+
 CIC_colonial_burma_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"

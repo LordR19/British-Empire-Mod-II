@@ -53,6 +53,35 @@ C6M_sub_british = {
 	}
 }
 
+C6M_sub_italian = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "orange"
+		color2 = "green"
+		instance = { scale = { 0.25 0.25 } position = { 0.224 0.25 } rotation = 180 }
+	}
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "red"
+		color2 = "white"
+		instance = { scale = { 0.25 0.25 } position = { 0.3 0.25 } rotation = 180 }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_dates.dds"
+		color1 = "green"
+		color2 = "green_dark"
+		instance = { scale = { 0.65 0.65 } position = { 0.63 0.5 } }
+	}
+}
+
 C6M_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"

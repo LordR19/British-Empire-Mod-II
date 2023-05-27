@@ -44,6 +44,19 @@ C2N = {
 	}
 
 	flag_definition = {
+		coa = C2N_sub_italian
+		allow_overlord_canton = no
+		coa_with_overlord_canton = C2N_sub_italian		
+		priority = 100
+		trigger = { 
+			exists = c:ITA
+			scope:actor = {
+				is_subject_of = c:ITA
+			}
+		}
+	}
+
+	flag_definition = {
 		coa = C2N_monarchy
 		subject_canton = C2N_monarchy
 		allow_overlord_canton = yes	

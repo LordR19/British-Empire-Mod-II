@@ -45,6 +45,19 @@ C3P = {
 	}
 
 	flag_definition = {
+		coa = C3P_sub_italian
+		allow_overlord_canton = no
+		coa_with_overlord_canton = C3P_sub_italian		
+		priority = 100
+		trigger = { 
+			exists = c:ITA
+			scope:actor = {
+				is_subject_of = c:ITA
+			}
+		}
+	}
+
+	flag_definition = {
 		coa = C3P_monarchy
 		subject_canton = C3P_monarchy
 		allow_overlord_canton = yes	
