@@ -298,12 +298,16 @@ bem_colonial_nation_trigger = {
 			this = c:CIC_colonial_burma
 		}
 		AND = {
-			exists = c:COC_colonial_fiji
-			this = c:COC_colonial_fiji
+			exists = c:COC_colonial_west_micronesia
+			this = c:COC_colonial_west_micronesia
 		}
 		AND = {
 			exists = c:COC_colonial_east_micronesia
 			this = c:COC_colonial_east_micronesia
+		}
+		AND = {
+			exists = c:COC_colonial_fiji
+			this = c:COC_colonial_fiji
 		}
 	}
 }

@@ -1078,10 +1078,10 @@ CIC_colonial_burma = {
 	
 }
 
-#Colonial Fiji
-COC_colonial_fiji = {
+#Colonial West Micronesia
+COC_colonial_west_micronesia = {
 
-	color = { 53 173 255 }
+	color = { 170 170 255 }
 	
 	country_type = colonial
 	
@@ -1089,7 +1089,7 @@ COC_colonial_fiji = {
 
 	cultures = { british }
 	
-	capital = STATE_FIJI
+	capital = STATE_WEST_MICRONESIA
 	
 }
 
@@ -1105,5 +1105,20 @@ COC_colonial_east_micronesia = {
 	cultures = { british }
 	
 	capital = STATE_EAST_MICRONESIA
+	
+}
+
+#Colonial Fiji
+COC_colonial_fiji = {
+
+	color = { 53 173 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_FIJI
 	
 }

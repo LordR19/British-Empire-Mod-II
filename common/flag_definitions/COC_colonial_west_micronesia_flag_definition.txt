@@ -1,0 +1,80 @@
+﻿#Colonial West Micronesia
+COC_colonial_west_micronesia = {
+	flag_definition = {
+		coa = COC_colonial_west_micronesia
+		subject_canton = COC_colonial_west_micronesia
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = COC_colonial_west_micronesia_sub		
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = COC_colonial_west_micronesia
+		subject_canton = COC_colonial_west_micronesia
+		coa_with_overlord_canton = COC_colonial_west_micronesia_sub	
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+		
+	flag_definition = {
+		coa = COC_colonial_west_micronesia_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = COC_colonial_west_micronesia_sub		
+		priority = 50
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = COC_colonial_west_micronesia_sub_british
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = COC_colonial_west_micronesia_sub_british		
+		priority = 100
+		trigger = { 
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = COC_colonial_west_micronesia_sub_italian
+		allow_overlord_canton = no
+		coa_with_overlord_canton = COC_colonial_west_micronesia_sub_italian		
+		priority = 100
+		trigger = { 
+			exists = c:ITA
+			scope:actor = {
+				is_subject_of = c:ITA
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = COC_colonial_west_micronesia_monarchy
+		subject_canton = COC_colonial_west_micronesia_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = COC_colonial_west_micronesia_sub			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = COC_colonial_west_micronesia_dictatorship
+		subject_canton = COC_colonial_west_micronesia_dictatorship
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = COC_colonial_west_micronesia_sub
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+}
