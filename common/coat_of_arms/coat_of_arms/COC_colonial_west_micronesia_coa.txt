@@ -42,22 +42,17 @@ COC_colonial_west_micronesia_sub_british = {
 	colored_emblem = {
 		texture = "ce_frame_circle.dds"
 		color1 = "white"
-		instance = { scale = { 0.52 0.52 } position = { 0.75 0.5 } }
-	}
-	colored_emblem = {
-		texture = "ce_frame_circle.dds"
-		color1 = "azure"
 		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
 	}
 	colored_emblem = {
 		texture = "ce_star_05.dds"
-		color1 = "white"
+		color1 = "red"
 		instance = { scale = { 0.12 0.12 } position = { 0.75 0.35 } }
 		instance = { scale = { 0.12 0.12 } position = { 0.75 0.65 } rotation = 180 }
 	}
 	colored_emblem = {
 		texture = "ce_star_05_tilted.dds"
-		color1 = "white"
+		color1 = "red"
 		instance = { scale = { 0.12 0.12 } position = { 0.66 0.5 } }
 		instance = { scale = { 0.12 0.12 } position = { 0.84 0.5 } rotation = 180 }
 	}
