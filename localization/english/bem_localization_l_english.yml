@@ -527,6 +527,11 @@
  dyn_c_default_nauru: "Nauru" 
  dyn_c_colonial_nauru: "[Country.GetOverlord.GetAdjectiveNoFormatting] Nauru"
 
+ COC_colonial_bougainville: "Colonial Bougainville"
+ COC_colonial_bougainville_ADJ: "Bougainvillean"
+ dyn_c_default_bougainville: "Bougainville"
+ dyn_c_colonial_bougainville: "[Country.GetOverlord.GetAdjectiveNoFormatting] Bougainville"
+
  COC_colonial_fiji: "Colonial Fiji"
  COC_colonial_fiji_ADJ: "Fijian"
  dyn_c_default_fiji: "Fiji"

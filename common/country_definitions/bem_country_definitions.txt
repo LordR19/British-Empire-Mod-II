@@ -1123,6 +1123,21 @@ COC_colonial_nauru = {
 	
 }
 
+#Colonial Bougainville
+COC_colonial_bougainville = {
+
+	color = { 255 32 22 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_BOUGAINVILLE
+	
+}
+
 #Colonial Fiji
 COC_colonial_fiji = {
 
