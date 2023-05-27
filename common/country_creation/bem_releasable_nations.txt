@@ -1618,6 +1618,24 @@ COC_colonial_east_micronesia = {
 	}
 }
 
+#Colonial Nauru
+COC_colonial_nauru = {
+	states = {
+		STATE_NAURU
+	}
+
+	possible = {
+		OR = { is_country_type = recognized is_country_type = colonial }
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		bem_country_is_in_oceania = no
+		owns_entire_state_region = STATE_NAURU
+	}
+}
+
 #Colonial Fiji
 COC_colonial_fiji = {
 	states = {

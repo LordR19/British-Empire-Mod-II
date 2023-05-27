@@ -1,0 +1,120 @@
+#Colonial Nauru
+COC_colonial_nauru = {
+	pattern = "pattern_solid.tga"
+	color1 = "azure"
+
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = "white"
+		instance = { scale = { 1 0.25 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_armillary_sphere.dds"
+		color1 = "white"
+		instance = { scale = { 0.45 0.45 } position = { 0.25 0.72 } }
+	}
+}
+
+COC_colonial_nauru_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "azure"
+
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = "white"
+		instance = { scale = { 1 0.25 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_armillary_sphere.dds"
+		color1 = "white"
+		instance = { scale = { 0.45 0.45 } position = { 0.75 0.72 } }
+	}
+}
+
+COC_colonial_nauru_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.335 0.1 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_armillary_sphere.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.25 0.25 } position = { 0.75 0.62 } }
+	}
+}
+
+COC_colonial_nauru_sub_italian = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "orange"
+		color2 = "green"
+		instance = { scale = { 0.25 0.25 } position = { 0.224 0.25 } rotation = 180 }
+	}
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "red"
+		color2 = "white"
+		instance = { scale = { 0.25 0.25 } position = { 0.3 0.25 } rotation = 180 }
+	}
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = "green"
+		instance = { scale = { 0.8 0.25 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_armillary_sphere.dds"
+		color1 = "green"
+		instance = { scale = { 0.4 0.4 } position = { 0.63 0.7 } }
+	}
+}
+
+COC_colonial_nauru_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "azure"
+
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = "white"
+		instance = { scale = { 1 0.25 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "white"
+		color2 = "azure"
+		color3 = "azure"
+		instance = { scale = { 0.6 0.6 } position = { 0.25 0.72 } }
+	}
+}
+
+COC_colonial_nauru_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = "yellow"
+		instance = { scale = { 1 0.25 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_armillary_sphere.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.45 0.45 } position = { 0.25 0.72 } }
+	}
+}

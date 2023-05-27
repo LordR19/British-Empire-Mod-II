@@ -1108,6 +1108,21 @@ COC_colonial_east_micronesia = {
 	
 }
 
+#Colonial Nauru
+COC_colonial_nauru = {
+
+	color = { 64 84 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_NAURU
+	
+}
+
 #Colonial Fiji
 COC_colonial_fiji = {
 

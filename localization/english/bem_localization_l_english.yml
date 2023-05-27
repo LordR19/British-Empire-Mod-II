@@ -522,6 +522,11 @@
  dyn_c_british_gilbert_islands: "[Country.GetOverlord.GetAdjectiveNoFormatting] Gilbert Islands"
  dyn_c_british_gilbert_islands_adj: "[Country.GetOverlord.GetAdjectiveNoFormatting] Gilbertese"
 
+ COC_colonial_nauru: "Colonial Nauru"
+ COC_colonial_nauru_ADJ: "Nauruan"
+ dyn_c_default_nauru: "Nauru" 
+ dyn_c_colonial_nauru: "[Country.GetOverlord.GetAdjectiveNoFormatting] Nauru"
+
  COC_colonial_fiji: "Colonial Fiji"
  COC_colonial_fiji_ADJ: "Fijian"
  dyn_c_default_fiji: "Fiji"
