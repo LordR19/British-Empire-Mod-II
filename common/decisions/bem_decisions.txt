@@ -49,9 +49,19 @@ bem_name_south_africa_dominion_decision ={
 		has_variable = show_bem_decisions_var
 		exists = c:GBR
 		this = c:GBR
-		exists = c:SAF
-		c:SAF = {
-			is_subject_of = c:GBR
+		OR = {
+			AND = {
+				exists = c:SAF
+				c:SAF = {
+					is_subject_of = c:GBR
+				}
+			}
+			AND = {
+				exists = c:C6C
+				c:C6C = {
+					is_subject_of = c:GBR
+				}
+			}
 		}
 		NOT = {
 			has_global_variable = bem_south_africa_dominion_global_var
@@ -80,9 +90,19 @@ bem_name_south_africa_default_decision ={
 		has_variable = show_bem_decisions_var
 		exists = c:GBR
 		this = c:GBR
-		exists = c:SAF
-		c:SAF = {
-			is_subject_of = c:GBR
+		OR = {
+			AND = {
+				exists = c:SAF
+				c:SAF = {
+					is_subject_of = c:GBR
+				}
+			}
+			AND = {
+				exists = c:C6C
+				c:C6C = {
+					is_subject_of = c:GBR
+				}
+			}
 		}
 		has_global_variable = bem_south_africa_dominion_global_var
 		is_player = yes
@@ -106,9 +126,19 @@ bem_flag_south_africa_decision ={
 		has_variable = show_bem_decisions_var
 		exists = c:GBR
 		this = c:GBR
-		exists = c:SAF
-		c:SAF = {
-			is_subject_of = c:GBR
+		OR = {
+			AND = {
+				exists = c:SAF
+				c:SAF = {
+					is_subject_of = c:GBR
+				}
+			}
+			AND = {
+				exists = c:C6C
+				c:C6C = {
+					is_subject_of = c:GBR
+				}
+			}
 		}
 		NOT = {
 			has_global_variable = bem_south_africa_flag_global_var
@@ -134,9 +164,19 @@ bem_flag_south_africa_default_decision ={
 		has_variable = show_bem_decisions_var
 		exists = c:GBR
 		this = c:GBR
-		exists = c:SAF
-		c:SAF = {
-			is_subject_of = c:GBR
+		OR = {
+			AND = {
+				exists = c:SAF
+				c:SAF = {
+					is_subject_of = c:GBR
+				}
+			}
+			AND = {
+				exists = c:C6C
+				c:C6C = {
+					is_subject_of = c:GBR
+				}
+			}
 		}
 		has_global_variable = bem_south_africa_flag_global_var
 		is_player = yes

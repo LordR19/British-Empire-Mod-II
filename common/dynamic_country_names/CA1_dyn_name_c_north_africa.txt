@@ -60,7 +60,7 @@
 						country_has_primary_culture  = cu:misri
 						country_has_primary_culture  = cu:mashriqi
 						country_has_primary_culture  = cu:bedouin
-						country_has_primary_culture  = cu:amazigh
+						country_has_primary_culture  = cu:berber
 						country_has_primary_culture  = cu:yemenite
 					}
 				}

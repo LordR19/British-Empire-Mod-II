@@ -76,5 +76,23 @@ C6C = {
 		trigger = {
 			coa_def_dictatorship_flag_trigger = yes
 		}
-	}	
+	}
+	
+	flag_definition = { #Union of South Africa
+		coa = SAF_ensign
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = SAF_ensign
+		priority = 1001
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_CAPE_COLONY
+				owns_entire_state_region = STATE_EASTERN_CAPE
+				owns_entire_state_region = STATE_NORTHERN_CAPE
+				owns_entire_state_region = STATE_TRANSVAAL
+				owns_entire_state_region = STATE_VRYSTAAT
+				owns_entire_state_region = STATE_ZULULAND
+			}
+		}
+	}
 }
