@@ -1,4 +1,771 @@
-﻿#Hong Kong
+﻿### Colonial Region North Africa / Maghreb ###
+
+#Colonial Region North Africa / Maghreb
+CA1 = {
+
+	color = { 255 255 142 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_TUNISIA
+	
+}
+
+#Colonial Libya
+C1L = {
+
+	color = { 43 107 21  }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_TRIPOLI
+	
+}
+
+#Colonial Tunisia
+C3T = {
+
+	color = { 230 42 0  }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_TUNISIA
+	
+}
+
+#Colonial Algeria
+C3A = {
+
+	color = { 243 211 211 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_ALGIERS
+	
+}
+
+#Colonial Morocco
+C5M = {
+
+	color = { 0 98 51 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_MARRAKECH
+	
+}
+
+#Colonial West Sahara
+C2W = {
+
+	color = { 255 175 111 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_WEST_SAHARA
+	
+}
+
+################################################
+
+### Colonial Region West Africa / (Senegal) ###
+
+#Colonial West Africa
+CWA_colonial_west_africa = {
+
+	color = { 0 98 0 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_SENEGAL
+	
+}
+
+#Colonial Mauritania
+C6M = {
+
+	color = { 208 28 31  }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_MAURITANIA
+	
+}
+
+#Colonial Senegal
+C3S = {
+
+	color = { 0 133 63 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { british }
+
+	capital = STATE_SENEGAL
+
+}
+
+#Colonial Guinea
+C2G = {
+
+	color = { 252 252 112 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { british }
+
+	capital = STATE_GUINEA
+
+}
+
+#Colony of Mali
+C4M = {
+
+	color = { 20 181 58  }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_WESTERN_MALI
+	
+}
+
+#Colonial Pepper Coast
+C3P = {
+
+	color = { 123 11 4 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { british }
+
+	capital = STATE_LIBERIA
+
+}
+
+#Colonial Ivory Coast
+C2I = {
+
+	color = { 0 250 147 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { british }
+
+	capital = STATE_IVORY_COAST
+
+}
+
+#Colonial Upper Volta
+C1V = {
+
+	color = { 235 34 4 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { british }
+
+	capital = STATE_VOLTA
+
+}
+
+#Colonial Gold Coast
+C3G = {
+
+	color = { 42 52 52 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { british }
+
+	capital = STATE_GHANA
+
+}
+
+################################################
+
+### Colonial Region Greater Nigeria ###
+
+#Colonial Greater Nigeria
+CGN_colonial_greater_nigeria = {
+
+	color = { 142 255 142 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	cultures = { british }
+
+	capital = STATE_YORUBA_STATES
+
+}
+
+#Colonial Togo
+C4T = {
+
+	color = "green_dark"
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { british }
+
+	capital = STATE_TOGO
+
+}
+
+#Colonial Dahomey
+C1D = {
+
+	color = { 252 210 15 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_DAHOMEY
+
+}
+
+#Protectorate of Nigeria
+C1N = {
+
+	color = { 30 80 0 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_YORUBA_STATES
+	
+}
+
+#Colony of Niger
+C2N = {
+
+	color = { 224 82 6 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_OUTER_HAUSALAND
+	
+}
+
+#Colony of Chad
+C5C = {
+
+	color = { 0 38 100 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+
+	capital = STATE_WADDAI
+
+}
+
+#Protectorate of North Cameroon
+C2C = {
+
+	color = "yellow"
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_NORTH_CAMEROON
+	
+}
+
+################################################
+
+### Colonial Region Nile Basin ###
+
+#Colonial Greater Egypt
+CGE_colonial_greater_egypt = {
+
+	color = { 255  180  115 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_LOWER_EGYPT
+	
+}
+
+#Colonial Egypt
+C1E = {
+
+	color = { 255  160  100 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_LOWER_EGYPT
+	
+}
+
+#Protectorate of Sudan
+C2S = {
+
+	color = { 0 60 160 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_BLUE_NILE
+	
+}
+
+#Colonial South Sudan
+C5S = {
+
+	color = { 42 255 42 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { british }
+
+	capital = STATE_EQUATORIA
+
+}
+
+################################################
+
+### Ethiopia Region Countries ###
+
+#Colonial Greater Ethiopia
+CET_colonial_greater_ethiopia = {
+
+	color = { 0 50 145 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_OROMIA
+	
+}
+
+#Colony of Ethiopia
+C2E = {
+
+	color = { 23 108 0 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_OROMIA
+	
+}
+
+#Colony of Eritrea
+C3E = {
+
+	color = { 222 185 0 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_ERITREA
+	
+}
+
+#Protectorate of Somaliland
+C1S = {
+
+	color = { 11 70 220 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_SOMALILAND
+	
+}
+
+################################################
+
+### Zanj Region Countries ###
+
+#Colonial East Africa
+CEA_colonial_east_africa = {
+
+	color = { 255 88 88 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_KENYA
+	
+}
+
+#Protectorate of Uganda
+C1U = {
+
+	color = { 230 170 0 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_UGANDA
+	
+}
+
+#Protectorate of Kenya
+C1K = {
+
+	color = { 100 0 0 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_KENYA
+	
+}
+
+#Tanganyika Territory
+C1T = {
+
+	color = { 0 100 20 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_ZANZIBAR
+	
+}
+
+#Mocambique / SE Africa
+C1M = {
+
+	color = { 255 200 85 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_MOCAMBIQUE
+	
+}
+
+#Colony of Madagascar
+C2M = {
+
+	color = "green"
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_NORTH_MADAGASCAR
+	
+}
+
+################################################
+
+### Congo Region Countries ###
+
+#Colonial Greater Congo
+CGC_colonial_greater_congo = {
+
+	color = { 0 200 0 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_BAS_CONGO
+	
+}
+
+#Colony of Gabon
+C1G = {
+
+	color = { 20 200 68 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_GABON
+	
+}
+
+#Colony of Middle-Congo
+C3M = {
+
+	color = { 175 40 40 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_CONGO
+	
+}
+
+#Colony of Central Africa
+C4C = {
+
+	color = { 153 147 78 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_UBANGI_SHARI
+	
+}
+
+#Colony of Congo
+C3C = {
+
+	color = { 0 130 255 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_BAS_CONGO
+	
+}
+
+#Colony of Angola
+C2A = {
+
+	color = { 150 50 50 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_NORTH_ANGOLA
+	
+}
+
+#Northern Rhodesia
+C2R = {
+
+	color = { 50 200 0 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_ZAMBIA
+	
+}
+
+################################################
+
+### South Africa Region Countries ###
+
+#Colonial South Africa
+CSAF_colonial_south_africa = {
+
+	color = { 255 142 0 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_CAPE_COLONY
+	
+}
+
+#Territory of South West Africa
+C1W = {
+
+	color = { 0 20 100}
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_HEREROLAND
+	
+}
+
+#Bechuanaland Protectorate
+C1B = {
+
+	color = { 0 150 250 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_BOTSWANA
+	
+}
+
+#Southern Rhodesia
+C1R = {
+
+	color = { 30 50 50 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_ZAMBEZI
+	
+}
+
+#Colonial Transvaal
+C5T = {
+
+	color = { 171 200 255 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	cultures = { british }
+
+	capital = STATE_TRANSVAAL
+
+}
+
+#Colonial Cape
+C6C = {
+
+	color = { 84 120 255  }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_CAPE_COLONY
+	
+}
+
+################################################
+
+#Hong Kong
 HGK = {
 
 	color = "red"
@@ -43,21 +810,6 @@ CBG = {
 	
 }
 
-#Colonial Region Maghreb
-CA1 = {
-
-	color = { 33 130 220 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_TUNISIA
-	
-}
-
 #Protectorate of Aden
 C1A = {
 
@@ -70,21 +822,6 @@ C1A = {
 	cultures = { british }
 	
 	capital = STATE_YEMEN
-	
-}
-
-#Bechuanaland Protectorate
-C1B = {
-
-	color = { 0 150 250 }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_BOTSWANA
 	
 }
 
@@ -103,36 +840,6 @@ C1C = {
 	
 }
 
-#Colonial Dahomey
-C1D = {
-
-	color = { 252 210 15 }
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_DAHOMEY
-
-}
-
-#Colonial Egypt
-C1E = {
-
-	color = { 255  160  100 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_LOWER_EGYPT
-	
-}
-
 #Falkland Islands
 C1F = {
 
@@ -145,21 +852,6 @@ C1F = {
 	cultures = { british }
 	
 	capital = STATE_SOUTH_ATLANTIC_ISLANDS
-	
-}
-
-#Colony of Gabon
-C1G = {
-
-	color = { 20 200 68 }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_GABON
 	
 }
 
@@ -193,66 +885,6 @@ C1I = {
 	
 }
 
-#Protectorate of Kenya
-C1K = {
-
-	color = { 100 0 0 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_KENYA
-	
-}
-
-#Colonial Lybia
-C1L = {
-
-	color = { 43 107 21  }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_TRIPOLI
-	
-}
-
-#Mocambique / SE Africa
-C1M = {
-
-	color = { 255 200 85 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_MOCAMBIQUE
-	
-}
-
-#Protectorate of Nigeria
-C1N = {
-
-	color = { 30 80 0 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_YORUBA_STATES
-	
-}
-
 #Colonial Oman
 C1O = {
 
@@ -280,96 +912,6 @@ C1P = {
 	cultures = { british }
 	
 	capital = STATE_PALESTINE
-	
-}
-
-#Southern Rhodesia
-C1R = {
-
-	color = { 30 50 50 }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_ZAMBEZI
-	
-}
-
-#Protectorate of Somaliland
-C1S = {
-
-	color = { 11 70 220 }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_SOMALILAND
-	
-}
-
-#Tanganyika Territory
-C1T = {
-
-	color = { 0 100 20 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_ZANZIBAR
-	
-}
-
-#Protectorate of Uganda
-C1U = {
-
-	color = { 230 170 0 }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_UGANDA
-	
-}
-
-#Colonial Upper Volta
-C1V = {
-
-	color = { 235 34 4 }
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { british }
-
-	capital = STATE_VOLTA
-
-}
-
-#Territory of South West Africa
-C1W = {
-
-	color = { 0 20 100}
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_HEREROLAND
 	
 }
 
@@ -403,21 +945,6 @@ C1Z = {
 	
 }
 
-#Colony of Angola
-C2A = {
-
-	color = { 150 50 50 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_NORTH_ANGOLA
-	
-}
-
 #Colony of Bermuda
 C2B = {
 
@@ -430,96 +957,6 @@ C2B = {
 	cultures = { british }
 	
 	capital = STATE_BERMUDA
-	
-}
-
-#Protectorate of North Cameroon
-C2C = {
-
-	color = "yellow"
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_NORTH_CAMEROON
-	
-}
-
-#Colony of Ethiopia
-C2E = {
-
-	color = { 23 108 0 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_OROMIA
-	
-}
-
-#Colonial Guinea
-C2G = {
-
-	color = { 252 252 112 }
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { british }
-
-	capital = STATE_GUINEA
-
-}
-
-#Colonial Ivory Coast
-C2I = {
-
-	color = { 0 250 147 }
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { british }
-
-	capital = STATE_IVORY_COAST
-
-}
-
-#Colony of Madagascar
-C2M = {
-
-	color = "green"
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_NORTH_MADAGASCAR
-	
-}
-
-#Colony of Niger
-C2N = {
-
-	color = { 224 82 6 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_OUTER_HAUSALAND
 	
 }
 
@@ -538,36 +975,6 @@ C2P = {
 	
 }
 
-#Northern Rhodesia
-C2R = {
-
-	color = { 50 200 0 }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_ZAMBIA
-	
-}
-
-#Protectorate of Sudan
-C2S = {
-
-	color = { 0 60 160 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_BLUE_NILE
-	
-}
-
 #Protectorate of Transjordan
 C2T = {
 
@@ -580,36 +987,6 @@ C2T = {
 	cultures = { british }
 	
 	capital = STATE_TRANSJORDAN
-	
-}
-
-#Colonial West Sahara
-C2W = {
-
-	color = { 255 175 111 }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_WEST_SAHARA
-	
-}
-
-#Colonial Algeria
-C3A = {
-
-	color = { 243 211 211 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_ALGIERS
 	
 }
 
@@ -628,51 +1005,6 @@ C3B = {
 	
 }
 
-#Colony of Congo
-C3C = {
-
-	color = { 0 130 255 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_BAS_CONGO
-	
-}
-
-#Colony of Eritrea
-C3E = {
-
-	color = { 222 185 0 }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_ERITREA
-	
-}
-
-#Colonial Gold Coast
-C3G = {
-
-	color = { 42 52 52 }
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { british }
-
-	capital = STATE_GHANA
-
-}
-
 #Colonial Indonesia
 C3I = {
 
@@ -686,66 +1018,6 @@ C3I = {
 
 	capital = STATE_WEST_JAVA
 
-}
-
-#Colony of Middle-Congo
-C3M = {
-
-	color = { 175 40 40 }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_CONGO
-	
-}
-
-#Colonial Pepper Coast
-C3P = {
-
-	color = { 123 11 4 }
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { british }
-
-	capital = STATE_LIBERIA
-
-}
-
-#Colonial Senegal
-C3S = {
-
-	color = { 0 133 63 }
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { british }
-
-	capital = STATE_SENEGAL
-
-}
-
-#Colonial Tunisia
-C3T = {
-
-	color = { 230 42 0  }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_TUNISIA
-	
 }
 
 #Colonial Arabia
@@ -763,22 +1035,7 @@ C4A = {
 	
 }
 
-#Colony of Central Africa
-C4C = {
-
-	color = { 153 147 78 }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_UBANGI_SHARI
-	
-}
-
-#Colony of Gibraltar
+#Colonial Gibraltar
 C4G = {
 
 	color = { 255 89 42 }
@@ -790,21 +1047,6 @@ C4G = {
 	cultures = { british }
 	
 	capital =  	STATE_GRANADA
-	
-}
-
-#Colony of Mali
-C4M = {
-
-	color = { 20 181 58  }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_WESTERN_MALI
 	
 }
 
@@ -823,21 +1065,6 @@ C4S = {
 	
 }
 
-#Colonial Togo
-C4T = {
-
-	color = "green_dark"
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { british }
-
-	capital = STATE_TOGO
-
-}
-
 #Colonial Australia
 C5A = {
 
@@ -850,96 +1077,6 @@ C5A = {
 	cultures = { british }
 	
 	capital = STATE_NEW_SOUTH_WALES
-	
-}
-
-#Colony of Chad
-C5C = {
-
-	color = { 0 38 100 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_WADDAI
-	
-}
-
-#Colonial Morocco
-C5M = {
-
-	color = { 0 98 51 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_MARRAKECH
-	
-}
-
-#Colonial South Sudan
-C5S = {
-
-	color = { 42 255 42 }
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { british }
-
-	capital = STATE_EQUATORIA
-
-}
-
-#Colonial Transvaal
-C5T = {
-
-	color = { 171 200 255 }
-
-	country_type = colonial
-
-	tier = kingdom
-
-	cultures = { british }
-
-	capital = STATE_TRANSVAAL
-
-}
-
-#Colonial Cape
-C6C = {
-
-	color = { 84 120 255  }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_CAPE_COLONY
-	
-}
-
-#Colonial Mauritania
-C6M = {
-
-	color = { 208 28 31  }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_MAURITANIA
 	
 }
 
@@ -1036,7 +1173,7 @@ CCI_colonial_bahamas = {
 #Colonial Jamaica
 CCI_colonial_jamaica = {
 
-	color = {255 255 0}
+	color = { 255 255 0 }
 	
 	country_type = colonial
 	

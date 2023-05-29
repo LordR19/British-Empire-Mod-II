@@ -74,6 +74,24 @@ CCI_colonial_jamaica_sub_italian = {
 	}
 }
 
+CCI_colonial_jamaica_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_pineapple_jamaica.dds"
+		color1 = "blue_light"
+		color2 = "blue"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.45 } }
+	}
+}
+
 CCI_colonial_jamaica_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "red_light"

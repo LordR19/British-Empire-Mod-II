@@ -22,7 +22,7 @@ COC_colonial_nauru = {
 		coa = COC_colonial_nauru_sub
 		allow_overlord_canton = yes
 		coa_with_overlord_canton = COC_colonial_nauru_sub
-		overlord_canton_scale = { 0.47 0.47 }		
+		overlord_canton_scale = { 0.47 0.47 }
 		priority = 50
 		trigger = {
 			scope:actor = {
@@ -53,6 +53,19 @@ COC_colonial_nauru = {
 			exists = c:ITA
 			scope:actor = {
 				is_subject_of = c:ITA
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = COC_colonial_nauru_sub_french
+		allow_overlord_canton = no
+		coa_with_overlord_canton = COC_colonial_nauru_sub_french		
+		priority = 100
+		trigger = { 
+			exists = c:FRA
+			scope:actor = {
+				is_subject_of = c:FRA
 			}
 		}
 	}

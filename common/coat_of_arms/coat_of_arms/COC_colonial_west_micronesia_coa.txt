@@ -93,6 +93,30 @@ COC_colonial_west_micronesia_sub_italian = {
 	}
 }
 
+COC_colonial_west_micronesia_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "blue"
+		instance = { scale = { 0.2 0.2 } position = { 0.5 0.35 } }
+		instance = { scale = { 0.2 0.2 } position = { 0.5 0.65 } rotation = 180 }
+	}
+	colored_emblem = {
+		texture = "ce_star_05_tilted.dds"
+		color1 = "blue"
+		instance = { scale = { 0.2 0.2 } position = { 0.4 0.5 } }
+		instance = { scale = { 0.2 0.2 } position = { 0.6 0.5 } rotation = 180 }
+	}
+}
+
 COC_colonial_west_micronesia_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "azure"

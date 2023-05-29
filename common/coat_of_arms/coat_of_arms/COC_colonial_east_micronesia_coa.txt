@@ -81,6 +81,28 @@ COC_colonial_east_micronesia_sub_italian = {
 	}
 }
 
+COC_colonial_east_micronesia_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_seagull_gilbert_islands.dds"
+		color1 = "blue"
+		instance = { scale = { 0.3 0.3 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_sun_gilbert_islands.dds"
+		color1 = "blue"
+		instance = { scale = { 0.35 0.35 } position = { 0.5 0.94 } }
+	}
+}
+
 COC_colonial_east_micronesia_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"

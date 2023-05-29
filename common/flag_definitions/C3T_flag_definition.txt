@@ -77,9 +77,8 @@ C3T = {
 
 	flag_definition = {
 		coa = C3T_sub_french
-		allow_overlord_canton = yes
-		coa_with_overlord_canton = C3T_sub_french
-		overlord_canton_scale = { 0.3 0.3 }			
+		allow_overlord_canton = no
+		coa_with_overlord_canton = C3T_sub_french		
 		priority = 100
 		trigger = { 
 			exists = c:FRA

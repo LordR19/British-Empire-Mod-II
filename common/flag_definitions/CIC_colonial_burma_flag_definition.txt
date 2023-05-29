@@ -57,6 +57,19 @@ CIC_colonial_burma = {
 	}
 
 	flag_definition = {
+		coa = CIC_colonial_burma_sub_french
+		allow_overlord_canton = no
+		coa_with_overlord_canton = CIC_colonial_burma_sub_french		
+		priority = 100
+		trigger = { 
+			exists = c:FRA
+			scope:actor = {
+				is_subject_of = c:FRA
+			}
+		}
+	}
+
+	flag_definition = {
 		coa = CIC_colonial_burma_monarchy
 		subject_canton = CIC_colonial_burma_monarchy
 		allow_overlord_canton = yes	

@@ -82,6 +82,24 @@ C6M_sub_italian = {
 	}
 }
 
+C6M_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_dates.dds"
+		color1 = "blue"
+		color2 = "black"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+}
+
 C6M_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"

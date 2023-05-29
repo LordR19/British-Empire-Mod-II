@@ -42,6 +42,25 @@ CNA_colonial_newfoundland_sub_italian = {
 	}
 }
 
+CNA_colonial_newfoundland_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_cross_newfoundland.dds"
+		color1 = "blue"
+		color2 = "azure"
+		color3 = "red_light"
+		instance = { scale = { 0.33 1 } position = { 0.5 0.52 } rotation = 90 }
+	}
+}
+
 CNA_colonial_newfoundland_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"

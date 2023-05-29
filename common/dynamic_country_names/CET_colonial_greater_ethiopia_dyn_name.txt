@@ -1,0 +1,26 @@
+﻿# Colonial Greater Ethiopia
+CET_colonial_greater_ethiopia = {
+	dynamic_country_name = {
+		name = dyn_c_default_greater_ethiopia
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_greater_ethiopia
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}

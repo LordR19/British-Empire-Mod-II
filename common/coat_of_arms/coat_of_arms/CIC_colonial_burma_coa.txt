@@ -72,6 +72,22 @@ CIC_colonial_burma_sub_italian = {
 	}
 }
 
+CIC_colonial_burma_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_peacock.dds"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.52 } }
+	}
+}
+
 CIC_colonial_burma_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"

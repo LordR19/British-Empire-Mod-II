@@ -85,6 +85,23 @@ C7M_sub_italian = {
 	}
 }
 
+C7M_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_14.dds"
+		color1 = "blue"
+		instance = { scale = { 0.53 0.53 } position = { 0.5 0.5 } }
+	}
+}
+
 C7M_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"

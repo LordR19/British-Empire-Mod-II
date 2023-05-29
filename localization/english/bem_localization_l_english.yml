@@ -461,6 +461,41 @@
  dyn_c_colony_of_mauritania: "[Country.GetOverlord.GetAdjectiveNoFormatting] Mauritania"
  dyn_c_colony_of_mauritania_adj: "Mauritanian"
 
+ CWA_colonial_west_africa: "Colonial West Africa"
+ CWA_colonial_west_africa_ADJ: "West African"
+ dyn_c_default_west_africa: "West Africa"
+ dyn_c_colony_of_west_africa: "[Country.GetOverlord.GetAdjectiveNoFormatting] West Africa"
+
+ CGN_colonial_greater_nigeria: "Colonial Greater Nigeria"
+ CGN_colonial_greater_nigeria_ADJ: "Great Nigerian"
+ dyn_c_default_greater_nigeria: "Greater Nigeria"
+ dyn_c_colonial_greater_nigeria: "[Country.GetOverlord.GetAdjectiveNoFormatting] Greater Nigeria"
+
+ CGE_colonial_greater_egypt: "Colonial Greater Egypt"
+ CGE_colonial_greater_egypt_ADJ: "Great Egyptian"
+ dyn_c_default_greater_egypt: "Greater Egypt"
+ dyn_c_colonial_greater_egypt: "[Country.GetOverlord.GetAdjectiveNoFormatting] Greater Egypt"
+
+ CGE_colonial_greater_ethiopia: "Colonial Greater Ethiopia"
+ CGE_colonial_greater_ethiopia_ADJ: "Great Ethiopian"
+ dyn_c_default_greater_ethiopia: "Greater Ethiopia"
+ dyn_c_colonial_greater_ethiopia: "[Country.GetOverlord.GetAdjectiveNoFormatting] Greater Ethiopia"
+
+ CEA_colonial_east_africa: "Colonial East Africa"
+ CEA_colonial_east_africa_ADJ: "East African"
+ dyn_c_default_east_africa: "East Africa"
+ dyn_c_colonial_east_africa: "[Country.GetOverlord.GetAdjectiveNoFormatting] East Africa"
+
+ CGC_colonial_greater_congo: "Colonial Greater Congo"
+ CGC_colonial_greater_congo_ADJ: "Great Congolese"
+ dyn_c_default_greater_congo: "Greater Congo"
+ dyn_c_colonial_greater_congo: "[Country.GetOverlord.GetAdjectiveNoFormatting] Greater Congo"
+
+ CSAF_colonial_south_africa: "Colonial South Africa"
+ CSAF_colonial_south_africa_ADJ: "South African"
+ dyn_c_default_south_africa: "South Africa"
+ dyn_c_colonial_south_africa: "[Country.GetOverlord.GetAdjectiveNoFormatting] South Africa"
+
  C7M: "Colonial Malaysia"
  C7M_ADJ: "Malaysian"
  dyn_c_default_malaysia: "Malaysia"

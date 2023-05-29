@@ -44,6 +44,19 @@ CCI_colonial_bahamas = {
 	}
 
 	flag_definition = {
+		coa = CCI_colonial_bahamas_sub_french
+		allow_overlord_canton = no
+		coa_with_overlord_canton = CCI_colonial_bahamas_sub_french		
+		priority = 100
+		trigger = { 
+			exists = c:FRA
+			scope:actor = {
+				is_subject_of = c:FRA
+			}
+		}
+	}
+
+	flag_definition = {
 		coa = BAH_subject
 		allow_overlord_canton = yes
 		coa_with_overlord_canton = BAH_subject		

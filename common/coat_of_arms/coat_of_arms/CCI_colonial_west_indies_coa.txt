@@ -62,6 +62,24 @@ CCI_colonial_west_indies_sub_italian = {
 	}
 }
 
+CCI_colonial_west_indies_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_pineapple_west_indies.dds"
+		color1 = "blue_light"
+		color2 = "blue"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
+	}
+}
+
 CCI_colonial_west_indies_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "blue"

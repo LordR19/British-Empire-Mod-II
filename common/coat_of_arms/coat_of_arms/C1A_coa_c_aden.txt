@@ -63,15 +63,32 @@ C1A_sub_italian = {
 		instance = { scale = { 0.25 0.25 } position = { 0.3 0.25 } rotation = 180 }
 	}
 	colored_emblem = {
-		texture = "ce_waves.dds"
+		texture = "ce_flag_river.dds"
 		color1 = "red"
 		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
 		instance = { scale = { 0.8 0.8 } position = { 0.5 0.9 } }
 	}
 	colored_emblem = {
-		texture = "ce_waves.dds"
+		texture = "ce_flag_river.dds"
 		color1 = "green"
 		instance = { scale = { 0.8 0.8 } position = { 0.5 0.7 } }
+	}
+}
+
+C1A_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_sailing_ship_aden.dds"
+		color1 = "blue"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.5 } }
 	}
 }
 
@@ -81,7 +98,7 @@ C1A_monarchy = {
 
 	textured_emblem = {
 		texture = "te_emblem_ship_aden.dds"
-		instance = { scale = { 0.75 0.75 } position = { 0.5 0.48 } }
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
 	}
 	colored_emblem = {
 		texture = "ce_waves.dds"

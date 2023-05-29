@@ -1,0 +1,140 @@
+#Colonial South Africa
+CSAF_colonial_south_africa = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_emblem_diamond.dds"
+		color1 = "black"
+		color2 = "blue_light"
+		instance = { scale = { 0.25 0.25 } position = { 0.5 0.23 } } #Top
+		instance = { scale = { 0.25 0.25 } position = { 0.32 0.5 } } #Left
+		instance = { scale = { 0.25 0.25 } position = { 0.68 0.5 } } #Right
+		instance = { scale = { 0.25 0.25 } position = { 0.5 0.77 } } #Bottom
+	}
+}
+
+CSAF_colonial_south_africa_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_emblem_diamond.dds"
+		color1 = "black"
+		color2 = "blue_light"
+		instance = { scale = { 0.2 0.2 } position = { 0.73 0.29 } } #Top
+		instance = { scale = { 0.2 0.2 } position = { 0.59 0.5 } } #Left
+		instance = { scale = { 0.2 0.2 } position = { 0.87 0.5 } } #Right
+		instance = { scale = { 0.2 0.2 } position = { 0.73 0.71 } } #Bottom
+	}
+}
+
+CSAF_colonial_south_africa_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_diamond.dds"
+		color1 = "black"
+		color2 = "blue_light"
+		instance = { scale = { 0.12 0.12 } position = { 0.75 0.38 } } #Top
+		instance = { scale = { 0.12 0.12 } position = { 0.67 0.5 } } #Left
+		instance = { scale = { 0.12 0.12 } position = { 0.83 0.5 } } #Right
+		instance = { scale = { 0.12 0.12 } position = { 0.75 0.62 } } #Bottom
+	}
+}
+
+CSAF_colonial_south_africa_sub_italian = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "orange"
+		color2 = "green"
+		instance = { scale = { 0.25 0.25 } position = { 0.224 0.25 } rotation = 180 }
+	}
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "red"
+		color2 = "white"
+		instance = { scale = { 0.25 0.25 } position = { 0.3 0.25 } rotation = 180 }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_diamond.dds"
+		color1 = "green_dark"
+		color2 = "green_light"
+		instance = { scale = { 0.2 0.2 } position = { 0.63 0.29 } } #Top
+		instance = { scale = { 0.2 0.2 } position = { 0.49 0.5 } } #Left
+		instance = { scale = { 0.2 0.2 } position = { 0.77 0.5 } } #Right
+		instance = { scale = { 0.2 0.2 } position = { 0.63 0.71 } } #Bottom
+	}
+}
+
+CSAF_colonial_south_africa_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_diamond.dds"
+		color1 = "blue"
+		color2 = "blue_light"
+		instance = { scale = { 0.12 0.12 } position = { 0.5 0.35 } } #Top
+		instance = { scale = { 0.12 0.12 } position = { 0.4 0.5 } } #Left
+		instance = { scale = { 0.12 0.12 } position = { 0.6 0.5 } } #Right
+		instance = { scale = { 0.12 0.12 } position = { 0.5 0.65 } } #Bottom
+	}
+}
+
+CSAF_colonial_south_africa_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_emblem_diamond.dds"
+		color1 = "black"
+		color2 = "blue_light"
+		instance = { scale = { 0.25 0.25 } position = { 0.5 0.23 } } #Top
+		instance = { scale = { 0.25 0.25 } position = { 0.32 0.5 } } #Left
+		instance = { scale = { 0.25 0.25 } position = { 0.68 0.5 } } #Right
+		instance = { scale = { 0.25 0.25 } position = { 0.5 0.77 } } #Bottom
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "grey"
+		color2 = "blue"
+		color3 = "azure"
+		instance = { scale = { 0.5 0.5 } position = { 0.2 0.2 } }
+	}
+}
+
+CSAF_colonial_south_africa_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_emblem_diamond.dds"
+		color1 = "blue"
+		color2 = "blue_light"
+		instance = { scale = { 0.25 0.25 } position = { 0.5 0.23 } } #Top
+		instance = { scale = { 0.25 0.25 } position = { 0.32 0.5 } } #Left
+		instance = { scale = { 0.25 0.25 } position = { 0.68 0.5 } } #Right
+		instance = { scale = { 0.25 0.25 } position = { 0.5 0.77 } } #Bottom
+	}
+}

@@ -70,6 +70,23 @@ C2T_sub_italian = {
 	}
 }
 
+C2T_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_petra.dds"
+		color1 = "azure"
+		instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 } }
+	}
+}
+
 C2T_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "orange"

@@ -98,6 +98,25 @@ C1G_sub_italian = {
 	}
 }
 
+C1G_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_ship_gabon.dds"
+		color1 = "blue"
+		color2 = "blue"
+		color3 = "blue"
+		instance = { scale = { 0.35 0.35 } position = { 0.5 0.49 } }
+	}
+}
+
 C1G_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"
