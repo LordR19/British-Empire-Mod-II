@@ -1334,3 +1334,18 @@ COC_colonial_fiji = {
 	capital = STATE_FIJI
 	
 }
+
+#Colonial Tonga
+COC_colonial_tonga = {
+
+	color = { 25 25 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_TONGA
+	
+}
