@@ -1290,6 +1290,21 @@ COC_colonial_solomon_islands = {
 	
 }
 
+#Colonial Vanuatu
+COC_colonial_vanuatu = {
+
+	color = { 100 100 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_VANUATU
+	
+}
+
 #Colonial Fiji
 COC_colonial_fiji = {
 

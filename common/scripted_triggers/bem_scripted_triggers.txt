@@ -367,6 +367,10 @@ bem_colonial_nation_trigger = {
 			this = c:COC_colonial_solomon_islands
 		}
 		AND = {
+			exists = c:COC_colonial_vanuatu
+			this = c:COC_colonial_vanuatu
+		}
+		AND = {
 			exists = c:COC_colonial_fiji
 			this = c:COC_colonial_fiji
 		}

@@ -1638,7 +1638,7 @@ COC_colonial_bougainville = {
 	}
 }
 
-#Colonial Fiji
+#Colonial Solomon Islands
 COC_colonial_solomon_islands = {
 	states = {
 		STATE_SOLOMON_ISLANDS
@@ -1653,6 +1653,24 @@ COC_colonial_solomon_islands = {
 		can_have_subjects = yes
 		bem_country_is_in_oceania = no
 		owns_entire_state_region = STATE_SOLOMON_ISLANDS
+	}
+}
+
+#Colonial Vanuatu
+COC_colonial_vanuatu = {
+	states = {
+		STATE_VANUATU
+	}
+
+	possible = {
+		OR = { is_country_type = recognized is_country_type = colonial }
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		bem_country_is_in_oceania = no
+		owns_entire_state_region = STATE_VANUATU
 	}
 }
 
