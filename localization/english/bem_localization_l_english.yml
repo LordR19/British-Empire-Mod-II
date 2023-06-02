@@ -567,6 +567,11 @@
  dyn_c_default_bougainville: "Bougainville"
  dyn_c_colonial_bougainville: "[Country.GetOverlord.GetAdjectiveNoFormatting] Bougainville"
 
+ COC_colonial_solomon_islands: "Colonial Solomon Islands"
+ COC_colonial_solomon_islands_ADJ: "Soloman Islander"
+ dyn_c_default_solomon_islands: "Solomon Islands"
+ dyn_c_colonial_solomon_islands: "[Country.GetOverlord.GetAdjectiveNoFormatting] Solomon Islands"
+
  COC_colonial_fiji: "Colonial Fiji"
  COC_colonial_fiji_ADJ: "Fijian"
  dyn_c_default_fiji: "Fiji"

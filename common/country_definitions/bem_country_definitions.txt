@@ -1275,6 +1275,21 @@ COC_colonial_bougainville = {
 	
 }
 
+#Colonial Solomon Island
+COC_colonial_solomon_islands = {
+
+	color = { 255 75 75 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_SOLOMON_ISLANDS
+	
+}
+
 #Colonial Fiji
 COC_colonial_fiji = {
 
