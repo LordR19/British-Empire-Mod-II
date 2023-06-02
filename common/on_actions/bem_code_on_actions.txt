@@ -217,6 +217,9 @@ bem_on_country_released_as_own_subject = {
 				#Disallows Colonization by subject
 				activate_law = law_type:law_no_colonial_affairs
 
+				#This is needed to prevent the investment pool from building factories in the colonies
+				activate_law = law_type:law_agrarianism
+
 				#Adds a new male leader
 				trigger_event = {
 						id = bem.2
