@@ -1349,3 +1349,18 @@ COC_colonial_tonga = {
 	capital = STATE_TONGA
 	
 }
+
+#Colonial Tonga
+COC_colonial_tahiti = {
+
+	color = { 255 22 64 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_TAHITI
+	
+}

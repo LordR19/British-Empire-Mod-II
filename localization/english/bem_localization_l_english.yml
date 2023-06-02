@@ -592,6 +592,11 @@
  dyn_c_default_tonga: "Tonga"
  dyn_c_colonial_tonga: "[Country.GetOverlord.GetAdjectiveNoFormatting] Tonga"
 
+ COC_colonial_tahiti: "Colonial Tahiti"
+ COC_colonial_tahiti_ADJ: "Tahitian"
+ dyn_c_default_tahiti: "Tahiti"
+ dyn_c_colonial_tahiti: "[Country.GetOverlord.GetAdjectiveNoFormatting] Tahiti"
+
  dyn_c_south_africa_union: "Union of South Africa"
  dyn_c_south_africa_union_adj: "South African"
  dyn_c_dominion_south_africa: "Dominion of South Africa"

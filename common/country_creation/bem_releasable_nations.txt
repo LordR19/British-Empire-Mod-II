@@ -1727,3 +1727,21 @@ COC_colonial_tonga = {
 		owns_entire_state_region = STATE_TONGA
 	}
 }
+
+#Colonial Tahiti
+COC_colonial_tahiti = {
+	states = {
+		STATE_TAHITI
+	}
+
+	possible = {
+		OR = { is_country_type = recognized is_country_type = colonial }
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		bem_country_is_in_oceania = no
+		owns_entire_state_region = STATE_TAHITI
+	}
+}
