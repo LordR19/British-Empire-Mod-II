@@ -597,6 +597,11 @@
  dyn_c_default_tahiti: "Tahiti"
  dyn_c_colonial_tahiti: "[Country.GetOverlord.GetAdjectiveNoFormatting] Tahiti"
 
+ COC_colonial_hawaii: "Colonial Hawaii"
+ COC_colonial_hawaii_ADJ: "Hawaiian"
+ dyn_c_default_hawaii: "Hawaii"
+ dyn_c_colonial_hawaii: "[Country.GetOverlord.GetAdjectiveNoFormatting] Hawaii"
+
  dyn_c_south_africa_union: "Union of South Africa"
  dyn_c_south_africa_union_adj: "South African"
  dyn_c_dominion_south_africa: "Dominion of South Africa"

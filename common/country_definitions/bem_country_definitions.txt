@@ -1364,3 +1364,18 @@ COC_colonial_tahiti = {
 	capital = STATE_TAHITI
 	
 }
+
+#Colonial Hawai
+COC_colonial_hawaii = {
+
+	color = { 255 150 0 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_HAWAIIAN_ISLANDS
+	
+}

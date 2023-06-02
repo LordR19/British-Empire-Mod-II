@@ -1,0 +1,117 @@
+#Colonial Hawaii
+COC_colonial_hawaii = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_emblem_kahili_hawaii.dds"
+		color1 = "black"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.5 } }
+	}
+}
+
+COC_colonial_hawaii_sub = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_emblem_kahili_hawaii.dds"
+		color1 = "black"
+		instance = { scale = { 0.55 0.55 } position = { 0.75 0.5 } }
+	}
+}
+
+COC_colonial_hawaii_sub_british = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "black"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.485 0.485 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_kahili_hawaii.dds"
+		color1 = "black"
+		instance = { scale = { 0.38 0.38 } position = { 0.75 0.5 } }
+	}
+}
+
+COC_colonial_hawaii_sub_italian = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "orange"
+		color2 = "green"
+		instance = { scale = { 0.25 0.25 } position = { 0.224 0.25 } rotation = 180 }
+	}
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "red"
+		color2 = "white"
+		instance = { scale = { 0.25 0.25 } position = { 0.3 0.25 } rotation = 180 }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_kahili_hawaii.dds"
+		color1 = "green"
+		instance = { scale = { 0.55 0.55 } position = { 0.63 0.5 } }
+	}
+}
+
+COC_colonial_hawaii_sub_french = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_kahili_hawaii.dds"
+		color1 = "blue"
+		instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 } }
+	}
+}
+
+COC_colonial_hawaii_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_emblem_kahili_hawaii.dds"
+		color1 = "black"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "black"
+		color2 = "red"
+		color3 = "red"
+		instance = { scale = { 0.4 0.4 } position = { 0.18 0.2 } }
+	}
+}
+
+COC_colonial_hawaii_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+
+	colored_emblem = {
+		texture = "ce_emblem_kahili_hawaii.dds"
+		color1 = "black"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.5 } }
+	}
+}
