@@ -1305,6 +1305,21 @@ COC_colonial_vanuatu = {
 	
 }
 
+#Colonial New Caledonia
+COC_colonial_new_caledonia = {
+
+	color = { 255 255 0 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_KANAK
+	
+}
+
 #Colonial Fiji
 COC_colonial_fiji = {
 

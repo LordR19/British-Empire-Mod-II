@@ -1674,6 +1674,24 @@ COC_colonial_vanuatu = {
 	}
 }
 
+#Colonial New Caledonia
+COC_colonial_new_caledonia = {
+	states = {
+		STATE_KANAK
+	}
+
+	possible = {
+		OR = { is_country_type = recognized is_country_type = colonial }
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		bem_country_is_in_oceania = no
+		owns_entire_state_region = STATE_KANAK
+	}
+}
+
 #Colonial Fiji
 COC_colonial_fiji = {
 	states = {

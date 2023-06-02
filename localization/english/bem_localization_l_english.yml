@@ -577,6 +577,11 @@
  dyn_c_default_new_hebrides: "New Hebrides"
  dyn_c_colonial_new_hebrides: "[Country.GetOverlord.GetAdjectiveNoFormatting] New Hebrides"
 
+ COC_colonial_new_caledonia: "Colonial New Caledonia"
+ COC_colonial_new_caledonia_ADJ: "New Caledonian"
+ dyn_c_default_new_caledonia: "New Caledonia"
+ dyn_c_colonial_new_caledonia: "[Country.GetOverlord.GetAdjectiveNoFormatting] New Caledonia"
+
  COC_colonial_fiji: "Colonial Fiji"
  COC_colonial_fiji_ADJ: "Fijian"
  dyn_c_default_fiji: "Fiji"
