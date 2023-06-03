@@ -1183,26 +1183,6 @@ C1Y = {
 	}
 }
 
-#Colonial New Zealand
-C1Z = {
-	states = {
-		STATE_NORTH_ISLAND
-		STATE_SOUTH_ISLAND
-	}
-
-	possible = {
-		OR = { is_country_type = recognized is_country_type = colonial }
-	}
-	
-	ai_will_do = {
-		has_game_rule = bem_colonial_nations_release
-		can_have_subjects = yes
-		bem_country_is_in_oceania = no
-		owns_entire_state_region = STATE_NORTH_ISLAND
-		owns_entire_state_region = STATE_SOUTH_ISLAND
-	}
-}
-
 #Colony of Bermuda
 C2B = {
 	states = {
@@ -1370,36 +1350,6 @@ C4S = {
 	ai_will_do = { always = no }
 }
 
-#Colonial Australia
-C5A = {
-	states = {
-		STATE_NEW_SOUTH_WALES
-		STATE_NORTHERN_TERRITORY
-		STATE_QUEENSLAND
-		STATE_SOUTH_AUSTRALIA
-		STATE_TASMANIA
-		STATE_VICTORIA
-		STATE_WESTERN_AUSTRALIA
-	}
-
-	possible = {
-		OR = { is_country_type = recognized is_country_type = colonial }
-	}
-	
-	ai_will_do = {
-		has_game_rule = bem_colonial_nations_release
-		can_have_subjects = yes
-		bem_country_is_in_oceania = no
-		owns_entire_state_region = STATE_NEW_SOUTH_WALES
-		owns_entire_state_region = STATE_NORTHERN_TERRITORY
-		owns_entire_state_region = STATE_QUEENSLAND
-		owns_entire_state_region = STATE_SOUTH_AUSTRALIA
-		owns_entire_state_region = STATE_TASMANIA
-		owns_entire_state_region = STATE_VICTORIA
-		owns_entire_state_region = STATE_WESTERN_AUSTRALIA
-	}
-}
-
 #Colonial Ceylon
 C7C = {
 	states = {
@@ -1563,6 +1513,60 @@ CIC_colonial_burma = {
 		owns_entire_state_region = STATE_PEGU
 		owns_entire_state_region = STATE_SHAN_STATES
 		owns_entire_state_region = STATE_TENASSERIM
+	}
+}
+
+################################################
+
+### Oceania Region Countries ###
+
+#Colonial Australia
+C5A = {
+	states = {
+		STATE_NEW_SOUTH_WALES
+		STATE_NORTHERN_TERRITORY
+		STATE_QUEENSLAND
+		STATE_SOUTH_AUSTRALIA
+		STATE_TASMANIA
+		STATE_VICTORIA
+		STATE_WESTERN_AUSTRALIA
+	}
+
+	possible = {
+		OR = { is_country_type = recognized is_country_type = colonial }
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		bem_country_is_in_oceania = no
+		owns_entire_state_region = STATE_NEW_SOUTH_WALES
+		owns_entire_state_region = STATE_NORTHERN_TERRITORY
+		owns_entire_state_region = STATE_QUEENSLAND
+		owns_entire_state_region = STATE_SOUTH_AUSTRALIA
+		owns_entire_state_region = STATE_TASMANIA
+		owns_entire_state_region = STATE_VICTORIA
+		owns_entire_state_region = STATE_WESTERN_AUSTRALIA
+	}
+}
+
+#Colonial New Zealand
+C1Z = {
+	states = {
+		STATE_NORTH_ISLAND
+		STATE_SOUTH_ISLAND
+	}
+
+	possible = {
+		OR = { is_country_type = recognized is_country_type = colonial }
+	}
+	
+	ai_will_do = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		bem_country_is_in_oceania = no
+		owns_entire_state_region = STATE_NORTH_ISLAND
+		owns_entire_state_region = STATE_SOUTH_ISLAND
 	}
 }
 

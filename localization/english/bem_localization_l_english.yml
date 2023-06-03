@@ -545,6 +545,11 @@
  dyn_c_default_burma: "Burma"
  dyn_c_colonial_burma: "[Country.GetOverlord.GetAdjectiveNoFormatting] Burma"
 
+ COC_colonial_oceania: "Colonial Oceania"
+ COC_colonial_oceania_ADJ: "Oceanian"
+ dyn_c_default_oceania: "Oceania"
+ dyn_c_colonial_oceania: "[Country.GetOverlord.GetAdjectiveNoFormatting] Oceania"
+
  COC_colonial_west_micronesia: "Colonial West Micronesia"
  COC_colonial_west_micronesia_ADJ: "Micronesian"
  dyn_c_default_west_micronesia: "West Micronesia"
@@ -772,6 +777,193 @@
  concept_bem_colony_desc: "A country that has researched Colonization can release a [concept_country] into their $concept_bem_colony$. A $concept_bem_colony$ is a [concept_subject] type that cannot start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] yet are forced to join their [Concept('concept_overlord','$concept_overlord_possessive$')] [Concept('concept_war','$concept_wars$')].\nColonies will focus on expanding their ressource output to supply their [concept_overlord]'s [concept_market]."
 
 #Decisions
+
+ bem_show_colonial_decisions_toggle: "Show Colonial Decisions"
+ bem_show_colonial_decisions_toggle_desc: "Shows all the Colonial Decisions"
+ show_colonial_decisions_tt: "Shows all the Colonial Decisions that you can take"
+
+ bem_hide_colonial_decisions_toggle: "Hide Colonial Decisions"
+ bem_hide_colonial_decisions_toggle_desc: "Hides all the Colonial Decisions"
+ hide_colonial_decisions_tt: "Hides all the Colonial Decisions"
+
+ bem_transfer_colonial_lands_puppet_decision: "Transfer #yellow African#! Colonial Lands of Puppets"
+ bem_transfer_colonial_lands_puppet_decision_desc: "Take control of all the #yellow African#! colonial lands of your puppets."
+
  unite_colonies_maghreb_decision: "Unite Colonies in North Africa"
  unite_colonies_maghreb_decision_desc: "This Decision allows you to #yellow unite all your Colonial Subjects and states in North Africa#! into one big Colonial Nation."
- unite_maghreb_tt: "Every #yellow Colonial Nation#! and #yellow every State you own#! in North Africa will be #yellow merged#! into one Colonial Nation. The Colonial Nation with the highest [concept_gdp] will take the lead of the united Colony"
+ colonial_nations_north_africa_more_2_tt: "You have two or more #yellow Colonial Nations#! in the North Africa Region"
+ colonial_nations_north_africa_tt: "You have one or more #yellow Colonial Nations#! in the North Africa Region"
+ unite_maghreb_tt: "Every #yellow Colonial Nation#! and #yellow every State you own#! in North Africa will be #yellow merged#! into one Colonial Nation. The Colonial Nation with the highest [concept_gdp] will take the lead of the united Colony."
+ warning_colony_unification_tt: "#n Be careful with this option. If some states in the region are not colonized yet, it will prevent you from colonizing further.#!"
+
+ unite_colonies_west_africa_decision: "Unite Colonies in Senegal"
+ unite_colonies_west_africa_decision_desc: "This Decision allows you to #yellow unite all your Colonial Subjects and states in Senegal Region#! into one big Colonial Nation."
+ colonial_nations_west_africa_more_2_tt: "You have two or more #yellow Colonial Nations#! in the Senegal Region"
+ colonial_nations_west_africa_tt: "You have one or more #yellow Colonial Nations#! in the Senegal Region"
+ unite_west_africa_tt: "Every #yellow Colonial Nation#! and #yellow every State you own#! in the Senegal Region will be #yellow merged#! into one Colonial Nation. The Colonial Nation with the highest [concept_gdp] will take the lead of the united Colony"
+
+ unite_colonies_greater_nigeria_decision: "Unite Colonies in Niger Region"
+ unite_colonies_greater_nigeria_decision_desc: "This Decision allows you to #yellow unite all your Colonial Subjects and states in the Niger Region#! into one big Colonial Nation."
+ colonial_nations_niger_more_2_tt: "You have two or more #yellow Colonial Nations#! in the Niger Region"
+ colonial_nations_niger_tt: "You have one or more #yellow Colonial Nations#! in the Niger Region"
+ unite_greater_nigeria_tt: "Every #yellow Colonial Nation#! and #yellow every State you own#! in the Niger Region will be #yellow merged#! into one Colonial Nation. The Colonial Nation with the highest [concept_gdp] will take the lead of the united Colony"
+
+ unite_colonies_greater_egypt_decision: "Unite Colonies in Nile Region"
+ unite_colonies_greater_egypt_decision_desc: "This Decision allows you to #yellow unite all your Colonial Subjects and states in the Nile Region#! into one big Colonial Nation."
+ colonial_nations_nile_more_2_tt: "You have two or more #yellow Colonial Nations#! in the Nile Region"
+ colonial_nations_nile_tt: "You have one or more #yellow Colonial Nations#! in the Nile Region"
+ unite_greater_egypt_tt: "Every #yellow Colonial Nation#! and #yellow every State you own#! in the Nile Region will be #yellow merged#! into one Colonial Nation. The Colonial Nation with the highest [concept_gdp] will take the lead of the united Colony"
+
+ unite_colonies_greater_ethiopia_decision: "Unite Colonies in Ethiopia Region"
+ unite_colonies_greater_ethiopia_decision_desc: "This Decision allows you to #yellow unite all your Colonial Subjects and states in the Ethiopia Region#! into one big Colonial Nation."
+ colonial_nations_ethiopia_more_2_tt: "You have two or more #yellow Colonial Nations#! in the Ethiopia Region"
+ colonial_nations_ethiopia_tt: "You have one or more #yellow Colonial Nations#! in the Ethiopia Region"
+ unite_greater_ethiopia_tt: "Every #yellow Colonial Nation#! and #yellow every State you own#! in the Ethiopia Region will be #yellow merged#! into one Colonial Nation. The Colonial Nation with the highest [concept_gdp] will take the lead of the united Colony"
+
+ unite_colonies_zanj_decision: "Unite Colonies in Zanj Region"
+ unite_colonies_zanj_decision_desc: "This Decision allows you to #yellow unite all your Colonial Subjects and states in the Zanj Region#! into one big Colonial Nation."
+ colonial_nations_zanj_more_2_tt: "You have two or more #yellow Colonial Nations#! in the Zanj Region"
+ colonial_nations_zanj_tt: "You have one or more #yellow Colonial Nations#! in the Zanj Region"
+ unite_zanj_tt: "Every #yellow Colonial Nation#! and #yellow every State you own#! in the Zanj Region will be #yellow merged#! into one Colonial Nation. The Colonial Nation with the highest [concept_gdp] will take the lead of the united Colony"
+
+ unite_colonies_congo_decision: "Unite Colonies in Congo Region"
+ unite_colonies_congo_decision_desc: "This Decision allows you to #yellow unite all your Colonial Subjects and states in the Congo Region#! into one big Colonial Nation."
+ colonial_nations_congo_more_2_tt: "You have two or more #yellow Colonial Nations#! in the Congo Region"
+ colonial_nations_congo_tt: "You have one or more #yellow Colonial Nations#! in the Congo Region"
+ unite_congo_tt: "Every #yellow Colonial Nation#! and #yellow every State you own#! in the Congo Region will be #yellow merged#! into one Colonial Nation. The Colonial Nation with the highest [concept_gdp] will take the lead of the united Colony"
+
+ unite_colonies_south_africa_decision: "Unite Colonies in South Africa"
+ unite_colonies_south_africa_decision_desc: "This Decision allows you to #yellow unite all your Colonial Subjects and states in South Africa#! into one big Colonial Nation."
+ colonial_nations_south_africa_more_2_tt: "You have two or more #yellow Colonial Nations#! in the South Africa Region"
+ colonial_nations_south_africa_tt: "You have one or more #yellow Colonial Nations#! in the South Africa Region"
+ unite_south_africa_tt: "Every #yellow Colonial Nation#! and #yellow every State you own#! in South Africa will be #yellow merged#! into one Colonial Nation. The Colonial Nation with the highest [concept_gdp] will take the lead of the united Colony"
+
+ unite_colonies_oceania_decision: "Unite Colonies in Oceania"
+ unite_colonies_oceania_decision_desc: "This Decision allows you to #yellow unite all your Colonial Subjects and states in Oceania#! into one big Colonial Nation."
+ colonial_nations_oceania_more_2_tt: "You have two or more #yellow Colonial Nations#! in the Oceania Region"
+ colonial_nations_oceania_tt: "You have one or more #yellow Colonial Nations#! in the Oceania Region"
+ unite_oceania_tt: "Every #yellow Colonial Nation#! and #yellow every State you own#! in OCeania will be #yellow merged#! into one Colonial Nation. The Colonial Nation with the highest [concept_gdp] will take the lead of the united Colony"
+
+#AI decisions
+ bem_create_colonial_libya: "AI decision Libya"
+ bem_create_colonial_libya_desc: "AI decision to create a colony in Libya. #n Should not be visible!#!"
+
+ bem_create_colonial_tunisia: "AI decision Tunisia"
+ bem_create_colonial_tunisia_desc: "AI decision to create a colony in Tunisia. #n Should not be visible!#!"
+
+ bem_create_colonial_algeria: "AI decision Algeria"
+ bem_create_colonial_algeria_desc: "AI decision to create a colony in Algeria. #n Should not be visible!#!"
+
+ bem_create_colonial_west_sahara: "AI decision West Sahara"
+ bem_create_colonial_west_sahara_desc: "AI decision to create a colony in West Sahara. #n Should not be visible!#!"
+
+ bem_create_colonial_morocco: "AI decision Morocco"
+ bem_create_colonial_morocco_desc: "AI decision to create a colony in Morocco. #n Should not be visible!#!"
+
+ bem_create_colonial_mauritania: "AI decision Mauritania"
+ bem_create_colonial_mauritania_desc: "AI decision to create a colony in Mauritania. #n Should not be visible!#!"
+
+ bem_create_colonial_senegal: "AI decision Senegal"
+ bem_create_colonial_senegal_desc: "AI decision to create a colony in Senegal. #n Should not be visible!#!"
+
+ bem_create_colonial_guinea: "AI decision Guinea"
+ bem_create_colonial_guinea_desc: "AI decision to create a colony in Guinea. #n Should not be visible!#!"
+
+ bem_create_colonial_mali: "AI decision Mali"
+ bem_create_colonial_mali_desc: "AI decision to create a colony in Mali. #n Should not be visible!#!"
+
+ bem_create_colonial_pepper_coast: "AI decision Pepper Coast"
+ bem_create_colonial_pepper_coast_desc: "AI decision to create a colony in Pepper Coast. #n Should not be visible!#!"
+
+ bem_create_colonial_ivory_coast: "AI decision Ivory Coast"
+ bem_create_colonial_ivory_coast_desc: "AI decision to create a colony in Ivory Coast. #n Should not be visible!#!"
+
+ bem_create_colonial_volta: "AI decision Volta"
+ bem_create_colonial_volta_desc: "AI decision to create a colony in Volta. #n Should not be visible!#!"
+
+ bem_create_colonial_gold_coast: "AI decision Gold Coast"
+ bem_create_colonial_gold_coast_desc: "AI decision to create a colony in Gold Coast. #n Should not be visible!#!"
+
+ bem_create_colonial_togo: "AI decision Togo"
+ bem_create_colonial_togo_desc: "AI decision to create a colony in Togo. #n Should not be visible!#!"
+
+ bem_create_colonial_dahomey: "AI decision Dahomey"
+ bem_create_colonial_dahomey_desc: "AI decision to create a colony in Dahomey. #n Should not be visible!#!"
+
+ bem_create_colonial_nigeria: "AI decision Nigeria"
+ bem_create_colonial_nigeria_desc: "AI decision to create a colony in Nigeria. #n Should not be visible!#!"
+
+ bem_create_colonial_niger: "AI decision Niger"
+ bem_create_colonial_niger_desc: "AI decision to create a colony in Niger. #n Should not be visible!#!"
+
+ bem_create_colonial_chad: "AI decision Chad"
+ bem_create_colonial_chad_desc: "AI decision to create a colony in Chad. #n Should not be visible!#!"
+
+ bem_create_colonial_cameroon: "AI decision Cameroon"
+ bem_create_colonial_cameroon_desc: "AI decision to create a colony in Cameroon. #n Should not be visible!#!"
+
+ bem_create_colonial_egypt: "AI decision Egypt"
+ bem_create_colonial_egypt_desc: "AI decision to create a colony in Egypt. #n Should not be visible!#!"
+
+ bem_create_colonial_sudan: "AI decision Sudan"
+ bem_create_colonial_sudan_desc: "AI decision to create a colony in Sudan. #n Should not be visible!#!"
+
+ bem_create_colonial_south_sudan: "AI decision South Sudan"
+ bem_create_colonial_south_sudan_desc: "AI decision to create a colony in South Sudan. #n Should not be visible!#!"
+
+ bem_create_colonial_ethiopia: "AI decision Ethiopia"
+ bem_create_colonial_ethiopia_desc: "AI decision to create a colony in Ethiopia. #n Should not be visible!#!"
+
+ bem_create_colonial_eritrea: "AI decision Eritrea"
+ bem_create_colonial_eritrea_desc: "AI decision to create a colony in Eritrea. #n Should not be visible!#!"
+
+ bem_create_colonial_somaliland: "AI decision Somaliland"
+ bem_create_colonial_somaliland_desc: "AI decision to create a colony in Somaliland. #n Should not be visible!#!"
+
+ bem_create_colonial_uganda: "AI decision Uganda"
+ bem_create_colonial_uganda_desc: "AI decision to create a colony in Uganda. #n Should not be visible!#!"
+
+ bem_create_colonial_kenya: "AI decision Kenya"
+ bem_create_colonial_kenya_desc: "AI decision to create a colony in Kenya. #n Should not be visible!#!"
+
+ bem_create_colonial_tanganyika: "AI decision Tanganyika"
+ bem_create_colonial_tanganyika_desc: "AI decision to create a colony in Tanganyika. #n Should not be visible!#!"
+
+ bem_create_colonial_mocambique: "AI decision Mocambique"
+ bem_create_colonial_mocambique_desc: "AI decision to create a colony in Mocambique. #n Should not be visible!#!"
+
+ bem_create_colonial_madagascar: "AI decision Madagascar"
+ bem_create_colonial_madagascar_desc: "AI decision to create a colony in Madagascar. #n Should not be visible!#!"
+
+ bem_create_colonial_gabon: "AI decision Gabon"
+ bem_create_colonial_gabon_desc: "AI decision to create a colony in Gabon. #n Should not be visible!#!"
+
+ bem_create_colonial_middle_congo: "AI decision Middle Congo"
+ bem_create_colonial_middle_congo_desc: "AI decision to create a colony in Middle Congo. #n Should not be visible!#!"
+
+ bem_create_colonial_central_africa: "AI decision Central Africa"
+ bem_create_colonial_central_africa_desc: "AI decision to create a colony in Central Africa. #n Should not be visible!#!"
+
+ bem_create_colonial_congo: "AI decision Congo"
+ bem_create_colonial_congo_desc: "AI decision to create a colony in Congo. #n Should not be visible!#!"
+
+ bem_create_colonial_angola: "AI decision Angola"
+ bem_create_colonial_angola_desc: "AI decision to create a colony in Angola. #n Should not be visible!#!"
+
+ bem_create_colonial_northern_rhodesia: "AI decision Northern Rhodesia"
+ bem_create_colonial_northern_rhodesia_desc: "AI decision to create a colony in Northern Rhodesia. #n Should not be visible!#!"
+
+ bem_create_colonial_swa: "AI decision South West Africa"
+ bem_create_colonial_swa_desc: "AI decision to create a colony in South West Africa. #n Should not be visible!#!"
+
+ bem_create_colonial_bechuanaland: "AI decision Bechuanaland"
+ bem_create_colonial_bechuanaland_desc: "AI decision to create a colony in South West AfricaBechuanaland. #n Should not be visible!#!"
+
+ bem_create_colonial_southern_rhodesia: "AI decision Southern Rhodesia"
+ bem_create_colonial_southern_rhodesia_desc: "AI decision to create a colony in Southern Rhodesia. #n Should not be visible!#!"
+
+ bem_create_colonial_transvaal: "AI decision Transvaal"
+ bem_create_colonial_transvaal_desc: "AI decision to create a colony in Transvaal. #n Should not be visible!#!"
+
+ bem_create_colonial_cape: "AI decision Cape"
+ bem_create_colonial_cape_desc: "AI decision to create a colony in Cape. #n Should not be visible!#!"

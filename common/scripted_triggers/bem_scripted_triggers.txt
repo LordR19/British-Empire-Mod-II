@@ -346,6 +346,19 @@ bem_colonial_nation_trigger = {
 			exists = c:CIC_colonial_burma
 			this = c:CIC_colonial_burma
 		}
+		### Oceania Region Countries ###
+		AND = { #Colonial Oceania
+			exists = c:COC_colonial_oceania
+			this = c:COC_colonial_oceania
+		}
+		AND = { #Colonial Australia
+			exists = c:C5A
+			this = c:C5A
+		}
+		AND = { #Colonial New Zealand
+			exists = c:C1Z
+			this = c:C1Z
+		}
 		AND = {
 			exists = c:COC_colonial_west_micronesia
 			this = c:COC_colonial_west_micronesia
@@ -633,6 +646,68 @@ bem_colonial_nation_south_africa_trigger = {
 		AND = { #Colonial Cape
 			exists = c:C6C
 			this = c:C6C
+		}
+	}
+}
+
+#Trigger for all the Colonial Nations in the Oceania Region
+bem_colonial_nation_oceania_trigger = {
+	OR = {
+		AND = { #Colonial Oceania
+			exists = c:COC_colonial_oceania
+			this = c:COC_colonial_oceania
+		}
+		AND = { #Colonial Australia
+			exists = c:C5A
+			this = c:C5A
+		}
+		AND = { #Colonial New Zealand
+			exists = c:C1Z
+			this = c:C1Z
+		}
+		AND = {
+			exists = c:COC_colonial_west_micronesia
+			this = c:COC_colonial_west_micronesia
+		}
+		AND = {
+			exists = c:COC_colonial_east_micronesia
+			this = c:COC_colonial_east_micronesia
+		}
+		AND = {
+			exists = c:COC_colonial_nauru
+			this = c:COC_colonial_nauru
+		}
+		AND = {
+			exists = c:COC_colonial_bougainville
+			this = c:COC_colonial_bougainville
+		}
+		AND = {
+			exists = c:COC_colonial_solomon_islands
+			this = c:COC_colonial_solomon_islands
+		}
+		AND = {
+			exists = c:COC_colonial_vanuatu
+			this = c:COC_colonial_vanuatu
+		}
+		AND = {
+			exists = c:COC_colonial_new_caledonia
+			this = c:COC_colonial_new_caledonia
+		}
+		AND = {
+			exists = c:COC_colonial_fiji
+			this = c:COC_colonial_fiji
+		}
+		AND = {
+			exists = c:COC_colonial_tonga
+			this = c:COC_colonial_tonga
+		}
+		AND = {
+			exists = c:COC_colonial_tahiti
+			this = c:COC_colonial_tahiti
+		}
+		AND = {
+			exists = c:COC_colonial_hawaii
+			this = c:COC_colonial_hawaii
 		}
 	}
 }

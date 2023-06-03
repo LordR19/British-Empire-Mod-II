@@ -930,21 +930,6 @@ C1Y = {
 	
 }
 
-#Colonial New Zealand
-C1Z = {
-
-	color = { 101 112 255 }
-	
-	country_type = colonial
-	
-	tier = principality
-
-	cultures = { british }
-	
-	capital = STATE_NORTH_ISLAND
-	
-}
-
 #Colony of Bermuda
 C2B = {
 
@@ -1062,21 +1047,6 @@ C4S = {
 	cultures = { british }
 	
 	capital = STATE_MALAYA
-	
-}
-
-#Colonial Australia
-C5A = {
-
-	color = { 0 38 100 }
-	
-	country_type = colonial
-	
-	tier = kingdom
-
-	cultures = { british }
-	
-	capital = STATE_NEW_SOUTH_WALES
 	
 }
 
@@ -1212,6 +1182,55 @@ CIC_colonial_burma = {
 	cultures = { british }
 	
 	capital = STATE_BURMA
+	
+}
+
+################################################
+
+### Oceania Region Countries ###
+
+#Colonial Region Oceania
+COC_colonial_oceania = {
+
+	color = { 100 100 255 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_NEW_SOUTH_WALES
+	
+}
+
+#Colonial Australia
+C5A = {
+
+	color = { 0 38 100 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_NEW_SOUTH_WALES
+	
+}
+
+#Colonial New Zealand
+C1Z = {
+
+	color = { 101 112 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_NORTH_ISLAND
 	
 }
 

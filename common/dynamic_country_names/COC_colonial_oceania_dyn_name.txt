@@ -1,0 +1,26 @@
+﻿# Colonial Oceania
+COC_colonial_oceania = {
+	dynamic_country_name = {
+		name = dyn_c_default_oceania
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_oceania
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}

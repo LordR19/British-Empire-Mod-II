@@ -1,0 +1,1183 @@
+﻿bem_show_colonial_decisions_toggle = {
+	is_shown = {
+		NOT = {
+			has_variable = show_bem_colonial_decisions_var
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		custom_tooltip = show_colonial_decisions_tt
+		set_variable = show_bem_colonial_decisions_var
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_hide_colonial_decisions_toggle = {
+	is_shown = {
+		has_variable = show_bem_colonial_decisions_var
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		custom_tooltip = hide_colonial_decisions_tt
+		remove_variable = show_bem_colonial_decisions_var
+	}
+	
+	ai_chance = {
+		base = 0 #AI should never do this
+	}
+}
+
+########################################################
+
+bem_transfer_colonial_lands_puppet_decision = {
+	is_shown = {
+		any_subject_or_below = {
+			is_ai = yes
+			country_is_in_africa = no
+			can_have_subjects = no
+			any_scope_state = {
+				state_is_in_africa = yes
+			}
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+#		change_infamy = 5
+		every_subject_or_below = {
+			limit = {
+				is_ai = yes
+				country_is_in_africa = no
+				can_have_subjects = no
+				any_scope_state = {
+					state_is_in_africa = yes
+				}
+			}
+			every_scope_state = {
+				limit = {
+					state_is_in_africa = yes
+				}
+				set_state_owner = root
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+########################################################
+
+unite_colonies_maghreb_decision = {
+	is_shown = {
+		OR = {
+			is_player = yes
+			AND = {
+				is_player = no
+				has_game_rule = bem_colonial_nations_release
+			}
+		}
+		has_variable = show_bem_colonial_decisions_var
+		any_subject_or_below = {
+			capital = { region = sr:region_north_africa }
+			is_subject_type = subject_type_bem_colony
+		}
+	}
+
+	possible = {
+		OR = {
+			custom_tooltip = {
+				any_subject_or_below = {
+					capital = { region = sr:region_north_africa }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count >= 2
+				}
+				text = colonial_nations_north_africa_more_2_tt
+			}
+			AND = {
+				custom_tooltip = {
+					any_subject_or_below = {
+						capital = { region = sr:region_north_africa }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					text = colonial_nations_north_africa_tt
+				}
+				any_scope_state = {
+					region = sr:region_north_africa
+				}
+			}
+		}
+	}
+	
+	when_taken = {
+		custom_tooltip = {
+			hidden_effect = {
+				ordered_subject_or_below  = {
+					limit = {
+						capital = { region = sr:region_north_africa }
+						is_subject_type = subject_type_bem_colony
+						relations:root >= relations_threshold:neutral
+					}
+					order_by = gdp
+		
+					save_scope_as = unifier_tag
+				}
+				if = {
+					limit = {
+						is_player = yes
+						any_scope_state = {
+							region = sr:region_north_africa
+						}
+					}
+					every_scope_state = {
+						limit = {
+							region = sr:region_north_africa
+							root = owner
+						}
+						set_state_owner = scope:unifier_tag
+					} 
+				}
+				every_subject_or_below = {
+					limit = {
+						NOT = { this = scope:unifier_tag }
+						capital = { region = sr:region_north_africa }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					scope:unifier_tag = {
+						annex = prev
+					}
+				}
+				if = {
+					limit =  {
+						is_player = yes
+						NOT = { exists = c:CA1 }
+					}
+					scope:unifier_tag = {
+						change_tag = CA1
+					}
+				}
+			}
+
+			text = unite_maghreb_tt
+		}
+		custom_tooltip = warning_colony_unification_tt
+	}
+
+	ai_chance = {
+		base = 100
+		modifier = {
+			trigger = {
+				NOT = { has_technology_researched = civilizing_mission }
+			}
+			add = -200
+		}
+		modifier = {
+			trigger = {
+				any_subject_or_below = {
+					capital = { region = sr:region_north_africa }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count < 2
+				}
+			}
+			add = -200
+		}
+	}
+}
+
+unite_colonies_west_africa_decision = {
+	is_shown = {
+		OR = {
+			is_player = yes
+			AND = {
+				is_player = no
+				has_game_rule = bem_colonial_nations_release
+			}
+		}
+		has_variable = show_bem_colonial_decisions_var
+		any_subject_or_below = {
+			capital = { region = sr:region_senegal }
+			is_subject_type = subject_type_bem_colony
+		}
+	}
+
+	possible = {
+		OR = {
+			custom_tooltip = {
+				any_subject_or_below = {
+					capital = { region = sr:region_senegal }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count >= 2
+				}
+				text = colonial_nations_west_africa_more_2_tt
+			}
+			AND = {
+				custom_tooltip = {
+					any_subject_or_below = {
+						capital = { region = sr:region_senegal }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					text = colonial_nations_west_africa_tt
+				}
+				any_scope_state = {
+					region = sr:region_senegal
+				}
+			}
+		}
+	}
+	
+	when_taken = {
+		custom_tooltip = {
+			hidden_effect = {
+				ordered_subject_or_below  = {
+					limit = {
+						capital = { region = sr:region_senegal }
+						is_subject_type = subject_type_bem_colony
+						relations:root >= relations_threshold:neutral
+					}
+					order_by = gdp
+		
+					save_scope_as = unifier_tag
+				}
+				if = {
+					limit = {
+						is_player = yes
+						any_scope_state = {
+							region = sr:region_senegal
+						}
+					}
+					every_scope_state = {
+						limit = {
+							region = sr:region_senegal
+							root = owner
+						}
+						set_state_owner = scope:unifier_tag
+					} 
+				}
+				every_subject_or_below = {
+					limit = {
+						NOT = { this = scope:unifier_tag }
+						capital = { region = sr:region_senegal }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					scope:unifier_tag = {
+						annex = prev
+					}
+				}
+				if = {
+					limit =  {
+						is_player = yes
+						NOT = { exists = c:CWA_colonial_west_africa }
+					}
+					scope:unifier_tag = {
+						change_tag = CWA_colonial_west_africa
+					}
+				}
+			}
+
+			text = unite_west_africa_tt
+		}
+		custom_tooltip = warning_colony_unification_tt
+	}
+
+	ai_chance = {
+		base = 100
+		modifier = {
+			trigger = {
+				NOT = { has_technology_researched = civilizing_mission }
+			}
+			add = -200
+		}
+		modifier = {
+			trigger = {
+				any_subject_or_below = {
+					capital = { region = sr:region_senegal }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count < 2
+				}
+			}
+			add = -200
+		}
+	}
+}
+
+unite_colonies_greater_nigeria_decision = {
+	is_shown = {
+		OR = {
+			is_player = yes
+			AND = {
+				is_player = no
+				has_game_rule = bem_colonial_nations_release
+			}
+		}
+		has_variable = show_bem_colonial_decisions_var
+		any_subject_or_below = {
+			capital = { region = sr:region_niger }
+			is_subject_type = subject_type_bem_colony
+		}
+	}
+
+	possible = {
+		OR = {
+			custom_tooltip = {
+				any_subject_or_below = {
+					capital = { region = sr:region_niger }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count >= 2
+				}
+				text = colonial_nations_niger_more_2_tt
+			}
+			AND = {
+				custom_tooltip = {
+					any_subject_or_below = {
+						capital = { region = sr:region_niger }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					text = colonial_nations_niger_tt
+				}
+				any_scope_state = {
+					region = sr:region_niger
+				}
+			}
+		}
+	}
+	
+	when_taken = {
+		custom_tooltip = {
+			hidden_effect = {
+				ordered_subject_or_below = {
+					limit = {
+						capital = { region = sr:region_niger }
+						is_subject_type = subject_type_bem_colony
+						relations:root >= relations_threshold:neutral
+					}
+					order_by = gdp
+		
+					save_scope_as = unifier_tag
+				}
+				if = {
+					is_player = yes
+					limit = {
+						any_scope_state = {
+							region = sr:region_niger
+						}
+					}
+					every_scope_state = {
+						limit = {
+							region = sr:region_niger
+							root = owner
+						}
+						set_state_owner = scope:unifier_tag
+					} 
+				}
+				every_subject_or_below = {
+					limit = {
+						NOT = { this = scope:unifier_tag }
+						capital = { region = sr:region_niger }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					scope:unifier_tag = {
+						annex = prev
+					}
+				}
+				if = {
+					limit =  {
+						is_player = yes
+						NOT = { exists = c:CGN_colonial_greater_nigeria }
+					}
+					scope:unifier_tag = {
+						change_tag = CGN_colonial_greater_nigeria
+					}
+				}
+			}
+
+			text = unite_greater_nigeria_tt
+		}
+		custom_tooltip = warning_colony_unification_tt
+	}
+
+	ai_chance = {
+		base = 100
+		modifier = {
+			trigger = {
+				NOT = { has_technology_researched = civilizing_mission }
+			}
+			add = -200
+		}
+		modifier = {
+			trigger = {
+				any_subject_or_below = {
+					capital = { region = sr:region_niger }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count < 2
+				}
+			}
+			add = -200
+		}
+	}
+}
+
+unite_colonies_greater_egypt_decision = {
+	is_shown = {
+		OR = {
+			is_player = yes
+			AND = {
+				is_player = no
+				has_game_rule = bem_colonial_nations_release
+			}
+		}
+		has_variable = show_bem_colonial_decisions_var
+		any_subject_or_below = {
+			capital = { region = sr:region_nile_basin }
+			is_subject_type = subject_type_bem_colony
+		}
+	}
+
+	possible = {
+		OR = {
+			custom_tooltip = {
+				any_subject_or_below = {
+					capital = { region = sr:region_nile_basin }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count >= 2
+				}
+				text = colonial_nations_nile_more_2_tt
+			}
+			AND = {
+				custom_tooltip = {
+					any_subject_or_below = {
+						capital = { region = sr:region_nile_basin }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					text = colonial_nations_nile_tt
+				}
+				any_scope_state = {
+					region = sr:region_nile_basin
+				}
+			}
+		}
+	}
+	
+	when_taken = {
+		custom_tooltip = {
+			hidden_effect = {
+				ordered_subject_or_below = {
+					limit = {
+						capital = { region = sr:region_nile_basin }
+						is_subject_type = subject_type_bem_colony
+						relations:root >= relations_threshold:neutral
+					}
+					order_by = gdp
+		
+					save_scope_as = unifier_tag
+				}
+				if = {
+					limit = {
+						is_player = yes
+						any_scope_state = {
+							region = sr:region_nile_basin
+						}
+					}
+					every_scope_state = {
+						limit = {
+							region = sr:region_nile_basin
+							root = owner
+						}
+						set_state_owner = scope:unifier_tag
+					} 
+				}
+				every_subject_or_below = {
+					limit = {
+						NOT = { this = scope:unifier_tag }
+						capital = { region = sr:region_nile_basin }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					scope:unifier_tag = {
+						annex = prev
+					}
+				}
+				if = {
+					limit =  {
+						is_player = yes
+						NOT = { exists = c:CGE_colonial_greater_egypt }
+					}
+					scope:unifier_tag = {
+						change_tag = CGE_colonial_greater_egypt
+					}
+				}
+			}
+
+			text = unite_greater_egypt_tt
+		}
+		custom_tooltip = warning_colony_unification_tt
+	}
+
+	ai_chance = {
+		base = 100
+		modifier = {
+			trigger = {
+				NOT = { has_technology_researched = civilizing_mission }
+			}
+			add = -200
+		}
+		modifier = {
+			trigger = {
+				any_subject_or_below = {
+					capital = { region = sr:region_nile_basin }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count < 2
+				}
+			}
+			add = -200
+		}
+	}
+}
+
+unite_colonies_greater_ethiopia_decision = {
+	is_shown = {
+		OR = {
+			is_player = yes
+			AND = {
+				is_player = no
+				has_game_rule = bem_colonial_nations_release
+			}
+		}
+		has_variable = show_bem_colonial_decisions_var
+		any_subject_or_below = {
+			capital = { region = sr:region_ethiopia }
+			is_subject_type = subject_type_bem_colony
+		}
+	}
+
+	possible = {
+		OR = {
+			custom_tooltip = {
+				any_subject_or_below = {
+					capital = { region = sr:region_ethiopia }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count >= 2
+				}
+				text = colonial_nations_ethiopia_more_2_tt
+			}
+			AND = {
+				custom_tooltip = {
+					any_subject_or_below = {
+						capital = { region = sr:region_ethiopia }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					text = colonial_nations_ethiopia_tt
+				}
+				any_scope_state = {
+					region = sr:region_ethiopia
+				}
+			}
+		}
+	}
+	
+	when_taken = {
+		custom_tooltip = {
+			hidden_effect = {
+				ordered_subject_or_below = {
+					limit = {
+						capital = { region = sr:region_ethiopia }
+						is_subject_type = subject_type_bem_colony
+						relations:root >= relations_threshold:neutral
+					}
+					order_by = gdp
+		
+					save_scope_as = unifier_tag
+				}
+				if = {
+					limit = {
+						is_player = yes
+						any_scope_state = {
+							region = sr:region_ethiopia
+						}
+					}
+					every_scope_state = {
+						limit = {
+							region = sr:region_ethiopia
+							root = owner
+						}
+						set_state_owner = scope:unifier_tag
+					} 
+				}
+				every_subject_or_below = {
+					limit = {
+						NOT = { this = scope:unifier_tag }
+						capital = { region = sr:region_ethiopia }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					scope:unifier_tag = {
+						annex = prev
+					}
+				}
+				if = {
+					limit =  {
+						is_player = yes
+						NOT = { exists = c:CET_colonial_greater_ethiopia }
+					}
+					scope:unifier_tag = {
+						change_tag = CET_colonial_greater_ethiopia
+					}
+				}
+			}
+
+			text = unite_greater_ethiopia_tt
+		}
+		custom_tooltip = warning_colony_unification_tt
+	}
+
+	ai_chance = {
+		base = 100
+		modifier = {
+			trigger = {
+				NOT = { has_technology_researched = civilizing_mission }
+			}
+			add = -200
+		}
+		modifier = {
+			trigger = {
+				any_subject_or_below = {
+					capital = { region = sr:region_ethiopia }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count < 2
+				}
+			}
+			add = -200
+		}
+	}
+}
+
+unite_colonies_zanj_decision = {
+	is_shown = {
+		OR = {
+			is_player = yes
+			AND = {
+				is_player = no
+				has_game_rule = bem_colonial_nations_release
+			}
+		}
+		has_variable = show_bem_colonial_decisions_var
+		any_subject_or_below = {
+			capital = { region = sr:region_zanj }
+			is_subject_type = subject_type_bem_colony
+		}
+	}
+
+	possible = {
+		OR = {
+			custom_tooltip = {
+				any_subject_or_below = {
+					capital = { region = sr:region_zanj }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count >= 2
+				}
+				text = colonial_nations_zanj_more_2_tt
+			}
+			AND = {
+				custom_tooltip = {
+					any_subject_or_below = {
+						capital = { region = sr:region_zanj }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					text = colonial_nations_zanj_tt
+				}
+				any_scope_state = {
+					region = sr:region_zanj
+				}
+			}
+		}
+	}
+	
+	when_taken = {
+		custom_tooltip = {
+			hidden_effect = {
+				ordered_subject_or_below = {
+					limit = {
+						capital = { region = sr:region_zanj }
+						is_subject_type = subject_type_bem_colony
+						relations:root >= relations_threshold:neutral
+					}
+					order_by = gdp
+		
+					save_scope_as = unifier_tag
+				}
+				if = {
+					limit = {
+						is_player = yes
+						any_scope_state = {
+							region = sr:region_zanj
+						}
+					}
+					every_scope_state = {
+						limit = {
+							region = sr:region_zanj
+							root = owner
+						}
+						set_state_owner = scope:unifier_tag
+					}
+				}
+				every_subject_or_below = {
+					limit = {
+						NOT = { this = scope:unifier_tag }
+						capital = { region = sr:region_zanj }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					scope:unifier_tag = {
+						annex = prev
+					}
+				}
+				if = {
+					limit =  {
+						is_player = yes
+						NOT = { exists = c:CEA_colonial_east_africa }
+					}
+					scope:unifier_tag = {
+						change_tag = CEA_colonial_east_africa
+					}
+				}
+			}
+
+			text = unite_zanj_tt
+		}
+		custom_tooltip = warning_colony_unification_tt
+	}
+
+	ai_chance = {
+		base = 100
+		modifier = {
+			trigger = {
+				NOT = { has_technology_researched = civilizing_mission }
+			}
+			add = -200
+		}
+		modifier = {
+			trigger = {
+				any_subject_or_below = {
+					capital = { region = sr:region_zanj }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count < 2
+				}
+			}
+			add = -200
+		}
+	}
+}
+
+unite_colonies_congo_decision = {
+	is_shown = {
+		OR = {
+			is_player = yes
+			AND = {
+				is_player = no
+				has_game_rule = bem_colonial_nations_release
+			}
+		}
+		has_variable = show_bem_colonial_decisions_var
+		any_subject_or_below = {
+			capital = { region = sr:region_congo }
+			is_subject_type = subject_type_bem_colony
+		}
+	}
+
+	possible = {
+		OR = {
+			custom_tooltip = {
+				any_subject_or_below = {
+					capital = { region = sr:region_congo }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count >= 2
+				}
+				text = colonial_nations_congo_more_2_tt
+			}
+			AND = {
+				custom_tooltip = {
+					any_subject_or_below = {
+						capital = { region = sr:region_congo }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					text = colonial_nations_congo_tt
+				}
+				any_scope_state = {
+					region = sr:region_congo
+				}
+			}
+		}
+	}
+	
+	when_taken = {
+		custom_tooltip = {
+			hidden_effect = {
+				ordered_subject_or_below = {
+					limit = {
+						capital = { region = sr:region_congo }
+						is_subject_type = subject_type_bem_colony
+						relations:root >= relations_threshold:neutral
+					}
+					order_by = gdp
+		
+					save_scope_as = unifier_tag
+				}
+				if = {
+					limit = {
+						is_player = yes
+						any_scope_state = {
+							region = sr:region_congo
+						}
+					}
+					every_scope_state = {
+						limit = {
+							region = sr:region_congo
+							root = owner
+						}
+						set_state_owner = scope:unifier_tag
+					} 
+				}
+				every_subject_or_below = {
+					limit = {
+						NOT = { this = scope:unifier_tag }
+						capital = { region = sr:region_congo }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					scope:unifier_tag = {
+						annex = prev
+					}
+				}
+				if = {
+					limit =  {
+						is_player = yes
+						NOT = { exists = c:CGC_colonial_greater_congo }
+					}
+					scope:unifier_tag = {
+						change_tag = CGC_colonial_greater_congo
+					}
+				}
+			}
+
+			text = unite_congo_tt
+		}
+		custom_tooltip = warning_colony_unification_tt
+	}
+
+	ai_chance = {
+		base = 100
+		modifier = {
+			trigger = {
+				NOT = { has_technology_researched = civilizing_mission }
+			}
+			add = -200
+		}
+		modifier = {
+			trigger = {
+				any_subject_or_below = {
+					capital = { region = sr:region_congo }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count < 2
+				}
+			}
+			add = -200
+		}
+	}
+}
+
+unite_colonies_south_africa_decision = {
+	is_shown = {
+		OR = {
+			is_player = yes
+			AND = {
+				is_player = no
+				has_game_rule = bem_colonial_nations_release
+			}
+		}
+		has_variable = show_bem_colonial_decisions_var
+		any_subject_or_below = {
+			capital = { region = sr:region_southern_africa }
+			is_subject_type = subject_type_bem_colony
+		}
+	}
+
+	possible = {
+		OR = {
+			custom_tooltip = {
+				any_subject_or_below = {
+					capital = { region = sr:region_southern_africa }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count >= 2
+				}
+				text = colonial_nations_south_africa_more_2_tt
+			}
+			AND = {
+				custom_tooltip = {
+					any_subject_or_below = {
+						capital = { region = sr:region_southern_africa }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					text = colonial_nations_south_africa_tt
+				}
+				any_scope_state = {
+					region = sr:region_southern_africa
+				}
+			}
+		}
+	}
+	
+	when_taken = {
+		custom_tooltip = {
+			hidden_effect = {
+				ordered_subject_or_below = {
+					limit = {
+						capital = { region = sr:region_southern_africa }
+						is_subject_type = subject_type_bem_colony
+						relations:root >= relations_threshold:neutral
+					}
+					order_by = gdp
+		
+					save_scope_as = unifier_tag
+				}
+				if = {
+					limit = {
+						is_player = yes
+						any_scope_state = {
+							region = sr:region_southern_africa
+						}
+					}
+					every_scope_state = {
+						limit = {
+							region = sr:region_southern_africa
+							root = owner
+						}
+						set_state_owner = scope:unifier_tag
+					} 
+				}
+				every_subject_or_below = {
+					limit = {
+						NOT = { this = scope:unifier_tag }
+						capital = { region = sr:region_southern_africa }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					scope:unifier_tag = {
+						annex = prev
+					}
+				}
+				if = {
+					limit =  {
+						is_player = yes
+						NOT = { exists = c:CSAF_colonial_south_africa }
+					}
+					scope:unifier_tag = {
+						change_tag = CSAF_colonial_south_africa
+					}
+				}
+			}
+
+			text = unite_south_africa_tt
+		}
+		custom_tooltip = warning_colony_unification_tt
+	}
+
+	ai_chance = {
+		base = 100
+		modifier = {
+			trigger = {
+				NOT = { has_technology_researched = civilizing_mission }
+			}
+			add = -200
+		}
+		modifier = {
+			trigger = {
+				any_subject_or_below = {
+					capital = { region = sr:region_southern_africa }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count < 2
+				}
+			}
+			add = -200
+		}
+	}
+}
+
+unite_colonies_oceania_decision = {
+	is_shown = {
+		OR = {
+			is_player = yes
+			AND = {
+				is_player = no
+				has_game_rule = bem_colonial_nations_release
+			}
+		}
+		has_variable = show_bem_colonial_decisions_var
+		any_subject_or_below = {
+			capital = { region = sr:region_oceania }
+			is_subject_type = subject_type_bem_colony
+		}
+	}
+
+	possible = {
+		OR = {
+			custom_tooltip = {
+				any_subject_or_below = {
+					capital = { region = sr:region_oceania }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count >= 2
+				}
+				text = colonial_nations_oceania_more_2_tt
+			}
+			AND = {
+				custom_tooltip = {
+					any_subject_or_below = {
+						capital = { region = sr:region_oceania }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					text = colonial_nations_oceania_tt
+				}
+				any_scope_state = {
+					region = sr:region_oceania
+				}
+			}
+		}
+	}
+	
+	when_taken = {
+		custom_tooltip = {
+			hidden_effect = {
+				ordered_subject_or_below = {
+					limit = {
+						capital = { region = sr:region_oceania }
+						is_subject_type = subject_type_bem_colony
+						relations:root >= relations_threshold:neutral
+					}
+					order_by = gdp
+		
+					save_scope_as = unifier_tag
+				}
+				if = {
+					limit = {
+						is_player = yes
+						any_scope_state = {
+							region = sr:region_oceania
+						}
+					}
+					every_scope_state = {
+						limit = {
+							region = sr:region_oceania
+							root = owner
+						}
+						set_state_owner = scope:unifier_tag
+					} 
+				}
+				every_subject_or_below = {
+					limit = {
+						NOT = { this = scope:unifier_tag }
+						capital = { region = sr:region_oceania }
+						is_subject_type = subject_type_bem_colony
+						is_ai = yes
+						relations:root >= relations_threshold:neutral
+					}
+					scope:unifier_tag = {
+						annex = prev
+					}
+				}
+				if = {
+					limit =  {
+						is_player = yes
+						NOT = { exists = c:COC_colonial_oceania }
+					}
+					scope:unifier_tag = {
+						change_tag = COC_colonial_oceania
+					}
+				}
+			}
+
+			text = unite_south_africa_tt
+		}
+		custom_tooltip = warning_colony_unification_tt
+	}
+
+	ai_chance = {
+		base = 100
+		modifier = {
+			trigger = {
+				NOT = { has_technology_researched = civilizing_mission }
+			}
+			add = -200
+		}
+		modifier = {
+			trigger = {
+				any_subject_or_below = {
+					capital = { region = sr:region_oceania }
+					is_subject_type = subject_type_bem_colony
+					is_ai = yes
+					count < 2
+				}
+			}
+			add = -200
+		}
+	}
+}
