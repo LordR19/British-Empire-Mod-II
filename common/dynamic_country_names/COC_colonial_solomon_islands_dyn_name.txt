@@ -1,7 +1,7 @@
-﻿# Colonial Australia
-C5A = {
+﻿# Colonial Solomon Islands
+COC_colonial_solomon_islands = {
 	dynamic_country_name = {
-		name = dyn_c_default_australia
+		name = dyn_c_default_solomon_islands
 
 		is_main_tag_only = no
 		priority = 1
@@ -12,7 +12,7 @@ C5A = {
 	}
 
 	dynamic_country_name = {
-		name = dyn_c_colonial_australia
+		name = dyn_c_colonial_solomon_islands
 
 		is_main_tag_only = no
 		priority = 10
@@ -25,10 +25,10 @@ C5A = {
 	}
 }
 
-# Colonial Australia AI
-C5A_AI = {
+# Colonial Solomon Islands AI
+COC_colonial_solomon_islands_AI = {
 	dynamic_country_name = {
-		name = dyn_c_default_australia
+		name = dyn_c_default_solomon_islands
 
 		is_main_tag_only = no
 		priority = 1
@@ -39,7 +39,7 @@ C5A_AI = {
 	}
 
 	dynamic_country_name = {
-		name = dyn_c_colonial_australia
+		name = dyn_c_colonial_solomon_islands
 
 		is_main_tag_only = no
 		priority = 10

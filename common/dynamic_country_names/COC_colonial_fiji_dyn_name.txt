@@ -1,4 +1,32 @@
-﻿COC_colonial_fiji = { # Colonial Fiji
+﻿# Colonial Fiji
+COC_colonial_fiji = {
+	dynamic_country_name = {
+		name = dyn_c_default_fiji
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_fiji
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}
+
+# Colonial Fiji AI
+COC_colonial_fiji_AI = {
 	dynamic_country_name = {
 		name = dyn_c_default_fiji
 

@@ -4745,3 +4745,1355 @@ bem_create_colonial_cape = {
 		base = 100
 	}
 }
+
+################################################
+
+### Oceania Region Countries ###
+
+bem_create_colonial_australia = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_NEW_SOUTH_WALES
+				state_region = s:STATE_NORTHERN_TERRITORY
+				state_region = s:STATE_QUEENSLAND
+				state_region = s:STATE_SOUTH_AUSTRALIA
+				state_region = s:STATE_TASMANIA
+				state_region = s:STATE_VICTORIA
+				state_region = s:STATE_WESTERN_AUSTRALIA
+			}
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:C5A_AI}
+						AND = {
+							exists = c:C5A_AI
+							NOT = { c:C5A_AI = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						OR = {
+							state_region = s:STATE_NEW_SOUTH_WALES
+							state_region = s:STATE_NORTHERN_TERRITORY
+							state_region = s:STATE_QUEENSLAND
+							state_region = s:STATE_SOUTH_AUSTRALIA
+							state_region = s:STATE_TASMANIA
+							state_region = s:STATE_VICTORIA
+							state_region = s:STATE_WESTERN_AUSTRALIA
+						}
+						bem_any_neighbouring_state_decentralized = yes
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = C5A_AI
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						OR = {
+							state_region = s:STATE_NEW_SOUTH_WALES
+							state_region = s:STATE_NORTHERN_TERRITORY
+							state_region = s:STATE_QUEENSLAND
+							state_region = s:STATE_SOUTH_AUSTRALIA
+							state_region = s:STATE_TASMANIA
+							state_region = s:STATE_VICTORIA
+							state_region = s:STATE_WESTERN_AUSTRALIA
+						}
+						bem_any_neighbouring_state_decentralized = yes
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						OR = {
+							has_state_in_state_region = STATE_NEW_SOUTH_WALES
+							has_state_in_state_region = STATE_NORTHERN_TERRITORY
+							has_state_in_state_region = STATE_QUEENSLAND
+							has_state_in_state_region = STATE_SOUTH_AUSTRALIA
+							has_state_in_state_region = STATE_TASMANIA
+							has_state_in_state_region = STATE_VICTORIA
+							has_state_in_state_region = STATE_WESTERN_AUSTRALIA
+						}
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						OR = {
+							state_region = s:STATE_NEW_SOUTH_WALES
+							state_region = s:STATE_NORTHERN_TERRITORY
+							state_region = s:STATE_QUEENSLAND
+							state_region = s:STATE_SOUTH_AUSTRALIA
+							state_region = s:STATE_TASMANIA
+							state_region = s:STATE_VICTORIA
+							state_region = s:STATE_WESTERN_AUSTRALIA
+						}
+						bem_any_neighbouring_state_decentralized = yes
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_create_colonial_new_zealand = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_NORTH_ISLAND
+				state_region = s:STATE_SOUTH_ISLAND
+			}
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:C1Z_AI}
+						AND = {
+							exists = c:C1Z_AI
+							NOT = { c:C1Z_AI = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						OR = {
+							state_region = s:STATE_NORTH_ISLAND
+							state_region = s:STATE_SOUTH_ISLAND
+						}
+						bem_any_neighbouring_state_decentralized = yes
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = C1Z_AI
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						OR = {
+							state_region = s:STATE_NORTH_ISLAND
+							state_region = s:STATE_SOUTH_ISLAND
+						}
+						bem_any_neighbouring_state_decentralized = yes
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						OR = {
+							has_state_in_state_region = STATE_NORTH_ISLAND
+							has_state_in_state_region = STATE_SOUTH_ISLAND
+						}
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						OR = {
+							state_region = s:STATE_NORTH_ISLAND
+							state_region = s:STATE_SOUTH_ISLAND
+						}
+						bem_any_neighbouring_state_decentralized = yes
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_create_colonial_west_micronesia = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			state_region = s:STATE_WEST_MICRONESIA
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:COC_colonial_west_micronesia}
+						AND = {
+							exists = c:COC_colonial_west_micronesia
+							NOT = { c:COC_colonial_west_micronesia = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_WEST_MICRONESIA
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = COC_colonial_west_micronesia
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_WEST_MICRONESIA
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						has_state_in_state_region = STATE_WEST_MICRONESIA
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_WEST_MICRONESIA
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_create_colonial_east_micronesia = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			state_region = s:STATE_EAST_MICRONESIA
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:COC_colonial_east_micronesia_AI}
+						AND = {
+							exists = c:COC_colonial_east_micronesia_AI
+							NOT = { c:COC_colonial_east_micronesia_AI = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_EAST_MICRONESIA
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = COC_colonial_east_micronesia_AI
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_EAST_MICRONESIA
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						has_state_in_state_region = STATE_EAST_MICRONESIA
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_EAST_MICRONESIA
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_create_colonial_nauru = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			state_region = s:STATE_NAURU
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:COC_colonial_nauru_AI}
+						AND = {
+							exists = c:COC_colonial_nauru_AI
+							NOT = { c:COC_colonial_nauru_AI = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_NAURU
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = COC_colonial_nauru_AI
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_NAURU
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						has_state_in_state_region = STATE_NAURU
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_NAURU
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_create_colonial_bougainville = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			state_region = s:STATE_BOUGAINVILLE
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:COC_colonial_bougainville_AI }
+						AND = {
+							exists = c:COC_colonial_bougainville_AI
+							NOT = { c:COC_colonial_bougainville_AI = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_BOUGAINVILLE
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = COC_colonial_bougainville_AI
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_BOUGAINVILLE
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						has_state_in_state_region = STATE_BOUGAINVILLE
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_BOUGAINVILLE
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_create_colonial_solomon_islands = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			state_region = s:STATE_SOLOMON_ISLANDS
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:COC_colonial_solomon_islands }
+						AND = {
+							exists = c:COC_colonial_solomon_islands
+							NOT = { c:COC_colonial_solomon_islands = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_SOLOMON_ISLANDS
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = COC_colonial_solomon_islands
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_SOLOMON_ISLANDS
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						has_state_in_state_region = STATE_SOLOMON_ISLANDS
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_SOLOMON_ISLANDS
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_create_colonial_vanuatu = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			state_region = s:STATE_VANUATU
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:COC_colonial_vanuatu_AI }
+						AND = {
+							exists = c:COC_colonial_vanuatu_AI
+							NOT = { c:COC_colonial_vanuatu_AI = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_VANUATU
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = COC_colonial_vanuatu_AI
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_VANUATU
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						has_state_in_state_region = STATE_VANUATU
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_VANUATU
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_create_colonial_new_caledonia = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			state_region = s:STATE_KANAK
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:COC_colonial_new_caledonia_AI }
+						AND = {
+							exists = c:COC_colonial_new_caledonia_AI
+							NOT = { c:COC_colonial_new_caledonia_AI = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_KANAK
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = COC_colonial_new_caledonia_AI
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_KANAK
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						has_state_in_state_region = STATE_KANAK
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_KANAK
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_create_colonial_fiji = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			state_region = s:STATE_FIJI
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:COC_colonial_fiji_AI }
+						AND = {
+							exists = c:COC_colonial_fiji_AI
+							NOT = { c:COC_colonial_fiji_AI = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_FIJI
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = COC_colonial_fiji_AI
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_FIJI
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						has_state_in_state_region = STATE_FIJI
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_FIJI
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_create_colonial_tonga = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			state_region = s:STATE_TONGA
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:COC_colonial_tonga_AI }
+						AND = {
+							exists = c:COC_colonial_tonga_AI
+							NOT = { c:COC_colonial_tonga_AI = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_TONGA
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = COC_colonial_tonga_AI
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_TONGA
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						has_state_in_state_region = STATE_TONGA
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_TONGA
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_create_colonial_tahiti = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			state_region = s:STATE_TAHITI
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:COC_colonial_tahiti_AI }
+						AND = {
+							exists = c:COC_colonial_tahiti_AI
+							NOT = { c:COC_colonial_tahiti_AI = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_TAHITI
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = COC_colonial_tahiti_AI
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_TAHITI
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						has_state_in_state_region = STATE_TAHITI
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_TAHITI
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_create_colonial_hawaii = {
+	is_shown = {
+		has_game_rule = bem_colonial_nations_release
+		can_have_subjects = yes
+		OR = { is_country_type = recognized is_country_type = colonial }
+		bem_country_is_in_oceania = no
+		is_ai = yes
+		any_scope_state = {
+			state_region = s:STATE_HAWAIIAN_ISLANDS
+			bem_any_neighbouring_state_decentralized = yes
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		hidden_effect = {
+			if = {
+				limit = { #Fires if there is no subject yet
+					OR = {
+						NOT = { exists = c:COC_colonial_hawaii_AI }
+						AND = {
+							exists = c:COC_colonial_hawaii_AI
+							NOT = { c:COC_colonial_hawaii_AI = { is_direct_subject_of = root } }
+						}
+					}
+				}
+
+				#Sets the Releasing Country as a global variable to be accessible in the on_created
+				set_global_variable = {
+					name = bem_colonizer_global_var
+					value = root
+				}
+
+				#This is needed to set a state for country creation
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_HAWAIIAN_ISLANDS
+					}
+					save_scope_as = bem_primary_state
+				}
+
+				#Creates a new subject if there is none yet
+				create_country = {
+					tag = COC_colonial_hawaii_AI
+					origin = this
+					state = scope:bem_primary_state
+
+					on_created = {
+						#Used to be able to get exactly this version of the tag
+						set_global_variable = {
+							name = bem_colony_global_var
+							value = prev
+						}
+
+						bem_colony_set_up_effect = yes
+					}
+				}
+
+				create_diplomatic_pact = {
+					country = global_var:bem_colony_global_var
+					type = bem_colony
+				}
+
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_HAWAIIAN_ISLANDS
+					}
+					set_state_owner = global_var:bem_colony_global_var
+				}
+	
+				remove_global_variable = bem_colony_global_var
+				remove_global_variable = bem_colonizer_global_var
+			}
+			else = {
+				random_subject_or_below  = {
+					limit = {
+						is_subject_type = subject_type_bem_colony
+						has_state_in_state_region = STATE_HAWAIIAN_ISLANDS
+					}
+					save_scope_as = bem_colony_scope
+				}
+				every_scope_state = {
+					limit = {
+						state_region = s:STATE_HAWAIIAN_ISLANDS
+					}
+					set_state_owner = scope:bem_colony_scope
+				}
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}

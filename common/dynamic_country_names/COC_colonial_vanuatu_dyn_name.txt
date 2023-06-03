@@ -24,3 +24,30 @@ COC_colonial_vanuatu = {
 		}
 	}
 }
+
+# Colonial Vanuatu AI
+COC_colonial_vanuatu_AI = {
+	dynamic_country_name = {
+		name = dyn_c_default_new_hebrides
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_new_hebrides
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}

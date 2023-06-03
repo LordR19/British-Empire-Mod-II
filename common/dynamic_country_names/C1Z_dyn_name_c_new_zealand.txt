@@ -1,4 +1,32 @@
-﻿C1Z = { # Colonial Oman
+﻿# Colonial New Zealand
+C1Z = {
+	dynamic_country_name = {
+		name = dyn_c_default_new_zealand
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_new_zealand
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}
+
+# Colonial New Zealand AI
+C1Z_AI = {
 	dynamic_country_name = {
 		name = dyn_c_default_new_zealand
 

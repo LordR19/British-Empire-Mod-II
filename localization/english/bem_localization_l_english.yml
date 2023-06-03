@@ -213,11 +213,6 @@
  dyn_c_protectorate_of_yemen_adj: "Yemeni"
  dyn_c_colonial_yemen: "[Country.GetOverlord.GetAdjectiveNoFormatting] Yemen"
 
- C1Z: "Colonial New Zealand"
- C1Z_ADJ: "New Zealand"
- dyn_c_default_new_zealand: "New Zealand"
- dyn_c_colonial_new_zealand: "[Country.GetOverlord.GetAdjectiveNoFormatting] New Zealand"
-
  C2A: "Colonial Angola"
  C2A_ADJ: "Angolan"
  dyn_c_default_angola: "Angola"
@@ -418,11 +413,6 @@
  dyn_c_colony_of_togo: "[Country.GetOverlord.GetAdjectiveNoFormatting] Togo"
  dyn_c_colony_of_togo_adj: "Togolese"
 
- C5A: "Colonial Australia"
- C5A_ADJ: "Australian"
- dyn_c_default_australia: "Australia"
- dyn_c_colonial_australia: "[Country.GetOverlord.GetAdjectiveNoFormatting] Australia"
-
  C5C: "Colonial Chad"
  C5C_ADJ: "Chad"
  dyn_c_default_chad: "Chad"
@@ -550,13 +540,31 @@
  dyn_c_default_oceania: "Oceania"
  dyn_c_colonial_oceania: "[Country.GetOverlord.GetAdjectiveNoFormatting] Oceania"
 
+ C5A: "Colonial Australia"
+ C5A_ADJ: "Australian"
+ C5A_AI: "Colonial Australia"
+ C5A_AI_ADJ: "Australian"
+ dyn_c_default_australia: "Australia"
+ dyn_c_colonial_australia: "[Country.GetOverlord.GetAdjectiveNoFormatting] Australia"
+
+ C1Z: "Colonial New Zealand"
+ C1Z_ADJ: "New Zealand"
+ C1Z_AI: "Colonial New Zealand"
+ C1Z_AI_ADJ: "New Zealand"
+ dyn_c_default_new_zealand: "New Zealand"
+ dyn_c_colonial_new_zealand: "[Country.GetOverlord.GetAdjectiveNoFormatting] New Zealand"
+
  COC_colonial_west_micronesia: "Colonial West Micronesia"
  COC_colonial_west_micronesia_ADJ: "Micronesian"
+ COC_colonial_west_micronesia_AI: "Colonial West Micronesia"
+ COC_colonial_west_micronesia_AI_ADJ: "Micronesian"
  dyn_c_default_west_micronesia: "West Micronesia"
  dyn_c_colonial_west_micronesia: "[Country.GetOverlord.GetAdjectiveNoFormatting] West Micronesia"
 
  COC_colonial_east_micronesia: "Colonial East Micronesia"
  COC_colonial_east_micronesia_ADJ: "Micronesian"
+ COC_colonial_east_micronesia_AI: "Colonial East Micronesia"
+ COC_colonial_east_micronesia_AI_ADJ: "Micronesian"
  dyn_c_default_east_micronesia: "East Micronesia"
  dyn_c_colonial_east_micronesia: "[Country.GetOverlord.GetAdjectiveNoFormatting] East Micronesia"
  dyn_c_british_gilbert_islands: "[Country.GetOverlord.GetAdjectiveNoFormatting] Gilbert Islands"
@@ -564,46 +572,64 @@
 
  COC_colonial_nauru: "Colonial Nauru"
  COC_colonial_nauru_ADJ: "Nauruan"
- dyn_c_default_nauru: "Nauru" 
+ COC_colonial_nauru_AI: "Colonial Nauru"
+ COC_colonial_nauru_AI_ADJ: "Nauruan"
+ dyn_c_default_nauru: "Nauru"
  dyn_c_colonial_nauru: "[Country.GetOverlord.GetAdjectiveNoFormatting] Nauru"
 
  COC_colonial_bougainville: "Colonial Bougainville"
  COC_colonial_bougainville_ADJ: "Bougainvillean"
+ COC_colonial_bougainville_AI: "Colonial Bougainville"
+ COC_colonial_bougainville_AI_ADJ: "Bougainvillean"
  dyn_c_default_bougainville: "Bougainville"
  dyn_c_colonial_bougainville: "[Country.GetOverlord.GetAdjectiveNoFormatting] Bougainville"
 
  COC_colonial_solomon_islands: "Colonial Solomon Islands"
  COC_colonial_solomon_islands_ADJ: "Soloman Islander"
+ COC_colonial_solomon_islands_AI: "Colonial Solomon Islands"
+ COC_colonial_solomon_islands_AI_ADJ: "Soloman Islander"
  dyn_c_default_solomon_islands: "Solomon Islands"
  dyn_c_colonial_solomon_islands: "[Country.GetOverlord.GetAdjectiveNoFormatting] Solomon Islands"
 
  COC_colonial_vanuatu: "Colonial Vanuatu"
  COC_colonial_vanuatu_ADJ: "New Hebride"
+ COC_colonial_vanuatu_AI: "Colonial Vanuatu"
+ COC_colonial_vanuatu_AI_ADJ: "New Hebride"
  dyn_c_default_new_hebrides: "New Hebrides"
  dyn_c_colonial_new_hebrides: "[Country.GetOverlord.GetAdjectiveNoFormatting] New Hebrides"
 
  COC_colonial_new_caledonia: "Colonial New Caledonia"
  COC_colonial_new_caledonia_ADJ: "New Caledonian"
+ COC_colonial_new_caledonia_AI: "Colonial New Caledonia"
+ COC_colonial_new_caledonia_AI_ADJ: "New Caledonian"
  dyn_c_default_new_caledonia: "New Caledonia"
  dyn_c_colonial_new_caledonia: "[Country.GetOverlord.GetAdjectiveNoFormatting] New Caledonia"
 
  COC_colonial_fiji: "Colonial Fiji"
  COC_colonial_fiji_ADJ: "Fijian"
+ COC_colonial_fiji_AI: "Colonial Fiji"
+ COC_colonial_fiji_AI_ADJ: "Fijian"
  dyn_c_default_fiji: "Fiji"
  dyn_c_colonial_fiji: "[Country.GetOverlord.GetAdjectiveNoFormatting] Fiji"
 
  COC_colonial_tonga: "Colonial Tonga"
  COC_colonial_tonga_ADJ: "Tongan"
+ COC_colonial_tonga_AI: "Colonial Tonga"
+ COC_colonial_tonga_AI_ADJ: "Tongan"
  dyn_c_default_tonga: "Tonga"
  dyn_c_colonial_tonga: "[Country.GetOverlord.GetAdjectiveNoFormatting] Tonga"
 
  COC_colonial_tahiti: "Colonial Tahiti"
  COC_colonial_tahiti_ADJ: "Tahitian"
+ COC_colonial_tahiti_AI: "Colonial Tahiti"
+ COC_colonial_tahiti_AI_ADJ: "Tahitian"
  dyn_c_default_tahiti: "Tahiti"
  dyn_c_colonial_tahiti: "[Country.GetOverlord.GetAdjectiveNoFormatting] Tahiti"
 
  COC_colonial_hawaii: "Colonial Hawaii"
  COC_colonial_hawaii_ADJ: "Hawaiian"
+ COC_colonial_hawaii_AI: "Colonial Hawaii"
+ COC_colonial_hawaii_AI_ADJ: "Hawaiian"
  dyn_c_default_hawaii: "Hawaii"
  dyn_c_colonial_hawaii: "[Country.GetOverlord.GetAdjectiveNoFormatting] Hawaii"
 
@@ -967,3 +993,46 @@
 
  bem_create_colonial_cape: "AI decision Cape"
  bem_create_colonial_cape_desc: "AI decision to create a colony in Cape. #n Should not be visible!#!"
+
+################################################
+
+### Oceania Region Countries ###
+
+ bem_create_colonial_australia: "AI decision Australia"
+ bem_create_colonial_australia_desc: "AI decision to create a colony in Australia. #n Should not be visible!#!"
+
+ bem_create_colonial_new_zealand: "AI decision New Zealand"
+ bem_create_colonial_new_zealand_desc: "AI decision to create a colony in New Zealand. #n Should not be visible!#!"
+
+ bem_create_colonial_west_micronesia: "AI decision West Micronesia"
+ bem_create_colonial_west_micronesia_desc: "AI decision to create a colony in West Micronesia. #n Should not be visible!#!"
+
+ bem_create_colonial_east_micronesia: "AI decision East Micronesia"
+ bem_create_colonial_east_micronesia_desc: "AI decision to create a colony in East Micronesia. #n Should not be visible!#!"
+
+ bem_create_colonial_nauru: "AI decision Nauru"
+ bem_create_colonial_nauru_desc: "AI decision to create a colony in Nauru. #n Should not be visible!#!"
+
+ bem_create_colonial_bougainville: "AI decision Bougainville"
+ bem_create_colonial_bougainville_desc: "AI decision to create a colony in Bougainville. #n Should not be visible!#!"
+
+ bem_create_colonial_solomon_islands: "AI decision Solomon Islands"
+ bem_create_colonial_solomon_islands_desc: "AI decision to create a colony in Solomon Islands. #n Should not be visible!#!"
+
+ bem_create_colonial_vanuatu: "AI decision Vanuatu"
+ bem_create_colonial_vanuatu_desc: "AI decision to create a colony in Vanuatu. #n Should not be visible!#!"
+
+ bem_create_colonial_new_caledonia: "AI decision New Caledonia"
+ bem_create_colonial_new_caledonia_desc: "AI decision to create a colony in New Caledonia. #n Should not be visible!#!"
+
+ bem_create_colonial_fiji: "AI decision Fiji"
+ bem_create_colonial_fiji_desc: "AI decision to create a colony in Fiji. #n Should not be visible!#!"
+
+ bem_create_colonial_tonga: "AI decision Tonga"
+ bem_create_colonial_tonga_desc: "AI decision to create a colony in Tonga. #n Should not be visible!#!"
+
+ bem_create_colonial_tahiti: "AI decision Tahiti"
+ bem_create_colonial_tahiti_desc: "AI decision to create a colony in Tahiti. #n Should not be visible!#!"
+
+ bem_create_colonial_hawaii: "AI decision Hawaii"
+ bem_create_colonial_hawaii_desc: "AI decision to create a colony in Hawaii. #n Should not be visible!#!"

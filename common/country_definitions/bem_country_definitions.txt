@@ -1834,8 +1834,38 @@ C5A = {
 	
 }
 
+#Colonial Australia AI
+C5A_AI = {
+
+	color = { 0 38 100 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+
+	cultures = { british }
+	
+	capital = STATE_NEW_SOUTH_WALES
+	
+}
+
 #Colonial New Zealand
 C1Z = {
+
+	color = { 101 112 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_NORTH_ISLAND
+	
+}
+
+#Colonial New Zealand AI
+C1Z_AI = {
 
 	color = { 101 112 255 }
 	
@@ -1864,8 +1894,38 @@ COC_colonial_west_micronesia = {
 	
 }
 
+#Colonial West Micronesia AI
+COC_colonial_west_micronesia_AI = {
+
+	color = { 170 170 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_WEST_MICRONESIA
+	
+}
+
 #Colonial East Micronesia / Gilbert Islands
 COC_colonial_east_micronesia = {
+
+	color = { 255 0 0 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_EAST_MICRONESIA
+	
+}
+
+#Colonial East Micronesia / Gilbert Islands AI
+COC_colonial_east_micronesia_AI = {
 
 	color = { 255 0 0 }
 	
@@ -1894,8 +1954,38 @@ COC_colonial_nauru = {
 	
 }
 
+#Colonial Nauru AI
+COC_colonial_nauru_AI = {
+
+	color = { 64 84 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_NAURU
+	
+}
+
 #Colonial Bougainville
 COC_colonial_bougainville = {
+
+	color = { 255 32 22 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_BOUGAINVILLE
+	
+}
+
+#Colonial Bougainville AI
+COC_colonial_bougainville_AI = {
 
 	color = { 255 32 22 }
 	
@@ -1924,8 +2014,38 @@ COC_colonial_solomon_islands = {
 	
 }
 
+#Colonial Solomon Island AI
+COC_colonial_solomon_islands_AI = {
+
+	color = { 255 75 75 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_SOLOMON_ISLANDS
+	
+}
+
 #Colonial Vanuatu
 COC_colonial_vanuatu = {
+
+	color = { 100 100 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_VANUATU
+	
+}
+
+#Colonial Vanuatu AI
+COC_colonial_vanuatu_AI = {
 
 	color = { 100 100 255 }
 	
@@ -1954,8 +2074,38 @@ COC_colonial_new_caledonia = {
 	
 }
 
+#Colonial New Caledonia AI
+COC_colonial_new_caledonia_AI = {
+
+	color = { 255 255 0 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_KANAK
+	
+}
+
 #Colonial Fiji
 COC_colonial_fiji = {
+
+	color = { 53 173 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_FIJI
+	
+}
+
+#Colonial Fiji AI
+COC_colonial_fiji_AI = {
 
 	color = { 53 173 255 }
 	
@@ -1984,8 +2134,38 @@ COC_colonial_tonga = {
 	
 }
 
-#Colonial Tonga
+#Colonial Tonga AI
+COC_colonial_tonga_AI = {
+
+	color = { 25 25 255 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_TONGA
+	
+}
+
+#Colonial Tahiti
 COC_colonial_tahiti = {
+
+	color = { 255 22 64 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_TAHITI
+	
+}
+
+#Colonial Tahiti AI
+COC_colonial_tahiti_AI = {
 
 	color = { 255 22 64 }
 	
@@ -2001,6 +2181,22 @@ COC_colonial_tahiti = {
 
 #Colonial Hawai
 COC_colonial_hawaii = {
+
+	color = { 255 150 0 }
+	
+	country_type = colonial
+	
+	tier = principality
+
+	cultures = { british }
+	
+	capital = STATE_HAWAIIAN_ISLANDS
+	
+}
+
+
+#Colonial Hawai AI
+COC_colonial_hawaii_AI = {
 
 	color = { 255 150 0 }
 	

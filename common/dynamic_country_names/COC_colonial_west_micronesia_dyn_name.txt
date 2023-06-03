@@ -1,4 +1,32 @@
-﻿COC_colonial_west_micronesia = { # Colonial West Micronesia
+﻿# Colonial West Micronesia
+COC_colonial_west_micronesia = {
+	dynamic_country_name = {
+		name = dyn_c_default_west_micronesia
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_west_micronesia
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}
+
+# Colonial West Micronesia AI
+COC_colonial_west_micronesia_AI = {
 	dynamic_country_name = {
 		name = dyn_c_default_west_micronesia
 

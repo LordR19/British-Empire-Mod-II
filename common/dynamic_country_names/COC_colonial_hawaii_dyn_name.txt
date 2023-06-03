@@ -24,3 +24,30 @@ COC_colonial_hawaii = {
 		}
 	}
 }
+
+# Colonial Hawaii AI
+COC_colonial_hawaii_AI = {
+	dynamic_country_name = {
+		name = dyn_c_default_hawaii
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_hawaii
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}
