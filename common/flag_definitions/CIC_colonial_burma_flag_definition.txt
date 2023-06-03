@@ -38,7 +38,7 @@ CIC_colonial_burma = {
 		trigger = { 
 			exists = c:GBR
 			scope:actor = {
-				is_subject_of = c:GBR
+				is_direct_subject_of  = c:GBR
 			}
 		}
 	}
@@ -51,7 +51,7 @@ CIC_colonial_burma = {
 		trigger = { 
 			exists = c:ITA
 			scope:actor = {
-				is_subject_of = c:ITA
+				is_direct_subject_of  = c:ITA
 			}
 		}
 	}
@@ -64,7 +64,21 @@ CIC_colonial_burma = {
 		trigger = { 
 			exists = c:FRA
 			scope:actor = {
-				is_subject_of = c:FRA
+				is_direct_subject_of  = c:FRA
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = CIC_colonial_burma_sub_dutch
+		allow_overlord_canton = no
+		subject_canton = CIC_colonial_burma_sub_dutch
+		coa_with_overlord_canton = CIC_colonial_burma_sub_dutch		
+		priority = 100
+		trigger = { 
+			exists = c:NET
+			scope:actor = {
+				is_direct_subject_of  = c:NET
 			}
 		}
 	}

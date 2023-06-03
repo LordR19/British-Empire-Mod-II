@@ -45,3 +45,51 @@
 		}
 	}
 }
+
+C1R_AI = { # Southern Rhodesia AI
+	dynamic_country_name = {
+		name = dyn_c_default_zimbabwe
+		adjective = dyn_c_default_zimbabwe_adj
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_zimbabwe
+		adjective = dyn_c_colonial_zimbabwe_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			AND = {
+				exists = c:GBR
+				NOT = {
+					scope:actor = {
+						is_subject_of = c:GBR
+					}
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_southern_rhodesia
+		adjective = dyn_c_southern_rhodesia_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+}

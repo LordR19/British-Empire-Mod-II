@@ -119,6 +119,32 @@ CA1_sub_french = {
 	}
 }
 
+CA1_sub_dutch = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_stripe_bottom.dds"
+		color1 = "blue"
+		instance = { scale = { 1 0.85 } position = { 0.5 0.6 } }
+	}
+	colored_emblem = {
+		texture = "ce_bicolor_top.dds"
+		color1 = "orange"
+		instance = { scale = { 1 1.7 } position = { 0.5 0.67 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_stars_maghreb.dds"
+		color1 = "white"
+		instance = { scale = { 0.85 0.85 } position = { 0.3 0.45 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_camel_west_sahara.dds"
+		color1 = "white"
+		instance = { scale = { 0.35 0.35 } position = { 0.3 0.45 } }
+	}
+}
+
 CA1_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"

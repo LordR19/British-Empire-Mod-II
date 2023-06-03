@@ -39,7 +39,7 @@ C3P = {
 		trigger = { 
 			exists = c:GBR
 			scope:actor = {
-				is_subject_of = c:GBR
+				is_direct_subject_of  = c:GBR
 			}
 		}
 	}
@@ -52,7 +52,7 @@ C3P = {
 		trigger = { 
 			exists = c:ITA
 			scope:actor = {
-				is_subject_of = c:ITA
+				is_direct_subject_of  = c:ITA
 			}
 		}
 	}
@@ -65,7 +65,116 @@ C3P = {
 		trigger = { 
 			exists = c:FRA
 			scope:actor = {
-				is_subject_of = c:FRA
+				is_direct_subject_of  = c:FRA
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C3P_sub_dutch
+		allow_overlord_canton = no
+		subject_canton = C3P_sub_dutch
+		coa_with_overlord_canton = C3P_sub_dutch		
+		priority = 100
+		trigger = { 
+			exists = c:NET
+			scope:actor = {
+				is_direct_subject_of  = c:NET
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C3P_monarchy
+		subject_canton = C3P_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C3P			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = C3P_dictatorship
+		subject_canton = C3P_dictatorship
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C3P
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+}
+
+#Colonial Pepper Coast AI
+C3P_AI = {
+	flag_definition = {
+		coa = C3P
+		subject_canton = C3P
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C3P		
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = C3P
+		subject_canton = C3P
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = C3P	
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+		
+	flag_definition = {
+		coa = C3P_sub
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = C3P_sub		
+		priority = 50
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C3P_sub_british
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = C3P_sub_british		
+		priority = 100
+		trigger = { 
+			exists = c:GBR
+			scope:actor = {
+				is_direct_subject_of  = c:GBR
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C3P_sub_italian
+		allow_overlord_canton = no
+		coa_with_overlord_canton = C3P_sub_italian		
+		priority = 100
+		trigger = { 
+			exists = c:ITA
+			scope:actor = {
+				is_direct_subject_of  = c:ITA
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C3P_sub_french
+		allow_overlord_canton = no
+		coa_with_overlord_canton = C3P_sub_french		
+		priority = 100
+		trigger = { 
+			exists = c:FRA
+			scope:actor = {
+				is_direct_subject_of  = c:FRA
 			}
 		}
 	}

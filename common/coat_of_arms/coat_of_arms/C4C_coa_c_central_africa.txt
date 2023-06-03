@@ -103,6 +103,30 @@ C4C_sub_french = {
 	}
 }
 
+C4C_sub_dutch = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_stripe_bottom.dds"
+		color1 = "blue"
+		instance = { scale = { 1 0.85 } position = { 0.5 0.6 } }
+	}
+	colored_emblem = {
+		texture = "ce_bicolor_top.dds"
+		color1 = "orange"
+		instance = { scale = { 1 1.7 } position = { 0.5 0.67 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		instance = { scale = { 0.2 0.2 } position = { 0.3 0.14 } }
+		instance = { scale = { 0.2 0.2 } position = { 0.3 0.56 } }
+		instance = { scale = { 0.2 0.2 } position = { 0.16 0.35 } }
+		instance = { scale = { 0.2 0.2 } position = { 0.44 0.35 } }
+	}
+}
+
 C4C_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "green"

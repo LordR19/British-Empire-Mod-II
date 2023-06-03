@@ -102,6 +102,31 @@ CSAF_colonial_south_africa_sub_french = {
 	}
 }
 
+CSAF_colonial_south_africa_sub_dutch = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_stripe_bottom.dds"
+		color1 = "blue"
+		instance = { scale = { 1 0.85 } position = { 0.5 0.6 } }
+	}
+	colored_emblem = {
+		texture = "ce_bicolor_top.dds"
+		color1 = "orange"
+		instance = { scale = { 1 1.7 } position = { 0.5 0.67 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_diamond.dds"
+		color1 = "white"
+		color2 = "orange"
+		instance = { scale = { 0.2 0.2 } position = { 0.3 0.17 } } #Top
+		instance = { scale = { 0.2 0.2 } position = { 0.18 0.35 } } #Left
+		instance = { scale = { 0.2 0.2 } position = { 0.42 0.35 } } #Right
+		instance = { scale = { 0.2 0.2 } position = { 0.3 0.53 } } #Bottom
+	}
+}
+
 CSAF_colonial_south_africa_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"

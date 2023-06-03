@@ -64,6 +64,32 @@ C3C_sub_french = {
 	}
 }
 
+C3C_sub_dutch = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_stripe_bottom.dds"
+		color1 = "blue"
+		instance = { scale = { 1 0.85 } position = { 0.5 0.6 } }
+	}
+	colored_emblem = {
+		texture = "ce_bicolor_top.dds"
+		color1 = "orange"
+		instance = { scale = { 1 1.7 } position = { 0.5 0.67 } }
+	}
+	colored_emblem = {
+		texture = "ce_anb_rhombus.dds"
+		color1 = "white"
+		instance = { scale = { 0.66 0.66 } position = { 0.23 0.34 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "orange"
+		instance = { scale = { 0.42 0.42 } position = { 0.23 0.34 } }
+	}
+}
+
 C3C_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "blue"

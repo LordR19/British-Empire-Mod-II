@@ -25,3 +25,31 @@
 		}
 	}
 }
+
+C5M_AI = { # Colonial Morocco AI
+	dynamic_country_name = {
+		name = dyn_c_default_morocco
+		adjective = dyn_c_default_morocco_adj
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colony_of_morocco
+		adjective = dyn_c_colony_of_morocco_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}

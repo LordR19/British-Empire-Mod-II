@@ -43,3 +43,49 @@
 		}
 	}
 }
+
+C2R_AI = { # Northern Rhodesia AI
+	dynamic_country_name = {
+		name = dyn_c_default_zambia
+		adjective = dyn_c_default_zambia_adj
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_zambia
+		adjective = dyn_c_colonial_zambia_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			exists = c:GBR
+			NOT = {
+				scope:actor = {
+					is_subject_of = c:GBR
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_northern_rhodesia
+		adjective = dyn_c_northern_rhodesia_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				exists = c:GBR
+				is_subject_of = c:GBR
+			}
+		}
+	}
+}

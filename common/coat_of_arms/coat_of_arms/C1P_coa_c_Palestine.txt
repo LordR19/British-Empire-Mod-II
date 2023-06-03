@@ -105,6 +105,27 @@ C1P_sub_french = {
 	}
 }
 
+C1P_sub_dutch = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_stripe_bottom.dds"
+		color1 = "blue"
+		instance = { scale = { 1 0.85 } position = { 0.5 0.6 } }
+	}
+	colored_emblem = {
+		texture = "ce_bicolor_top.dds"
+		color1 = "orange"
+		instance = { scale = { 1 1.7 } position = { 0.5 0.67 } }
+	}
+	colored_emblem = {
+		texture = "ce_emblem_cross_jerusalem.dds"
+		color1 = "white"
+		instance = { scale = { 0.48 0.48 } position = { 0.3 0.35 } }
+	}
+}
+
 C1P_dictatorship = {
 	pattern = "pattern_solid.tga"
 	color1 = "black"

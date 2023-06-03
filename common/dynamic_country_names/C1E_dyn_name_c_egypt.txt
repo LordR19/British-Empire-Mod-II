@@ -44,3 +44,50 @@
 		}
 	}
 }
+
+C1E_AI = { # Protectorate of Egypt AI
+	dynamic_country_name = {
+		name = dyn_c_default_egypt
+		adjective = dyn_c_default_egypt_adj
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_protectorate_of_egypt
+		adjective = dyn_c_protectorate_of_egypt_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			exists = c:GBR
+			scope:actor = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_egypt
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			AND = {
+				exists = c:GBR
+				NOT = {
+					scope:actor = {
+						is_subject_of = c:GBR
+					}
+				}
+			}
+		}
+	}
+}

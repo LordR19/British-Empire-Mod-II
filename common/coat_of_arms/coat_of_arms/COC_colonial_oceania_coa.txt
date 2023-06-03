@@ -144,11 +144,11 @@ COC_colonial_oceania_sub_dutch = {
 	colored_emblem = {
 		texture = "ce_star_05.dds"
 		color1 = "white"
-		instance = { scale = { 0.2 0.2 } position = { 0.3 0.14 } }
-		instance = { scale = { 0.2 0.2 } position = { 0.2 0.3 } }
-		instance = { scale = { 0.2 0.2 } position = { 0.4 0.26 } }
+		instance = { scale = { 0.18 0.18 } position = { 0.3 0.14 } }
+		instance = { scale = { 0.18 0.18 } position = { 0.2 0.3 } }
+		instance = { scale = { 0.18 0.18 } position = { 0.4 0.26 } }
 		instance = { scale = { 0.13 0.13 } position = { 0.35 0.41 } }
-		instance = { scale = { 0.2 0.2 } position = { 0.3 0.56 } }
+		instance = { scale = { 0.18 0.18 } position = { 0.3 0.56 } }
 	}
 }
 

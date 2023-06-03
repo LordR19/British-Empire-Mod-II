@@ -40,3 +40,46 @@
 		}
 	}
 }
+
+C6C_AI = { # Colonial Cape AI
+	dynamic_country_name = {
+		name = dyn_c_default_cape
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_cape
+
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_dominion_south_africa
+		adjective = dyn_c_dominion_south_africa
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = c:GBR
+			scope:actor = {
+				is_direct_subject_of = c:GBR
+			}
+			has_global_variable = bem_south_africa_dominion_global_var
+		}
+	}
+}

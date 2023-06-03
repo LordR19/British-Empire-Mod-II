@@ -74,6 +74,20 @@ COC_colonial_new_caledonia = {
 	}
 
 	flag_definition = {
+		coa = COC_colonial_new_caledonia_sub_dutch
+		allow_overlord_canton = no
+		subject_canton = COC_colonial_new_caledonia_sub_dutch
+		coa_with_overlord_canton = COC_colonial_new_caledonia_sub_dutch		
+		priority = 100
+		trigger = { 
+			exists = c:NET
+			scope:actor = {
+				is_direct_subject_of  = c:NET
+			}
+		}
+	}
+
+	flag_definition = {
 		coa = COC_colonial_new_caledonia_monarchy
 		subject_canton = COC_colonial_new_caledonia_monarchy
 		allow_overlord_canton = yes

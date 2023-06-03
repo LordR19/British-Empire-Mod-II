@@ -38,7 +38,7 @@ C2T = {
 		trigger = { 
 			exists = c:GBR
 			scope:actor = {
-				is_subject_of = c:GBR
+				is_direct_subject_of  = c:GBR
 			}
 		}
 	}
@@ -51,7 +51,7 @@ C2T = {
 		trigger = { 
 			exists = c:ITA
 			scope:actor = {
-				is_subject_of = c:ITA
+				is_direct_subject_of  = c:ITA
 			}
 		}
 	}
@@ -64,7 +64,21 @@ C2T = {
 		trigger = { 
 			exists = c:FRA
 			scope:actor = {
-				is_subject_of = c:FRA
+				is_direct_subject_of  = c:FRA
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = C2T_sub_dutch
+		allow_overlord_canton = no
+		subject_canton = C2T_sub_dutch
+		coa_with_overlord_canton = C2T_sub_dutch		
+		priority = 100
+		trigger = { 
+			exists = c:NET
+			scope:actor = {
+				is_direct_subject_of  = c:NET
 			}
 		}
 	}

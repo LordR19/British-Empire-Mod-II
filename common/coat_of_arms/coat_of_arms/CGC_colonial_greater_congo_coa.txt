@@ -117,6 +117,34 @@ CGC_colonial_greater_congo_sub_french = {
 	}
 }
 
+CGC_colonial_greater_congo_sub_dutch = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_stripe_bottom.dds"
+		color1 = "blue"
+		instance = { scale = { 1 0.85 } position = { 0.5 0.6 } }
+	}
+	colored_emblem = {
+		texture = "ce_bicolor_top.dds"
+		color1 = "orange"
+		instance = { scale = { 1 1.7 } position = { 0.5 0.67 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		instance = { scale = { 0.15 0.15 } position = { 0.3 0.15 } } #Top
+		instance = { scale = { 0.15 0.15 } position = { 0.225 0.25 } } #Middle Top Left
+		instance = { scale = { 0.15 0.15 } position = { 0.15 0.35 } } #Left
+		instance = { scale = { 0.15 0.15 } position = { 0.225 0.45 } } #Middle Bottom Left
+		instance = { scale = { 0.15 0.15 } position = { 0.3 0.55 } } #Bottom
+		instance = { scale = { 0.15 0.15 } position = { 0.375 0.45 } } #Middle Bottom Right
+		instance = { scale = { 0.15 0.15 } position = { 0.45 0.35 } } #Right
+		instance = { scale = { 0.15 0.15 } position = { 0.375 0.25 } } #Middle Top Right
+	}
+}
+
 CGC_colonial_greater_congo_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "green_dark"

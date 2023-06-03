@@ -1,0 +1,55 @@
+﻿C1W = { # Territory of South West Africa
+dynamic_country_name = {
+	name = dyn_c_default_south_west
+	adjective = dyn_c_default_south_west_adj
+
+	is_main_tag_only = no
+	priority = 1
+	
+	trigger = {
+		always = yes
+	}
+}
+
+	dynamic_country_name = {
+		name = dyn_c_territory_of_swa
+		adjective = dyn_c_territory_of_swa_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}
+
+C1W_AI = { # Territory of South West Africa AI
+	dynamic_country_name = {
+		name = dyn_c_default_south_west
+		adjective = dyn_c_default_south_west_adj
+
+		is_main_tag_only = no
+		priority = 1
+		
+		trigger = {
+			always = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_territory_of_swa
+		adjective = dyn_c_territory_of_swa_adj
+
+		is_main_tag_only = no
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+			}
+		}
+	}
+}
