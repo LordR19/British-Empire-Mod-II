@@ -41,7 +41,7 @@ bem_hide_colonial_decisions_toggle = {
 
 ########################################################
 
-bem_transfer_colonial_lands_puppet_decision = {
+bem_transfer_colonial_lands_africa_puppet_decision = {
 	is_shown = {
 		any_subject_or_below = {
 			is_ai = yes
@@ -71,6 +71,152 @@ bem_transfer_colonial_lands_puppet_decision = {
 			every_scope_state = {
 				limit = {
 					state_is_in_africa = yes
+				}
+				set_state_owner = root
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_transfer_colonial_lands_oceania_puppet_decision = {
+	is_shown = {
+		any_subject_or_below = {
+			is_ai = yes
+			bem_country_is_in_oceania = no
+			can_have_subjects = no
+			any_scope_state = {
+				bem_state_is_in_oceania = yes
+			}
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+#		change_infamy = 5
+		every_subject_or_below = {
+			limit = {
+				is_ai = yes
+				bem_country_is_in_oceania = no
+				can_have_subjects = no
+				any_scope_state = {
+					bem_state_is_in_oceania = yes
+				}
+			}
+			every_scope_state = {
+				limit = {
+					bem_state_is_in_oceania = yes
+				}
+				set_state_owner = root
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+bem_transfer_pacific_islands_from_subject_decision = {
+	is_shown = {
+		any_subject_or_below = {
+			is_ai = yes
+			is_direct_subject_of = root
+			bem_country_is_in_oceania = yes
+			any_state = {
+				is_capital = yes
+				OR = {
+					state_region = s:STATE_NEW_SOUTH_WALES
+					state_region = s:STATE_NORTHERN_TERRITORY
+					state_region = s:STATE_QUEENSLAND
+					state_region = s:STATE_SOUTH_AUSTRALIA
+					state_region = s:STATE_TASMANIA
+					state_region = s:STATE_VICTORIA
+					state_region = s:STATE_WESTERN_AUSTRALIA
+					state_region = s:STATE_NORTH_ISLAND
+					state_region = s:STATE_SOUTH_ISLAND
+				}
+			}
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_WEST_MICRONESIA
+					state_region = s:STATE_EAST_MICRONESIA
+					state_region = s:STATE_NAURU
+					state_region = s:STATE_BOUGAINVILLE
+					state_region = s:STATE_SOLOMON_ISLANDS
+					state_region = s:STATE_VANUATU
+					state_region = s:STATE_KANAK
+					state_region = s:STATE_FIJI
+					state_region = s:STATE_TONGA
+					state_region = s:STATE_TAHITI
+					state_region = s:STATE_HAWAIIAN_ISLANDS
+				}
+			}
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+#		change_infamy = 5
+		every_subject_or_below = {
+			limit = {
+				is_ai = yes
+				is_direct_subject_of = root
+				bem_country_is_in_oceania = yes
+				any_state = {
+					is_capital = yes
+					OR = {
+						state_region = s:STATE_NEW_SOUTH_WALES
+						state_region = s:STATE_NORTHERN_TERRITORY
+						state_region = s:STATE_QUEENSLAND
+						state_region = s:STATE_SOUTH_AUSTRALIA
+						state_region = s:STATE_TASMANIA
+						state_region = s:STATE_VICTORIA
+						state_region = s:STATE_WESTERN_AUSTRALIA
+						state_region = s:STATE_NORTH_ISLAND
+						state_region = s:STATE_SOUTH_ISLAND
+					}
+				}
+				any_scope_state = {
+					OR = {
+						state_region = s:STATE_WEST_MICRONESIA
+						state_region = s:STATE_EAST_MICRONESIA
+						state_region = s:STATE_NAURU
+						state_region = s:STATE_BOUGAINVILLE
+						state_region = s:STATE_SOLOMON_ISLANDS
+						state_region = s:STATE_VANUATU
+						state_region = s:STATE_KANAK
+						state_region = s:STATE_FIJI
+						state_region = s:STATE_TONGA
+						state_region = s:STATE_TAHITI
+						state_region = s:STATE_HAWAIIAN_ISLANDS
+					}
+				}
+			}
+			every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_WEST_MICRONESIA
+						state_region = s:STATE_EAST_MICRONESIA
+						state_region = s:STATE_NAURU
+						state_region = s:STATE_BOUGAINVILLE
+						state_region = s:STATE_SOLOMON_ISLANDS
+						state_region = s:STATE_VANUATU
+						state_region = s:STATE_KANAK
+						state_region = s:STATE_FIJI
+						state_region = s:STATE_TONGA
+						state_region = s:STATE_TAHITI
+						state_region = s:STATE_HAWAIIAN_ISLANDS
+					}
 				}
 				set_state_owner = root
 			}
@@ -1155,7 +1301,7 @@ unite_colonies_oceania_decision = {
 				}
 			}
 
-			text = unite_south_africa_tt
+			text = unite_oceania_tt
 		}
 		custom_tooltip = warning_colony_unification_tt
 	}

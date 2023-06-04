@@ -815,6 +815,12 @@
  bem_transfer_colonial_lands_puppet_decision: "Transfer #yellow African#! Colonial Lands of Puppets"
  bem_transfer_colonial_lands_puppet_decision_desc: "Take control of all the #yellow African#! colonial lands of your puppets."
 
+ bem_transfer_colonial_lands_oceania_puppet_decision: "Transfer #yellow Oceanian#! Colonial Lands of Puppets"
+ bem_transfer_colonial_lands_oceania_puppet_decision_desc: "Take control of all the #yellow Oceanian#! colonial lands of your puppets."
+
+ bem_transfer_pacific_islands_from_subject_decision: "Transfer #yellow Pacific Islands#! from Australian Subject"
+ bem_transfer_pacific_islands_from_subject_decision_desc: "Take control of all the #yellow Pacific Islands#! currently controlled by a subject nation in Australia or New Zealand."
+
  unite_colonies_maghreb_decision: "Unite Colonies in North Africa"
  unite_colonies_maghreb_decision_desc: "This Decision allows you to #yellow unite all your Colonial Subjects and states in North Africa#! into one big Colonial Nation."
  colonial_nations_north_africa_more_2_tt: "You have two or more #yellow Colonial Nations#! in the North Africa Region"
