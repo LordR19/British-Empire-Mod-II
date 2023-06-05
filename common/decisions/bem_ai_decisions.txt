@@ -1,4 +1,159 @@
-﻿bem_create_colonial_libya = { #This code creates a colonial nation for the AI
+﻿#Decision for the AI to take control of fully colonized states in the Pacific Region
+bem_transfer_pacific_islands_from_subject_ai_decision = {
+	is_shown = {
+		is_ai = yes
+		any_subject_or_below = {
+			is_ai = yes
+			OR = {
+				AND = {
+					exists = c:NZL
+					this = c:NZL
+				}
+				AND = {
+					exists = c:AST
+					this = c:AST
+				}
+				AND = {
+					exists = c:NSW
+					this = c:NSW
+				}
+				AND = {
+					exists = c:SAS
+					this = c:SAS
+				}
+				AND = {
+					exists = c:TAS
+					this = c:TAS
+				}
+				AND = {
+					exists = c:WAS
+					this = c:WAS
+				}
+			}
+			is_direct_subject_of = root
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_WEST_MICRONESIA
+					state_region = s:STATE_EAST_MICRONESIA
+					state_region = s:STATE_NAURU
+					state_region = s:STATE_BOUGAINVILLE
+					state_region = s:STATE_SOLOMON_ISLANDS
+					state_region = s:STATE_VANUATU
+					state_region = s:STATE_KANAK
+					state_region = s:STATE_FIJI
+					state_region = s:STATE_TONGA
+					state_region = s:STATE_TAHITI
+					state_region = s:STATE_HAWAIIAN_ISLANDS
+				}
+				state_region = {
+					any_scope_state = {
+						count = all
+						NOT = {
+							owner = { is_country_type = decentralized }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+#		change_infamy = 5
+		every_subject_or_below = {
+			limit = {
+				is_ai = yes
+				OR = {
+					AND = {
+						exists = c:NZL
+						this = c:NZL
+					}
+					AND = {
+						exists = c:AST
+						this = c:AST
+					}
+					AND = {
+						exists = c:NSW
+						this = c:NSW
+					}
+					AND = {
+						exists = c:SAS
+						this = c:SAS
+					}
+					AND = {
+						exists = c:TAS
+						this = c:TAS
+					}
+					AND = {
+						exists = c:WAS
+						this = c:WAS
+					}
+				}
+				is_direct_subject_of = root
+				any_scope_state = {
+					OR = {
+						state_region = s:STATE_WEST_MICRONESIA
+						state_region = s:STATE_EAST_MICRONESIA
+						state_region = s:STATE_NAURU
+						state_region = s:STATE_BOUGAINVILLE
+						state_region = s:STATE_SOLOMON_ISLANDS
+						state_region = s:STATE_VANUATU
+						state_region = s:STATE_KANAK
+						state_region = s:STATE_FIJI
+						state_region = s:STATE_TONGA
+						state_region = s:STATE_TAHITI
+						state_region = s:STATE_HAWAIIAN_ISLANDS
+					}
+					state_region = {
+						any_scope_state = {
+							count = all
+							NOT = {
+								owner = { is_country_type = decentralized }
+							}
+						}
+					}
+				}
+			}
+			every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_WEST_MICRONESIA
+						state_region = s:STATE_EAST_MICRONESIA
+						state_region = s:STATE_NAURU
+						state_region = s:STATE_BOUGAINVILLE
+						state_region = s:STATE_SOLOMON_ISLANDS
+						state_region = s:STATE_VANUATU
+						state_region = s:STATE_KANAK
+						state_region = s:STATE_FIJI
+						state_region = s:STATE_TONGA
+						state_region = s:STATE_TAHITI
+						state_region = s:STATE_HAWAIIAN_ISLANDS
+					}
+					state_region = {
+						any_scope_state = {
+							count = all
+							NOT = {
+								owner = { is_country_type = decentralized }
+							}
+						}
+					}
+				}
+				set_state_owner = root
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+########################################################
+
+bem_create_colonial_libya = { #This code creates a colonial nation for the AI
 	is_shown = { #I tried to order the triggers logically to reduce the calculations
 		has_game_rule = bem_colonial_nations_release #Only used when the game rule is activated
 		can_have_subjects = yes

@@ -877,6 +877,9 @@
  unite_oceania_tt: "Every #yellow Colonial Nation#! and #yellow every State you own#! in OCeania will be #yellow merged#! into one Colonial Nation. The Colonial Nation with the highest [concept_gdp] will take the lead of the united Colony"
 
 #AI decisions
+ bem_transfer_pacific_islands_from_subject_ai_decision: "AI decision to take Islands from Australia"
+ bem_transfer_pacific_islands_from_subject_ai_decision_desc: "Let's the AI take fully colonised states in the pacific ocean from the original Australian Colonial Nations. Should be relevant mostly for Great Britain. #n Should not be visible!#!"
+
  bem_create_colonial_libya: "AI decision Libya"
  bem_create_colonial_libya_desc: "AI decision to create a colony in Libya. #n Should not be visible!#!"
 
