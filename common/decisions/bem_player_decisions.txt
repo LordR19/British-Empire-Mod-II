@@ -127,23 +127,33 @@ bem_transfer_pacific_islands_from_subject_decision = {
 	is_shown = {
 		any_subject_or_below = {
 			is_ai = yes
-			is_direct_subject_of = root
-			bem_colonial_nation_oceania_trigger = no
-			bem_country_is_in_oceania = yes
-			any_state = {
-				is_capital = yes
-				OR = {
-					state_region = s:STATE_NEW_SOUTH_WALES
-					state_region = s:STATE_NORTHERN_TERRITORY
-					state_region = s:STATE_QUEENSLAND
-					state_region = s:STATE_SOUTH_AUSTRALIA
-					state_region = s:STATE_TASMANIA
-					state_region = s:STATE_VICTORIA
-					state_region = s:STATE_WESTERN_AUSTRALIA
-					state_region = s:STATE_NORTH_ISLAND
-					state_region = s:STATE_SOUTH_ISLAND
+			OR = {
+				AND = {
+					exists = c:NZL
+					this = c:NZL
+				}
+				AND = {
+					exists = c:AST
+					this = c:AST
+				}
+				AND = {
+					exists = c:NSW
+					this = c:NSW
+				}
+				AND = {
+					exists = c:SAS
+					this = c:SAS
+				}
+				AND = {
+					exists = c:TAS
+					this = c:TAS
+				}
+				AND = {
+					exists = c:WAS
+					this = c:WAS
 				}
 			}
+			is_direct_subject_of = root
 			any_scope_state = {
 				OR = {
 					state_region = s:STATE_WEST_MICRONESIA
@@ -171,22 +181,33 @@ bem_transfer_pacific_islands_from_subject_decision = {
 		every_subject_or_below = {
 			limit = {
 				is_ai = yes
-				is_direct_subject_of = root
-				bem_country_is_in_oceania = yes
-				any_state = {
-					is_capital = yes
-					OR = {
-						state_region = s:STATE_NEW_SOUTH_WALES
-						state_region = s:STATE_NORTHERN_TERRITORY
-						state_region = s:STATE_QUEENSLAND
-						state_region = s:STATE_SOUTH_AUSTRALIA
-						state_region = s:STATE_TASMANIA
-						state_region = s:STATE_VICTORIA
-						state_region = s:STATE_WESTERN_AUSTRALIA
-						state_region = s:STATE_NORTH_ISLAND
-						state_region = s:STATE_SOUTH_ISLAND
+				OR = {
+					AND = {
+						exists = c:NZL
+						this = c:NZL
+					}
+					AND = {
+						exists = c:AST
+						this = c:AST
+					}
+					AND = {
+						exists = c:NSW
+						this = c:NSW
+					}
+					AND = {
+						exists = c:SAS
+						this = c:SAS
+					}
+					AND = {
+						exists = c:TAS
+						this = c:TAS
+					}
+					AND = {
+						exists = c:WAS
+						this = c:WAS
 					}
 				}
+				is_direct_subject_of = root
 				any_scope_state = {
 					OR = {
 						state_region = s:STATE_WEST_MICRONESIA
@@ -225,7 +246,7 @@ bem_transfer_pacific_islands_from_subject_decision = {
 	}
 
 	ai_chance = {
-		base = 100
+		base = 0
 	}
 }
 
@@ -533,8 +554,8 @@ unite_colonies_greater_nigeria_decision = {
 					save_scope_as = unifier_tag
 				}
 				if = {
-					is_player = yes
 					limit = {
+						is_player = yes
 						any_scope_state = {
 							region = sr:region_niger
 						}
